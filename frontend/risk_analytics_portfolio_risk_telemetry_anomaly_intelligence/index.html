@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-full"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#d3e4ff","on-tertiary":"#ffffff","primary-fixed-dim":"#bac7e1","on-tertiary-container":"#6d85a9","primary":"#000000","on-primary-fixed-variant":"#3a475c","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-dim":"#cbdbf5","surface-bright":"#f8f9ff","primary-container":"#0e1c2f","error-container":"#ffdad6","primary-fixed":"#d6e3fe","surface-variant":"#d3e4fe","on-background":"#0b1c30","secondary-container":"#b3d1fd","error":"#ba1a1a","on-tertiary-fixed-variant":"#2f4869","inverse-primary":"#bac7e1","on-secondary-fixed":"#001c38","outline-variant":"#c5c6cd","on-tertiary-fixed":"#001c39","surface-container":"#e5eeff","on-primary-fixed":"#0e1c2f","on-secondary-container":"#3b5a7f","on-secondary":"#ffffff","on-surface":"#0b1c30","surface":"#f8f9ff","on-surface-variant":"#44474c","background":"#f8f9ff","on-secondary-fixed-variant":"#29486d","inverse-surface":"#213145","outline":"#75777d","tertiary":"#000000","on-error-container":"#93000a","secondary":"#426086","secondary-fixed-dim":"#aac9f4","on-error":"#ffffff","surface-container-highest":"#d3e4fe","tertiary-fixed":"#d4e3ff","surface-container-low":"#eff4ff","surface-tint":"#525f75","tertiary-container":"#001c39","surface-container-high":"#dce9ff","tertiary-fixed-dim":"#afc8ef","inverse-on-surface":"#eaf1ff","on-primary-container":"#77849c"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-tablet":"1rem","xs":"0.25rem","2xl":"2rem","xl":"1.5rem","3xl":"2.5rem","base":"1rem","margin-mobile":"0.75rem","md":"0.75rem","sm":"0.5rem","2xs":"0.125rem","margin-desktop":"1.5rem","gutter-table":"0.5rem","lg":"1.25rem"},fontFamily:{"label-code":["JetBrains Mono"],"headline-sm":["Public Sans"],"headline-lg":["Public Sans"],"headline-xl-mobile":["Public Sans"],"table-header":["Public Sans"],"body-lg":["Public Sans"],"headline-lg-mobile":["Public Sans"],"body-md":["Public Sans"],"headline-md":["Public Sans"],"headline-xl":["Public Sans"],"label-numeric-md":["JetBrains Mono"],"body-sm":["Public Sans"],"label-numeric-lg":["JetBrains Mono"],"label-numeric-sm":["JetBrains Mono"]},fontSize:{"label-code":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"500"}],"headline-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-xl-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"700"}],"table-header":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.06em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"headline-lg-mobile":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"400"}],"headline-md":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.025em",fontWeight:"700"}],"label-numeric-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"500"}],"body-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}],"label-numeric-lg":["1.25rem",{lineHeight:"1.5rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-numeric-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}]}}}}</script><script src="../assets/api.js"></script>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-md flex items-start gap-sm bg-surface-container-lowest"><img alt="MPLADS Sentinel Shield Logo" class="h-8 w-auto object-contain flex-shrink-0 mt-2xs" src="https://lh3.googleusercontent.com/aida/AEtjO1VhH7wdcogRRhR39oP8iyEJbJID7kD-kqGt7ib-gjGz0wWRVV5yDz0Ds9iVFmeRfsqFw5xmmo-IAxr3dbjP9rVZkkE8d2N7d6rTlH_IT2c-bFLR6i8NYkXfWnagzLMvJOTHfCo_WDobH3UTyuWNyaMFNGK_1icSeLaeGUOd0y5mfBcn9W-g0rxcIAx7bEoMdZ6-gEqTywglF4hvtRKd5dTHIEDGKq82sshg_AyXmXjPfWT5W2TBcKGj1X5j"/><div class="min-w-0"><h1 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface truncate">MPLADS SENTINEL</h1><p class="font-table-header text-table-header uppercase text-on-surface-variant line-clamp-2">MoSPI / Audit Decision Support</p></div></div><nav class="flex-1 px-unit-8 py-unit-8 space-y-unit-4 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-strong">
+  <div class="px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-blue-700 font-bold tracking-wider">Stakeholder Portals</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="consumer" href="../consumer_portal/">
+  <span class="material-symbols-outlined text-lg">person</span>
+  <span class="font-body-default text-body-default">Consumer (Citizen)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nodal" href="../nodal_head_portal/">
+  <span class="material-symbols-outlined text-lg">account_balance</span>
+  <span class="font-body-default text-body-default">Nodal Head (Sanctions)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executer" href="../site_executer_portal/">
+  <span class="material-symbols-outlined text-lg">engineering</span>
+  <span class="font-body-default text-body-default">Site Executer (Field)</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Operational Units</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="../overview_dashboard_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dashboard</span>
+  <span class="font-body-default text-body-default">HQ Overview</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="../projects_explorer_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">folder_managed</span>
+  <span class="font-body-default text-body-default">Projects Explorer</span>
+</a>
+<a aria-current="page" class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg transition-colors bg-primary-container text-on-primary font-body-strong shadow-sm" data-path="analytics" href="../risk_analytics_portfolio_risk_telemetry_anomaly_intelligence/">
+  <span class="material-symbols-outlined text-lg">query_stats</span>
+  <span class="font-body-default text-body-default">Risk Analytics</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="spatial" href="../geographic_analysis_spatial_risk_intelligence/">
+  <span class="material-symbols-outlined text-lg">travel_explore</span>
+  <span class="font-body-default text-body-default">Spatial Risk</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audits" href="../investigation_queue_case_management_review_triage/">
+  <span class="material-symbols-outlined text-lg">fact_check</span>
+  <span class="font-body-default text-body-default">Audits & Cases</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assistant" href="../ai_audit_assistant_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">smart_toy</span>
+  <span class="font-body-default text-body-default">AI Assistant</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Governance</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-status" href="../data_system_status_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dns</span>
+  <span class="font-body-default text-body-default">System Status</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="login" href="../authorized_officer_login_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">logout</span>
+  <span class="font-body-default text-body-default">Officer Sign Out</span>
+</a>
+</nav></div><div class="p-sm bg-surface-container space-y-xs flex-shrink-0"><div class="p-xs rounded bg-surface-container-lowest flex items-center justify-between"><div class="flex items-center gap-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><div class="min-w-0"><p class="font-label-numeric-sm text-label-numeric-sm text-on-surface truncate">Synced: 09 Sep 2026, 08:42 AM</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">24,381 Projects Monitored</p></div></div><span class="material-symbols-outlined text-base text-secondary">sync</span></div><div class="pt-xs flex items-center gap-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAffuK6WNYBFm7YBMzskLzY-bbQMajOagTygyG3O9xyHmq730bBOyio9mNWVG8ClfhhUfVs7WGveZ-DUZVpKGYB6mJrNsHFum6YgWr5y9Bm090iy8NtdXs3O3HUHx4d1k1TDpZz0Ke2KMcJGnqP7oB8LAIvolJB0qJcFZkZeBUYYUoRpcOBiFsAqUkt1MlaQTEQtp454oysGjz2ykCmvLNMrt_BAlQST_MT8k4MaEJY2l_gMZs8nVDZ1w"/><div class="min-w-0 flex-1"><p class="font-headline-sm text-headline-sm text-on-surface truncate">Rajiv Sundaram, IAS</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Joint Secretary &amp; Audit Director, MoSPI</p></div><span class="px-xs py-2xs rounded bg-primary-container text-on-primary-container font-label-code text-label-code uppercase flex-shrink-0">Officer</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-md"><div class="flex items-center gap-xs px-sm py-2xs rounded bg-surface-container"><span class="material-symbols-outlined text-base text-secondary">account_balance</span><span class="font-table-header text-table-header uppercase tracking-wider text-on-surface-variant">GOVERNMENT OF INDIA | MINISTRY OF STATISTICS &amp; PROGRAMME IMPLEMENTATION (MoSPI)</span></div></div><div class="flex-1 max-w-lg mx-lg"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-sm text-base text-on-surface-variant">search</span><input class="w-full h-8 pl-9 pr-14 rounded bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low" placeholder="Search projects, agencies, districts..." type="text"/><span class="absolute right-sm px-xs py-2xs rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Ctrl + K</span></div></div><div class="flex items-center gap-md"><div class="flex items-center gap-xs px-xs py-2xs rounded bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-base">cloud_done</span><span class="font-label-numeric-sm text-label-numeric-sm">● Sync: Live (08:42 AM)</span></div><button class="relative p-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button"><span class="material-symbols-outlined text-base">notifications</span><span class="absolute -top-1 -right-1 px-xs py-2xs rounded bg-error text-on-error font-label-numeric-sm text-label-numeric-sm">12</span></button><button class="p-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Statutory &amp; Audit Documentation" type="button"><span class="material-symbols-outlined text-base">help_outline</span></button><div class="flex items-center gap-xs pl-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAffuK6WNYBFm7YBMzskLzY-bbQMajOagTygyG3O9xyHmq730bBOyio9mNWVG8ClfhhUfVs7WGveZ-DUZVpKGYB6mJrNsHFum6YgWr5y9Bm090iy8NtdXs3O3HUHx4d1k1TDpZz0Ke2KMcJGnqP7oB8LAIvolJB0qJcFZkZeBUYYUoRpcOBiFsAqUkt1MlaQTEQtp454oysGjz2ykCmvLNMrt_BAlQST_MT8k4MaEJY2l_gMZs8nVDZ1w"/><span class="material-symbols-outlined text-base text-on-surface-variant">arrow_drop_down</span></div></div></header><main class="relative pt-16 flex-1 w-full px-lg bg-surface"><div class="my-xs py-xs px-sm rounded bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center gap-xs"><span class="material-symbols-outlined text-base text-secondary">verified_user</span><span><strong>Confidential Government Decision-Support:</strong> Analytical signals represent risk indicators and do not establish fraud or misconduct. Human ground verification required under GFR 2017 Rule 14.</span></div><div class="flex flex-col w-full space-y-unit-20 pb-unit-32">
+<!-- TOP HEADER & CONTEXT BAR -->
+<div class="flex flex-col space-y-unit-12 pt-unit-8">
+<!-- Breadcrumb & Statutory Engine Pill -->
+<div class="flex flex-wrap items-center justify-between gap-unit-8">
+<div class="flex items-center space-x-unit-6 text-on-surface-variant font-caption-meta text-caption-meta">
+<span class="hover:text-on-surface cursor-pointer">Monitoring &amp; Intelligence</span>
+<span class="material-symbols-outlined text-xs text-outline">chevron_right</span>
+<span class="text-on-surface font-caption-strong text-caption-strong">Risk Analytics &amp; Statistical Modeling</span>
+</div>
+<div class="flex items-center gap-unit-6">
+<span class="px-unit-8 py-unit-2 bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge uppercase tracking-wider rounded">
+          Statutory Model: Sentinel Engine v4.2
+        </span>
+<span class="px-unit-8 py-unit-2 bg-surface-container text-on-surface-variant font-micro-badge text-micro-badge uppercase tracking-wider rounded">
+          GFR 2017 R-144(A)
+        </span>
+</div>
+</div>
+<!-- Title & Action Ribbon -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-unit-16">
+<div class="space-y-unit-4 max-w-3xl">
+<h1 class="font-title-page text-title-page text-on-surface tracking-tight">Risk Analytics</h1>
+<p class="font-body-default text-body-default text-on-surface-variant">
+          Macro portfolio risk patterns, algorithmic variance telemetry, and recurring anomaly concentrations across sanctioned works.
+        </p>
+</div>
+<!-- Controls & Quick Action -->
+<div class="flex flex-wrap items-center gap-unit-8">
+<div class="flex items-center bg-surface-container-lowest px-unit-12 py-unit-6 rounded shadow-sm">
+<span class="material-symbols-outlined text-base text-secondary mr-unit-6">calendar_today</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">FY 2024–25 (YTD: Apr 2024 – Current)</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant ml-unit-6 cursor-pointer">expand_more</span>
+</div>
+<button class="flex items-center gap-unit-6 bg-primary-container hover:bg-inverse-surface text-on-primary font-body-strong text-body-default px-unit-16 py-unit-6 rounded transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export Analytics Dossier</span>
+</button>
+</div>
+</div>
+<!-- Filter Bar Tier -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-unit-8 p-unit-8 bg-surface-container-low rounded shadow-sm">
+<div class="flex items-center justify-between bg-surface-container-lowest px-unit-12 py-unit-6 rounded text-on-surface">
+<div class="flex flex-col">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Jurisdiction</span>
+<span class="font-data-tabular text-data-tabular">All States &amp; UTs</span>
+</div>
+<span class="material-symbols-outlined text-base text-outline">arrow_drop_down</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-unit-12 py-unit-6 rounded text-on-surface">
+<div class="flex flex-col">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Sector Group</span>
+<span class="font-data-tabular text-data-tabular">All Sectors (14 Sectors)</span>
+</div>
+<span class="material-symbols-outlined text-base text-outline">arrow_drop_down</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-unit-12 py-unit-6 rounded text-on-surface">
+<div class="flex flex-col">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Risk Velocity</span>
+<span class="font-data-tabular text-data-tabular">All Velocity Profiles</span>
+</div>
+<span class="material-symbols-outlined text-base text-outline">arrow_drop_down</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest px-unit-12 py-unit-6 rounded text-on-surface">
+<div class="flex flex-col">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Auditing Baseline</span>
+<span class="font-data-tabular text-data-tabular">CAG Compliance Standard</span>
+</div>
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+</div>
+</div>
+</div>
+<!-- KEY METRICS STRIP (Refined single-tier telemetry bar) -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-unit-8 bg-surface-container-lowest p-unit-12 rounded shadow-sm">
+<!-- Assessed -->
+<div class="flex flex-col p-unit-8 space-y-unit-4 bg-surface-container-low rounded">
+<div class="flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Total Assessed</span>
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+</div>
+<div class="flex items-baseline space-x-unit-4">
+<span class="font-title-page text-title-page text-on-surface">24,381</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Works</span>
+</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">
+        100% evaluated vs GFR 2017
+      </div>
+</div>
+<!-- High Risk -->
+<div class="flex flex-col p-unit-8 space-y-unit-4 bg-error-container/40 rounded">
+<div class="flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-error-container uppercase tracking-wider">High Risk</span>
+<span class="inline-flex items-center px-unit-4 py-unit-2 rounded bg-error text-on-error font-micro-badge text-micro-badge">Score &gt;75</span>
+</div>
+<div class="flex items-baseline space-x-unit-4">
+<span class="font-title-page text-title-page text-error">128</span>
+<span class="font-caption-strong text-caption-strong text-error">0.5%</span>
+</div>
+<div class="font-caption-meta text-caption-meta text-on-error-container">
+        Mandatory statutory review
+      </div>
+</div>
+<!-- Medium Risk -->
+<div class="flex flex-col p-unit-8 space-y-unit-4 bg-surface-container-low rounded">
+<div class="flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Medium Risk</span>
+<span class="inline-flex items-center px-unit-4 py-unit-2 rounded bg-surface-container-highest text-on-surface font-micro-badge text-micro-badge">Score 40–74</span>
+</div>
+<div class="flex items-baseline space-x-unit-4">
+<span class="font-title-page text-title-page text-on-surface">941</span>
+<span class="font-caption-strong text-caption-strong text-on-surface-variant">3.9%</span>
+</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">
+        Monitored surveillance review
+      </div>
+</div>
+<!-- Low Risk -->
+<div class="flex flex-col p-unit-8 space-y-unit-4 bg-surface-container-low rounded">
+<div class="flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Low Risk</span>
+<span class="inline-flex items-center px-unit-4 py-unit-2 rounded bg-surface-container text-on-secondary-container font-micro-badge text-micro-badge">Score &lt;40</span>
+</div>
+<div class="flex items-baseline space-x-unit-4">
+<span class="font-title-page text-title-page text-on-surface">23,312</span>
+<span class="font-caption-strong text-caption-strong text-secondary">95.6%</span>
+</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">
+        Verified compliant baseline
+      </div>
+</div>
+<!-- Monthly Velocity Shift -->
+<div class="flex flex-col p-unit-8 space-y-unit-4 bg-surface-container-low rounded col-span-2 sm:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Risk Shift (30d)</span>
+<span class="material-symbols-outlined text-sm text-error">trending_up</span>
+</div>
+<div class="flex items-baseline space-x-unit-4">
+<span class="font-title-page text-title-page text-error">+18</span>
+<span class="font-caption-strong text-caption-strong text-error">+16.3%</span>
+</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">
+        Net escalation past 30 days
+      </div>
+</div>
+</div>
+<!-- TOP ANALYTICAL ROW (60% / 40% SPLIT) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-16 items-stretch">
+<!-- LEFT: Risk Trend Over Time (7 cols ~ 60%) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col justify-between space-y-unit-16">
+<div class="flex flex-col space-y-unit-4">
+<div class="flex items-center justify-between">
+<h2 class="font-title-section text-title-section text-on-surface">Portfolio Risk Velocity &amp; Anomaly Trends</h2>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Past 6 Months (May – Oct)</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant">
+          Longitudinal comparison between high-risk flags vs reconciled/mitigated cases.
+        </p>
+</div>
+<!-- Trend Chart Graphic (Clean SVG Telemetry) -->
+<div class="relative w-full bg-surface-container-low/60 p-unit-12 rounded">
+<!-- Legend -->
+<div class="flex items-center gap-unit-16 pb-unit-8 font-caption-meta text-caption-meta text-on-surface-variant">
+<div class="flex items-center gap-unit-4">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-caption-strong text-caption-strong text-on-surface">High Risk Works (86 → 128)</span>
+</div>
+<div class="flex items-center gap-unit-4">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Reconciled / Mitigated (42 → 67)</span>
+</div>
+</div>
+<svg class="w-full h-44 overflow-visible text-on-surface-variant" fill="none" viewbox="0 0 540 180">
+<!-- Background Grid Lines -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.12" x1="40" x2="520" y1="20" y2="20"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.12" x1="40" x2="520" y1="60" y2="60"></line>
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.12" x1="40" x2="520" y1="100" y2="100"></line>
+<line stroke="currentColor" stroke-opacity="0.2" x1="40" x2="520" y1="140" y2="140"></line>
+<!-- Y Axis Labels -->
+<text class="text-[10px] font-mono fill-current text-on-surface-variant" text-anchor="end" x="32" y="24">140</text>
+<text class="text-[10px] font-mono fill-current text-on-surface-variant" text-anchor="end" x="32" y="64">100</text>
+<text class="text-[10px] font-mono fill-current text-on-surface-variant" text-anchor="end" x="32" y="104">60</text>
+<text class="text-[10px] font-mono fill-current text-on-surface-variant" text-anchor="end" x="32" y="144">20</text>
+<!-- High Risk Trajectory (Red path) -->
+<!-- Points: May(86->y=74), Jun(91->y=69), Jul(95->y=65), Aug(104->y=56), Sep(114->y=46), Oct(128->y=32) -->
+<path d="M 60 74 L 152 69 L 244 65 L 336 56 L 428 46 L 500 32" stroke="#ba1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Reconciled Trajectory (Blue path) -->
+<!-- Points: May(42->y=118), Jun(45->y=115), Jul(51->y=109), Aug(56->y=104), Sep(61->y=99), Oct(67->y=93) -->
+<path d="M 60 118 L 152 115 L 244 109 L 336 104 L 428 99 L 500 93" stroke="#4059aa" stroke-dasharray="4 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Data Points (Red) -->
+<circle class="fill-surface stroke-error" cx="60" cy="74" r="3.5" stroke-width="2"></circle>
+<circle class="fill-surface stroke-error" cx="152" cy="69" r="3.5" stroke-width="2"></circle>
+<circle class="fill-surface stroke-error" cx="244" cy="65" r="3.5" stroke-width="2"></circle>
+<circle class="fill-surface stroke-error" cx="336" cy="56" r="3.5" stroke-width="2"></circle>
+<circle class="fill-surface stroke-error" cx="428" cy="46" r="3.5" stroke-width="2"></circle>
+<circle class="fill-error stroke-surface" cx="500" cy="32" r="4.5" stroke-width="2"></circle>
+<!-- Current Month Value Callout (Oct: 128) -->
+<g transform="translate(450, 10)">
+<rect class="fill-primary-container" height="22" rx="3" width="80" x="0" y="0"></rect>
+<text class="text-[10px] font-caption-strong fill-on-primary" text-anchor="middle" x="40" y="15">Oct: 128 (+14)</text>
+</g>
+<!-- X Axis Labels -->
+<text class="text-[11px] font-caption-meta fill-current text-on-surface-variant" text-anchor="middle" x="60" y="162">May</text>
+<text class="text-[11px] font-caption-meta fill-current text-on-surface-variant" text-anchor="middle" x="152" y="162">Jun</text>
+<text class="text-[11px] font-caption-meta fill-current text-on-surface-variant" text-anchor="middle" x="244" y="162">Jul</text>
+<text class="text-[11px] font-caption-meta fill-current text-on-surface-variant" text-anchor="middle" x="336" y="162">Aug</text>
+<text class="text-[11px] font-caption-meta fill-current text-on-surface-variant" text-anchor="middle" x="428" y="162">Sep</text>
+<text class="text-[11px] font-caption-strong fill-current text-on-surface" text-anchor="middle" x="500" y="162">Oct</text>
+</svg>
+</div>
+<!-- Informational Analytical Dispatch -->
+<div class="p-unit-8 bg-surface-container-low rounded flex items-start space-x-unit-8 text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">info</span>
+<p class="font-caption-meta text-caption-meta leading-relaxed">
+<strong class="font-caption-strong text-on-surface">Auditor Note:</strong> 
+          Risk spike in Q2 correlates directly with post-monsoon milestone billing surges without matching physical e-MB uploads. Immediate District-level reconciliation recommended.
+        </p>
+</div>
+</div>
+<!-- RIGHT: Risk Distribution & Sector Concentration (5 cols ~ 40%) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col justify-between space-y-unit-16">
+<div class="space-y-unit-4">
+<div class="flex items-center justify-between">
+<h2 class="font-title-section text-title-section text-on-surface">Distribution &amp; Concentration</h2>
+<span class="font-micro-badge text-micro-badge text-on-surface-variant bg-surface-container px-unit-6 py-unit-2 rounded">Macro View</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant">
+          Proportional portfolio segmentation &amp; high-risk sector footprint.
+        </p>
+</div>
+<!-- Proportional Distribution Bar -->
+<div class="space-y-unit-6">
+<div class="h-3 w-full rounded-full overflow-hidden flex bg-surface-container-high">
+<div class="bg-error h-full" style="width: 0.5%;" title="High Risk: 0.5%"></div>
+<div class="bg-surface-tint h-full" style="width: 3.9%;" title="Medium Risk: 3.9%"></div>
+<div class="bg-secondary h-full" style="width: 95.6%;" title="Low Risk: 95.6%"></div>
+</div>
+<!-- 3 Segment Cards -->
+<div class="grid grid-cols-3 gap-unit-6 text-center">
+<div class="p-unit-6 bg-surface-container-low rounded flex flex-col items-center">
+<div class="flex items-center gap-unit-4">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">High</span>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface mt-unit-2">128</span>
+<span class="font-micro-badge text-micro-badge text-error">0.5%</span>
+</div>
+<div class="p-unit-6 bg-surface-container-low rounded flex flex-col items-center">
+<div class="flex items-center gap-unit-4">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Medium</span>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface mt-unit-2">941</span>
+<span class="font-micro-badge text-micro-badge text-on-surface-variant">3.9%</span>
+</div>
+<div class="p-unit-6 bg-surface-container-low rounded flex flex-col items-center">
+<div class="flex items-center gap-unit-4">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Low</span>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface mt-unit-2">23,312</span>
+<span class="font-micro-badge text-micro-badge text-secondary">95.6%</span>
+</div>
+</div>
+</div>
+<!-- Sector Concentration Mini-Bar List -->
+<div class="space-y-unit-8 pt-unit-4">
+<span class="font-caption-strong text-caption-strong text-on-surface uppercase tracking-wider block">
+          Sector Concentration (High-Risk Works)
+        </span>
+<div class="space-y-unit-6">
+<!-- Item 1 -->
+<div class="space-y-unit-2">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface">Social Infrastructure &amp; Hall Works</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">42 works (32.8%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 32.8%;"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="space-y-unit-2">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface">Rural Roads, Bridges &amp; Culverts</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">34 works (26.5%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 26.5%;"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="space-y-unit-2">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface">Water Resources, Drainage &amp; Sanitation</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">28 works (21.9%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 21.9%;"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="space-y-unit-2">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface">Community Electrification &amp; Solar</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">24 works (18.8%)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 18.8%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MIDDLE ROW: PRIMARY RISK FACTORS & ANOMALY DRIVERS -->
+<div class="flex flex-col space-y-unit-12">
+<div class="space-y-unit-2">
+<div class="flex items-center space-x-unit-6">
+<span class="material-symbols-outlined text-base text-secondary">psychology_alt</span>
+<h2 class="font-title-section text-title-section text-on-surface">Recurring Anomaly Drivers &amp; Factor Distribution</h2>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant max-w-4xl">
+        Root causes identified across algorithmic auditing passes against PFMS disbursements, ISRO Bhuvan satellite telemetry, and electronic Measurement Book (e-MB) records.
+      </p>
+</div>
+<!-- 4 Factor Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-12">
+<!-- Card 1 -->
+<div class="p-unit-16 bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between space-y-unit-12">
+<div class="space-y-unit-8">
+<div class="flex items-center justify-between">
+<span class="px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge uppercase">37.5% Share</span>
+<span class="material-symbols-outlined text-lg text-error">account_balance_wallet</span>
+</div>
+<div class="space-y-unit-4">
+<h3 class="font-title-subsection text-title-subsection text-on-surface">Financial-Physical Decoupling</h3>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              Disbursements outpace certified on-ground physical milestones by &gt;25%. Funds drawn ahead of verified site works.
+            </p>
+</div>
+</div>
+<div class="pt-unit-8 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">48 Active Cases</span>
+<span class="font-data-tabular text-data-tabular text-error">Avg lead +36.2%</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-unit-16 bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between space-y-unit-12">
+<div class="space-y-unit-8">
+<div class="flex items-center justify-between">
+<span class="px-unit-6 py-unit-2 rounded bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge uppercase">28.1% Share</span>
+<span class="material-symbols-outlined text-lg text-secondary">timer_off</span>
+</div>
+<div class="space-y-unit-4">
+<h3 class="font-title-subsection text-title-subsection text-on-surface">Milestone Inactivity &amp; Dormancy</h3>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              No recorded site activity or contractor muster roll updates for &gt;60 consecutive days post-fund release.
+            </p>
+</div>
+</div>
+<div class="pt-unit-8 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">36 Active Cases</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">Mean lag 74 days</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-unit-16 bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between space-y-unit-12">
+<div class="space-y-unit-8">
+<div class="flex items-center justify-between">
+<span class="px-unit-6 py-unit-2 rounded bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge uppercase">20.3% Share</span>
+<span class="material-symbols-outlined text-lg text-secondary">price_change</span>
+</div>
+<div class="space-y-unit-4">
+<h3 class="font-title-subsection text-title-subsection text-on-surface">Unsanctioned SOR Rate Escalation</h3>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              Contractor submittals exceeding sanctioned Schedule of Rates without mandatory District Collector administrative sanction.
+            </p>
+</div>
+</div>
+<div class="pt-unit-8 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">26 Active Cases</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">₹4.82 Cr excess</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-unit-16 bg-surface-container-lowest rounded shadow-sm flex flex-col justify-between space-y-unit-12">
+<div class="space-y-unit-8">
+<div class="flex items-center justify-between">
+<span class="px-unit-6 py-unit-2 rounded bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge uppercase">14.1% Share</span>
+<span class="material-symbols-outlined text-lg text-secondary">satellite_alt</span>
+</div>
+<div class="space-y-unit-4">
+<h3 class="font-title-subsection text-title-subsection text-on-surface">Cadastral Proximity &amp; Duplication</h3>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              ISRO Bhuvan GIS detection of pre-existing state/panchayat public assets within 200m radius polygon bounds.
+            </p>
+</div>
+</div>
+<div class="pt-unit-8 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">18 Active Cases</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">&lt;140m buffer overlap</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM SECTION: HIGH-RISK PROJECTS TABLE -->
+<div class="bg-surface-container-lowest rounded shadow-sm flex flex-col overflow-hidden">
+<!-- Table Header & Toolbar -->
+<div class="p-unit-16 bg-surface-container-low/50 flex flex-col sm:flex-row sm:items-center justify-between gap-unit-12">
+<div class="space-y-unit-2">
+<div class="flex items-center gap-unit-6">
+<h2 class="font-title-section text-title-section text-on-surface">High-Risk Projects Ledger</h2>
+<span class="px-unit-6 py-unit-2 rounded bg-error text-on-error font-micro-badge text-micro-badge">128 Critical Works</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant">
+          Projects exceeding statutory risk threshold (Score &gt;75) requiring nodal officer review under GFR 2017 Rule 144(A).
+        </p>
+</div>
+<!-- Quick Search / Filter within Table -->
+<div class="flex items-center gap-unit-8">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-base text-on-surface-variant absolute left-unit-8">search</span>
+<input class="h-8 pl-8 pr-unit-8 bg-surface-container-lowest text-on-surface font-caption-meta text-caption-meta rounded focus:outline-none focus:bg-surface-container-high w-64" placeholder="Filter ID, constituency, contractor..." type="text"/>
+</div>
+<button class="p-unit-6 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded" type="button">
+<span class="material-symbols-outlined text-base">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption-strong text-caption-strong uppercase tracking-wider text-[11px]">
+<th class="py-unit-8 px-unit-12">Project ID &amp; Sanctioned Title</th>
+<th class="py-unit-8 px-unit-12">Constituency &amp; State</th>
+<th class="py-unit-8 px-unit-12">Risk Tier</th>
+<th class="py-unit-8 px-unit-12">Risk Score</th>
+<th class="py-unit-8 px-unit-12">Primary Anomaly Factor</th>
+<th class="py-unit-8 px-unit-12 text-right">Statutory Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-caption-meta text-caption-meta text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="font-data-tabular text-data-tabular font-caption-strong text-caption-strong text-on-surface">P-10291</span>
+<span class="text-on-surface line-clamp-1 max-w-xs font-body-default text-body-default">Multi-Purpose Community Hall &amp; Skill Training Center</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="text-on-surface">Bangalore Rural (KA-14)</span>
+<span class="text-on-surface-variant text-[11px]">Nelamangala Taluk</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<span class="inline-flex items-center px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge">
+                Critical / High
+              </span>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="font-data-tabular text-data-tabular font-body-strong text-body-strong text-error">84 / 100</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 84%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-4 text-error">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>Financial-Physical Decoupling (+35.1% lead)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-right">
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary hover:bg-inverse-surface rounded font-caption-strong text-caption-strong transition-colors" type="button">
+                Inspect Dossier
+              </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="font-data-tabular text-data-tabular font-caption-strong text-caption-strong text-on-surface">P-08412</span>
+<span class="text-on-surface line-clamp-1 max-w-xs font-body-default text-body-default">Panchayat Rural Road Culvert &amp; Black-topping Phase II</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="text-on-surface">Gorakhpur (UP-64)</span>
+<span class="text-on-surface-variant text-[11px]">Pipraich Block</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<span class="inline-flex items-center px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge">
+                Critical / High
+              </span>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="font-data-tabular text-data-tabular font-body-strong text-body-strong text-error">81 / 100</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 81%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-4 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">update_disabled</span>
+<span>Dormant e-MB records &gt;68 days</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-right">
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary hover:bg-inverse-surface rounded font-caption-strong text-caption-strong transition-colors" type="button">
+                Inspect Dossier
+              </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="font-data-tabular text-data-tabular font-caption-strong text-caption-strong text-on-surface">P-11044</span>
+<span class="text-on-surface line-clamp-1 max-w-xs font-body-default text-body-default">District Hospital Solar Microgrid &amp; Backup Storage</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="text-on-surface">Alwar (RJ-08)</span>
+<span class="text-on-surface-variant text-[11px]">Tijara Tehsil</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<span class="inline-flex items-center px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge">
+                Critical / High
+              </span>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="font-data-tabular text-data-tabular font-body-strong text-body-strong text-error">79 / 100</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 79%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-4 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">request_quote</span>
+<span>Unapproved SOR Escalation (+₹38.5 Lakhs)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-right">
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary hover:bg-inverse-surface rounded font-caption-strong text-caption-strong transition-colors" type="button">
+                Inspect Dossier
+              </button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="font-data-tabular text-data-tabular font-caption-strong text-caption-strong text-on-surface">P-09520</span>
+<span class="text-on-surface line-clamp-1 max-w-xs font-body-default text-body-default">Overhead Clean Water Reservoir &amp; Pipeline Feeder</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="text-on-surface">Malkangiri (OD-12)</span>
+<span class="text-on-surface-variant text-[11px]">Kalimela Block</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<span class="inline-flex items-center px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge">
+                Critical / High
+              </span>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="font-data-tabular text-data-tabular font-body-strong text-body-strong text-error">78 / 100</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-4 text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">share_location</span>
+<span>ISRO GIS Proximity Conflict (142m to PHC asset)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-right">
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary hover:bg-inverse-surface rounded font-caption-strong text-caption-strong transition-colors" type="button">
+                Inspect Dossier
+              </button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="font-data-tabular text-data-tabular font-caption-strong text-caption-strong text-on-surface">P-12409</span>
+<span class="text-on-surface line-clamp-1 max-w-xs font-body-default text-body-default">Primary Health Center Inpatient Ward Augmentation</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex flex-col">
+<span class="text-on-surface">Madurai (TN-32)</span>
+<span class="text-on-surface-variant text-[11px]">Vadipatti Circle</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<span class="inline-flex items-center px-unit-6 py-unit-2 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge">
+                Critical / High
+              </span>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="font-data-tabular text-data-tabular font-body-strong text-body-strong text-error">76 / 100</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 76%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12">
+<div class="flex items-center gap-unit-4 text-error">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>Financial-Physical Decoupling (+29.4% lead)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-right">
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary hover:bg-inverse-surface rounded font-caption-strong text-caption-strong transition-colors" type="button">
+                Inspect Dossier
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Tier -->
+<div class="p-unit-12 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-unit-8 text-on-surface-variant font-caption-meta text-caption-meta">
+<div class="flex items-center space-x-unit-4">
+<span>Showing <strong>1 – 5</strong> of <strong>128</strong> high-risk statutory intervention targets</span>
+</div>
+<div class="flex items-center space-x-unit-4">
+<button class="px-unit-8 py-unit-4 bg-surface-container-lowest rounded text-on-surface disabled:opacity-40" disabled="" type="button">Previous</button>
+<button class="px-unit-8 py-unit-4 bg-primary-container text-on-primary rounded font-caption-strong text-caption-strong" type="button">1</button>
+<button class="px-unit-8 py-unit-4 bg-surface-container-lowest rounded text-on-surface" type="button">2</button>
+<button class="px-unit-8 py-unit-4 bg-surface-container-lowest rounded text-on-surface" type="button">3</button>
+<span class="px-unit-4">...</span>
+<button class="px-unit-8 py-unit-4 bg-surface-container-lowest rounded text-on-surface" type="button">26</button>
+<button class="px-unit-8 py-unit-4 bg-surface-container-lowest rounded text-on-surface" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- STATUTORY AUDIT DISCLAIMER & CRYPTO SESSION FOOTER -->
+<div class="p-unit-12 bg-surface-container-low rounded flex flex-col sm:flex-row items-start sm:items-center justify-between gap-unit-8 text-on-surface-variant font-caption-meta text-caption-meta">
+<div class="flex items-start gap-unit-6 max-w-4xl">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0">gavel</span>
+<p class="leading-relaxed">
+        Risk scores and factor attributions represent analytical anomaly telemetry generated under CAG Rule 144(A) and GFR 2017. They highlight priority audit inspection targets and do not constitute formal legal findings.
+      </p>
+</div>
+<div class="flex items-center gap-unit-4 font-data-tabular text-data-tabular flex-shrink-0 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Session: #8F2A-MoSPI-26</span>
+</div>
+</div>
+</div></main></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.SentinelAPI && window.SentinelAPI.renderRoleSwitcher) {
+    window.SentinelAPI.renderRoleSwitcher("analytics");
+  }
+});
+</script>
+
+</body></html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Oversight Portal - MPLADS Sentinel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/api.js"></script>
+  <style>
+    body { font-family: 'Public Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+  <!-- Institutional Top Header -->
+  <header class="bg-white border-b border-slate-200 px-6 py-3 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded bg-blue-900 text-white flex items-center justify-center font-bold text-sm shadow-sm">
+          🇮🇳
+        </div>
+        <div>
+          <div class="text-xs uppercase font-semibold text-slate-500 tracking-wider">Government of India • MoSPI</div>
+          <div class="text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
+            MPLADS Citizen Oversight Portal
+            <span class="bg-emerald-100 text-emerald-800 text-[11px] font-semibold px-2 py-0.5 rounded-full">Public Transparency</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <button onclick="openFeedbackModal('GEN-INQUIRY')" class="bg-blue-800 hover:bg-blue-900 text-white text-xs font-semibold px-3 py-2 rounded inline-flex items-center gap-1.5 transition-colors shadow-sm">
+          <span class="material-symbols-outlined text-sm">campaign</span>
+          Report Ground Issue
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Search Section -->
+  <section class="bg-gradient-to-b from-blue-900 to-indigo-950 text-white py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Track Public Projects In Your Constituency</h1>
+      <p class="text-blue-200 text-sm mb-6 max-w-2xl mx-auto">
+        Know exactly where your Member of Parliament's local area development funds are being spent, view real-time site execution progress, and report discrepancies directly to the District Nodal Officer.
+      </p>
+
+      <!-- Search Box -->
+      <div class="bg-white p-2 rounded-lg shadow-lg flex flex-col sm:flex-row gap-2 max-w-2xl mx-auto">
+        <div class="relative flex-1 flex items-center">
+          <span class="material-symbols-outlined text-slate-400 absolute left-3">search</span>
+          <input id="citizen-search" type="text" placeholder="Search by Project Title, Work Code, Constituency, or MP..." 
+            class="w-full pl-10 pr-3 py-2 text-sm text-slate-800 focus:outline-none placeholder:text-slate-400">
+        </div>
+        <button onclick="performCitizenSearch()" class="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-5 py-2.5 rounded transition-all flex items-center justify-center gap-1">
+          <span>Search Works</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Citizen Content -->
+  <main class="max-w-7xl mx-auto px-6 py-8 flex-1 w-full space-y-8">
+    
+    <!-- Highlights Row -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="bg-white border border-slate-200 p-5 rounded-lg shadow-xs flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+        </div>
+        <div>
+          <div class="text-xs text-slate-500 font-medium uppercase">Total Sanctioned Funds</div>
+          <div id="hero-sanctioned" class="text-xl font-bold text-slate-900">₹3,950.40 Cr</div>
+          <div class="text-[11px] text-emerald-600 font-medium">Verified by Public Ledger</div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 p-5 rounded-lg shadow-xs flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-emerald-50 text-emerald-800 flex items-center justify-center">
+          <span class="material-symbols-outlined text-2xl">task_alt</span>
+        </div>
+        <div>
+          <div class="text-xs text-slate-500 font-medium uppercase">Completed Works</div>
+          <div id="hero-completed" class="text-xl font-bold text-slate-900">4,120 Works</div>
+          <div class="text-[11px] text-slate-500">100% physically delivered</div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 p-5 rounded-lg shadow-xs flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-xs text-slate-500 font-medium uppercase">Active Surveillance</div>
+          <div id="hero-delayed" class="text-xl font-bold text-slate-900">342 Under Review</div>
+          <div class="text-[11px] text-amber-600 font-medium">Flagged for delay or audit</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
+      <div class="flex flex-wrap items-center gap-2" id="sector-filters">
+        <span class="text-xs font-semibold text-slate-500 uppercase mr-1">Sector:</span>
+        <button onclick="filterSector('')" class="sector-btn bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-full">All Sectors</button>
+        <button onclick="filterSector('Drinking Water')" class="sector-btn bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">Drinking Water</button>
+        <button onclick="filterSector('Education')" class="sector-btn bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">Education</button>
+        <button onclick="filterSector('Healthcare')" class="sector-btn bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">Healthcare</button>
+        <button onclick="filterSector('Roads & Infrastructure')" class="sector-btn bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full">Roads & Pathways</button>
+      </div>
+      <div class="text-xs text-slate-500">
+        Showing <span id="project-count" class="font-bold text-slate-900">0</span> verified community works
+      </div>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Dynamic Project Cards inserted here -->
+    </div>
+
+    <!-- Citizen Ground Reports Feed -->
+    <section class="bg-white border border-slate-200 rounded-lg p-6 shadow-xs">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h2 class="text-base font-bold text-slate-900">Community Watch & Citizen Reports</h2>
+          <p class="text-xs text-slate-500">Real ground observations submitted by local citizens and village auditors.</p>
+        </div>
+        <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded font-medium">Public Transparency Log</span>
+      </div>
+
+      <div id="reports-feed" class="space-y-3">
+        <!-- Live reports inserted here -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Citizen Grievance Modal -->
+  <div id="feedback-modal" class="fixed inset-0 bg-slate-950/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-lg w-full p-6 shadow-xl border border-slate-200 relative">
+      <button onclick="closeFeedbackModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+      <div class="flex items-center gap-2 mb-3">
+        <span class="material-symbols-outlined text-blue-700">report_problem</span>
+        <h3 class="text-base font-bold text-slate-900">Submit Ground Observation</h3>
+      </div>
+      <p class="text-xs text-slate-500 mb-4">
+        Your observation is transmitted to the District Nodal Officer and MoSPI statutory audit portal.
+      </p>
+
+      <form id="issue-form" onsubmit="submitCitizenIssue(event)" class="space-y-4">
+        <input type="hidden" id="modal-project-id" value="MPLAD-10291">
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Name</label>
+          <input type="text" id="citizen-name" required placeholder="Full Name" class="w-full text-sm border border-slate-300 rounded px-3 py-2 focus:ring-1 focus:ring-blue-600">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone or Email</label>
+            <input type="text" id="citizen-contact" placeholder="For audit verification" class="w-full text-sm border border-slate-300 rounded px-3 py-2 focus:ring-1 focus:ring-blue-600">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Village / Landmark</label>
+            <input type="text" id="citizen-landmark" placeholder="e.g. Near GP Office" class="w-full text-sm border border-slate-300 rounded px-3 py-2 focus:ring-1 focus:ring-blue-600">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Observation Type</label>
+          <select id="citizen-issue-type" class="w-full text-sm border border-slate-300 rounded px-3 py-2 bg-white">
+            <option value="Work Not Started">Work Not Started (Beyond Sanction Date)</option>
+            <option value="Substandard Material">Substandard Construction Materials</option>
+            <option value="Site Abandoned">Contractor Site Abandoned / Idle Machinery</option>
+            <option value="Missing Signboard">No Statutory MPLADS Information Signboard</option>
+            <option value="Quality Commendation">Quality Commendation (Work Well Executed)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Detailed Description</label>
+          <textarea id="citizen-desc" rows="3" required placeholder="Describe what you observed on site..." class="w-full text-sm border border-slate-300 rounded px-3 py-2 focus:ring-1 focus:ring-blue-600"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-2 border-t border-slate-200">
+          <button type="button" onclick="closeFeedbackModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-800">Cancel</button>
+          <button type="submit" class="bg-blue-800 hover:bg-blue-900 text-white text-xs font-semibold px-4 py-2 rounded shadow-sm">Submit to District Nodal Officer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-white border-t border-slate-200 py-6 px-6 text-center text-xs text-slate-500">
+    <p>Ministry of Statistics & Programme Implementation (MoSPI) • MPLADS Public Civic Oversight Framework</p>
+  </footer>
+
+  <script>
+    let currentSectorFilter = "";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Inject global role switcher
+      window.SentinelAPI.renderRoleSwitcher("consumer");
+
+      // Load initial cards and reports
+      loadConsumerProjects();
+      loadCitizenReports();
+    });
+
+    async function loadConsumerProjects() {
+      const grid = document.getElementById("projects-grid");
+      grid.innerHTML = '<div class="col-span-full py-12 text-center text-slate-400 text-sm">Loading verified developmental works...</div>';
+
+      const data = await window.SentinelAPI.getProjects({ limit: 12, sector: currentSectorFilter });
+      const projects = (data && data.items && data.items.length) ? data.items : [
+        {
+          project_id: "P-10291",
+          project_title: "Multi-Purpose Community Hall Construction",
+          sector: "Community Infrastructure",
+          district_name: "Nashik",
+          mp_name: "Hon. Supriya Sule",
+          sanctioned_amount: 4200000,
+          expenditure_amount: 2100000,
+          current_status: "In Progress",
+          physical_progress_pct: 52
+        },
+        {
+          project_id: "P-10344",
+          project_title: "Solar Water Pumping RO System for Primary School",
+          sector: "Drinking Water",
+          district_name: "Pune",
+          mp_name: "Hon. Supriya Sule",
+          sanctioned_amount: 1850000,
+          expenditure_amount: 1750000,
+          current_status: "In Progress",
+          physical_progress_pct: 88
+        },
+        {
+          project_id: "P-10420",
+          project_title: "Primary Health Sub-Center Ward Extension",
+          sector: "Healthcare",
+          district_name: "Satara",
+          mp_name: "Hon. Shrikant Shinde",
+          sanctioned_amount: 3200000,
+          expenditure_amount: 800000,
+          current_status: "In Progress",
+          physical_progress_pct: 25
+        }
+      ];
+
+      document.getElementById("project-count").textContent = projects.length;
+      grid.innerHTML = "";
+
+      projects.forEach(p => {
+        const progress = p.physical_progress_pct || 40;
+        const sanctionedStr = window.SentinelAPI.formatCurrencyINR(p.sanctioned_amount);
+        const spentStr = window.SentinelAPI.formatCurrencyINR(p.expenditure_amount);
+
+        const card = document.createElement("div");
+        card.className = "bg-white border border-slate-200 rounded-lg p-5 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between";
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-[11px] font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded font-mono">${p.project_id || 'MPLAD-WORK'}</span>
+              <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">${p.current_status || 'Active'}</span>
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 line-clamp-2 mb-1">${p.project_title}</h3>
+            <p class="text-xs text-slate-500 mb-3">${p.sector} • ${p.district_name || 'District'} • MP: ${p.mp_name || 'Hon. MP'}</p>
+            
+            <div class="mb-3">
+              <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                <span>Execution Progress</span>
+                <span class="text-blue-700">${progress}%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-blue-700 h-2 rounded-full transition-all" style="width: ${progress}%"></div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded border border-slate-100 text-xs mb-4">
+              <div>
+                <span class="text-slate-400 block text-[10px] uppercase font-semibold">Sanctioned</span>
+                <span class="font-bold text-slate-800">${sanctionedStr}</span>
+              </div>
+              <div>
+                <span class="text-slate-400 block text-[10px] uppercase font-semibold">Spent to Date</span>
+                <span class="font-bold text-emerald-700">${spentStr}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-3 border-t border-slate-100 gap-2">
+            <a href="../project_risk_profile_p_10291_multi_purpose_community_hall/?id=${p.project_id}" class="text-xs text-blue-700 hover:text-blue-900 font-semibold inline-flex items-center gap-1">
+              View Audit Data <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            </a>
+            <button onclick="openFeedbackModal('${p.project_id}')" class="text-xs text-slate-600 hover:text-red-700 font-medium inline-flex items-center gap-1 bg-slate-100 hover:bg-red-50 px-2 py-1 rounded transition-colors">
+              <span class="material-symbols-outlined text-xs text-amber-600">flag</span>
+              Report
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    async function loadCitizenReports() {
+      const feed = document.getElementById("reports-feed");
+      const reports = await window.SentinelAPI.getRecentCitizenReports();
+      feed.innerHTML = "";
+
+      reports.forEach(r => {
+        const item = document.createElement("div");
+        item.className = "p-3 rounded bg-slate-50 border border-slate-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2";
+        item.innerHTML = `
+          <div>
+            <div class="flex items-center gap-2 font-semibold text-slate-800">
+              <span>${r.citizen_name}</span>
+              <span class="text-slate-400">•</span>
+              <span class="text-amber-800 bg-amber-100 px-1.5 py-0.2 rounded text-[10px]">${r.issue_type}</span>
+              <span class="text-slate-400 font-mono text-[10px]">${r.project_id}</span>
+            </div>
+            <p class="text-slate-600 mt-1">${r.description}</p>
+            <span class="text-[10px] text-slate-400">${r.geo_location || 'Local Area'} • ${r.timestamp}</span>
+          </div>
+          <div class="flex items-center gap-1 text-[11px] font-semibold text-blue-800 bg-blue-50 px-2 py-1 rounded border border-blue-100 whitespace-nowrap">
+            <span class="material-symbols-outlined text-xs">schedule</span>
+            ${r.triage_status}
+          </div>
+        `;
+        feed.appendChild(item);
+      });
+    }
+
+    function filterSector(sector) {
+      currentSectorFilter = sector;
+      document.querySelectorAll(".sector-btn").forEach(btn => {
+        btn.className = "sector-btn bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full";
+      });
+      event.target.className = "sector-btn bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-full";
+      loadConsumerProjects();
+    }
+
+    function performCitizenSearch() {
+      const q = document.getElementById("citizen-search").value.trim();
+      currentSectorFilter = q;
+      loadConsumerProjects();
+    }
+
+    function openFeedbackModal(projectId) {
+      document.getElementById("modal-project-id").value = projectId;
+      document.getElementById("feedback-modal").classList.remove("hidden");
+      document.getElementById("feedback-modal").classList.add("flex");
+    }
+
+    function closeFeedbackModal() {
+      document.getElementById("feedback-modal").classList.add("hidden");
+      document.getElementById("feedback-modal").classList.remove("flex");
+    }
+
+    async function submitCitizenIssue(e) {
+      e.preventDefault();
+      const projId = document.getElementById("modal-project-id").value;
+      const payload = {
+        citizen_name: document.getElementById("citizen-name").value,
+        phone_or_email: document.getElementById("citizen-contact").value,
+        issue_type: document.getElementById("citizen-issue-type").value,
+        description: document.getElementById("citizen-desc").value,
+        geo_location: document.getElementById("citizen-landmark").value
+      };
+
+      const res = await window.SentinelAPI.consumerReportIssue(projId, payload);
+      alert(`Report Submitted Successfully!\nTracking Ticket: ${res.ticket_id || 'CIT-1092'}\nStatus: Under Review by District Nodal Officer.`);
+      closeFeedbackModal();
+      loadCitizenReports();
+    }
+  </script>
+</body>
+</html>

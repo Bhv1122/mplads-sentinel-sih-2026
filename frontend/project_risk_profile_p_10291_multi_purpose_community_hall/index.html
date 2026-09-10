@@ -1,0 +1,728 @@
+<!DOCTYPE html><html lang="en" class="h-full"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#e4c09c","secondary-fixed-dim":"#b6c4ff","on-background":"#131b2e","on-secondary-fixed-variant":"#264191","error":"#ba1a1a","primary":"#000000","on-tertiary-fixed-variant":"#5a4226","error-container":"#ffdad6","on-error-container":"#93000a","background":"#faf8ff","tertiary-fixed":"#ffddba","surface-container-high":"#e2e7ff","surface-container-highest":"#dae2fd","outline":"#75777d","secondary":"#4059aa","on-primary-fixed":"#0e1c2f","surface-tint":"#525f75","tertiary-container":"#2a1702","on-secondary-fixed":"#00164e","on-tertiary-fixed":"#2a1702","on-tertiary":"#ffffff","on-secondary-container":"#1d3989","on-error":"#ffffff","inverse-surface":"#283044","on-surface":"#131b2e","surface-container-lowest":"#ffffff","outline-variant":"#c5c6cd","tertiary":"#000000","secondary-container":"#8fa7fe","primary-container":"#0e1c2f","on-primary-fixed-variant":"#3a475c","on-primary":"#ffffff","surface":"#faf8ff","primary-fixed":"#d6e3fe","inverse-primary":"#bac7e1","on-tertiary-container":"#9d7e5e","surface-container":"#eaedff","secondary-fixed":"#dce1ff","surface-bright":"#faf8ff","surface-dim":"#d2d9f4","inverse-on-surface":"#eef0ff","on-secondary":"#ffffff","on-primary-container":"#77849c","primary-fixed-dim":"#bac7e1","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","on-surface-variant":"#44474c"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"unit-6":"0.375rem","unit-24":"1.5rem","sidebar-width":"16rem","table-cell-y":"0.5rem","unit-12":"0.75rem","unit-8":"0.5rem","unit-4":"0.25rem","unit-2":"0.125rem","table-cell-x":"0.75rem","unit-20":"1.25rem","unit-32":"2rem","unit-16":"1rem","toolbar-height":"3.25rem","inspector-width":"22rem"},fontFamily:{"title-subsection":["Public Sans"],"caption-strong":["Public Sans"],"caption-meta":["Public Sans"],"title-section":["Public Sans"],"body-strong":["Public Sans"],"body-default":["Public Sans"],"micro-badge":["Public Sans"],"data-tabular":["Public Sans"],"title-page":["Public Sans"]},fontSize:{"title-subsection":["14px",{lineHeight:"20px",letterSpacing:"-0.005em",fontWeight:"600"}],"caption-strong":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"caption-meta":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"title-section":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-strong":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"body-default":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"micro-badge":["11px",{lineHeight:"14px",letterSpacing:"0.025em",fontWeight:"600"}],"data-tabular":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"500"}],"title-page":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}}</script><script src="../assets/api.js"></script>
+</head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-toolbar-height bg-surface-container-lowest border-b border-outline-variant flex items-center justify-between px-unit-16"><div class="flex items-center gap-unit-12"><img alt="Brand logo. - Primary color: #0b192c
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UZVUhHU_R8MtVbE0IcN3EbU4mVm1ZArPgYOQYDAgWraaQFP108HDq1OEA61tuBaehPBfOY3-c1BL6HDLt-sILbjQN40gQ8zQjT5MoFdqycwoc4VLmFx9jF4SWW9lD2iLO0iiAEE9gQQn4U3XuWk1kZSxr16gPhaqm031ooy7XIDodDWbHtp-4tfB6mdyKeehQZgPW92_6NDPQq2MRgQjHLW1JZAXdW_HBJDFvWQreNouaJ84GJHe6qNCdD"><div class="flex flex-col"><div class="flex items-center gap-unit-8"><span class="font-title-section text-title-section text-primary tracking-tight">MPLADS SENTINEL</span><span class="px-unit-6 py-unit-2 bg-surface-container-high text-on-surface font-micro-badge text-micro-badge rounded">MoSPI · GOVT OF INDIA</span></div><span class="font-caption-meta text-caption-meta text-on-surface-variant">Statutory Expenditure &amp; Project Compliance Architecture</span></div></div><div class="flex items-center gap-unit-16"><div class="relative w-80"><span class="material-symbols-outlined absolute left-unit-8 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-8 pl-unit-32 pr-unit-8 bg-surface-container-low border border-outline-variant rounded font-body-default text-body-default text-on-surface placeholder:text-outline focus:outline-none focus:border-secondary transition-colors" placeholder="Search constituency, work code, or auditor..." type="text"></div><div class="h-5 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-unit-6 font-data-tabular text-data-tabular text-on-surface-variant bg-surface-container-low px-unit-8 py-unit-4 rounded border border-outline-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span>Sync: 14:05 IST</span></div><button aria-label="Notifications" class="relative p-unit-6 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-unit-8 pl-unit-8 border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1WL4F2wgPBUKMYSfLufozITKXoCTVbMaMsu-FZ5p8YUTh3q4Y98h1Am_uQmCklvixLfF9bgAedD6aG750EXmxeytSLJaa2D8-13oG6ess4KOEDRyBuhYoAdIwhBChyFvQ1Slwzbc9_Vxe4diHpwMkv9Go89yYJXRRIzRejQtALdv5GzQ-xZ6nZUyHBlGPy9YHFXOquClgI88EPLAFHChar0c0G6F_9wkXGD-Gelf_JAwcFcXGf249IGQrdj"><div class="flex flex-col text-left"><span class="font-caption-strong text-caption-strong text-on-surface leading-tight">Rajiv Sundaram, IAS</span><span class="font-caption-meta text-caption-meta text-on-surface-variant leading-tight">Principal Secretary / Audit Lead</span></div></div></div></header><aside class="fixed left-0 top-toolbar-height bottom-0 w-sidebar-width bg-surface-container-lowest border-r border-outline-variant z-40 flex flex-col justify-between"><div class="flex flex-col"><div class="px-unit-16 py-unit-12 border-b border-outline-variant"><span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase tracking-wider">Operational Modules</span></div><nav class="flex-1 px-unit-8 py-unit-8 space-y-unit-4 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-strong">
+  <div class="px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-blue-700 font-bold tracking-wider">Stakeholder Portals</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="consumer" href="../consumer_portal/">
+  <span class="material-symbols-outlined text-lg">person</span>
+  <span class="font-body-default text-body-default">Consumer (Citizen)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nodal" href="../nodal_head_portal/">
+  <span class="material-symbols-outlined text-lg">account_balance</span>
+  <span class="font-body-default text-body-default">Nodal Head (Sanctions)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executer" href="../site_executer_portal/">
+  <span class="material-symbols-outlined text-lg">engineering</span>
+  <span class="font-body-default text-body-default">Site Executer (Field)</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Operational Units</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="../overview_dashboard_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dashboard</span>
+  <span class="font-body-default text-body-default">HQ Overview</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="../projects_explorer_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">folder_managed</span>
+  <span class="font-body-default text-body-default">Projects Explorer</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="../risk_analytics_portfolio_risk_telemetry_anomaly_intelligence/">
+  <span class="material-symbols-outlined text-lg">query_stats</span>
+  <span class="font-body-default text-body-default">Risk Analytics</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="spatial" href="../geographic_analysis_spatial_risk_intelligence/">
+  <span class="material-symbols-outlined text-lg">travel_explore</span>
+  <span class="font-body-default text-body-default">Spatial Risk</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audits" href="../investigation_queue_case_management_review_triage/">
+  <span class="material-symbols-outlined text-lg">fact_check</span>
+  <span class="font-body-default text-body-default">Audits & Cases</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assistant" href="../ai_audit_assistant_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">smart_toy</span>
+  <span class="font-body-default text-body-default">AI Assistant</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Governance</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-status" href="../data_system_status_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dns</span>
+  <span class="font-body-default text-body-default">System Status</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="login" href="../authorized_officer_login_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">logout</span>
+  <span class="font-body-default text-body-default">Officer Sign Out</span>
+</a>
+</nav></div><div class="p-unit-12 border-t border-outline-variant bg-surface-container-low"><div class="flex flex-col gap-unit-6"><div class="flex items-center justify-between"><span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase">CAG Audit Status</span><span class="px-unit-6 py-unit-2 bg-[#10b981]/10 text-[#0f5132] font-micro-badge text-micro-badge rounded font-bold">SECURE</span></div><div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden"><div class="bg-secondary h-1.5 rounded-full w-[88%]"></div></div><div class="flex justify-between items-center font-caption-meta text-caption-meta text-outline"><span class="font-data-tabular text-data-tabular">FY 2024-25 Q3</span><span class="font-data-tabular text-data-tabular">88% Verified</span></div></div></div></aside><div class="pl-sidebar-width"><main class="w-full pt-toolbar-height min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Feedback Drawer / Notification Toast (Hidden by default) -->
+<div class="fixed bottom-unit-16 right-unit-16 z-50 transform translate-y-20 opacity-0 transition-all duration-200 bg-surface-container-highest p-unit-12 rounded shadow-md flex items-center gap-unit-12" id="action-toast">
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+<span class="font-body-strong text-body-strong text-on-surface" id="toast-message">Directive recorded in audit ledger</span>
+</div>
+<!-- BREADCRUMB & CONTEXTUAL NAVIGATION -->
+<div class="bg-surface-container-lowest px-unit-24 py-unit-8 flex items-center justify-between">
+<div class="flex items-center gap-unit-6 font-caption-meta text-caption-meta text-outline">
+<a class="hover:text-on-surface transition-colors" href="#">Projects</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Karnataka</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Bangalore Rural</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">P-10291</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-caption-strong text-caption-strong">Statutory Risk Profile</span>
+</div>
+<div class="flex items-center gap-unit-12 font-data-tabular text-data-tabular text-outline">
+<span class="flex items-center gap-unit-4">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span>Inspection Priority Flagged</span>
+</span>
+<span class="text-outline-variant">•</span>
+<span>Assessed: Today, 07:15 IST (Engine v4.2)</span>
+</div>
+</div>
+<!-- WORKSPACE HEADER & CRITICAL ACTIONS -->
+<div class="bg-surface-container-lowest px-unit-24 py-unit-16 flex flex-col md:flex-row md:items-center justify-between gap-unit-16">
+<div class="flex flex-col gap-unit-4">
+<div class="flex flex-wrap items-center gap-unit-8">
+<h1 class="font-title-page text-title-page text-primary tracking-tight">
+          Multi-Purpose Community Hall &amp; Skill Development Center
+        </h1>
+<span class="px-unit-6 py-unit-2 bg-surface-container text-on-surface font-caption-strong text-caption-strong rounded">
+          Work ID: P-10291
+        </span>
+<span class="px-unit-6 py-unit-2 bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge rounded">
+          Social Infrastructure • Block #4
+        </span>
+</div>
+<div class="flex flex-wrap items-center gap-unit-12 text-on-surface-variant">
+<div class="flex items-center gap-unit-6 px-unit-6 py-unit-2 bg-error-container/40 rounded">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-caption-strong text-caption-strong text-on-error-container">High Risk Profile (Score: 84 / 100)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-unit-4 font-caption-meta text-caption-meta">
+<span class="material-symbols-outlined text-[16px] text-outline">pause_circle</span>
+<span>Status: <strong class="text-on-surface font-caption-strong text-caption-strong">Active Execution (Stalled Milestone)</strong></span>
+</div>
+<span class="text-outline-variant">•</span>
+<span class="font-caption-meta text-caption-meta text-outline">NIC-MoSPI Gateway Verification OK</span>
+</div>
+</div>
+<!-- Right Actions -->
+<div class="flex items-center gap-unit-8 self-start md:self-center shrink-0">
+<button class="px-unit-12 py-unit-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded transition-colors flex items-center gap-unit-6" onclick="handleOfficerAction('Under Review Status logged', this)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Mark Under Review</span>
+</button>
+<button class="px-unit-12 py-unit-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded transition-colors flex items-center gap-unit-6" onclick="handleOfficerAction('Compiling Statutory PDF Package...', this)">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Dossier</span>
+</button>
+<button class="px-unit-16 py-unit-8 bg-primary hover:bg-primary-container text-on-primary font-body-strong text-body-strong rounded transition-colors flex items-center gap-unit-6 shadow-sm" onclick="handleOfficerAction('Formal Inquest &amp; Summons initiated for P-10291', this)">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Initiate Statutory Audit</span>
+</button>
+</div>
+</div>
+<!-- 4-COLUMN RISK METRICS STRIP -->
+<div class="bg-surface-container-low px-unit-24 py-unit-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-16">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-unit-16 rounded flex flex-col justify-between gap-unit-8 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-outline uppercase tracking-wider">Overall Risk Score</span>
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div>
+<div class="flex items-baseline gap-unit-4">
+<span class="font-title-page text-title-page font-bold text-error tracking-tight">84</span>
+<span class="font-caption-meta text-caption-meta text-outline">/ 100</span>
+</div>
+<!-- Segmented Risk Bar -->
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mt-unit-6 flex">
+<div class="bg-secondary h-full" style="width: 50%;"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 25%;"></div>
+<div class="bg-error h-full" style="width: 9%;"></div>
+<div class="bg-surface-container-high h-full" style="width: 16%;"></div>
+</div>
+</div>
+<span class="font-micro-badge text-micro-badge text-error font-semibold">Priority Exceeded (&gt;75 Cutoff)</span>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-unit-16 rounded flex flex-col justify-between gap-unit-8 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-outline uppercase tracking-wider">Risk Classification</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">category</span>
+</div>
+<div>
+<span class="font-title-subsection text-title-subsection text-on-surface font-bold block">
+            Critical Fiscal Decoupling
+          </span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant line-clamp-1 mt-unit-2">
+            SOR Revision Anomaly &amp; Dormant e-MB
+          </span>
+</div>
+<div class="flex items-center gap-unit-4 font-micro-badge text-micro-badge text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Dual Flag: Discrepancy + Timeline</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-unit-16 rounded flex flex-col justify-between gap-unit-8 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-outline uppercase tracking-wider">Velocity &amp; Trend</span>
+<span class="material-symbols-outlined text-error text-[18px]">trending_up</span>
+</div>
+<div>
+<div class="flex items-baseline gap-unit-4 text-error">
+<span class="font-title-subsection text-title-subsection font-bold">↑ Deteriorating</span>
+<span class="font-caption-meta text-caption-meta">(+18 pts / 30d)</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant line-clamp-1 mt-unit-2">
+            Tranche 3 PFMS released sans e-MB
+          </span>
+</div>
+<span class="font-micro-badge text-micro-badge text-outline">Steepest climb in BLR Rural</span>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-unit-16 rounded flex flex-col justify-between gap-unit-8 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-outline uppercase tracking-wider">Statutory Framework</span>
+<span class="material-symbols-outlined text-outline text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-title-subsection text-title-subsection text-on-surface font-bold block">
+            CAG Rule 144(A)
+          </span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant line-clamp-1 mt-unit-2">
+            Automated Daily Audit Engine Cycle
+          </span>
+</div>
+<div class="flex items-center gap-unit-4 font-micro-badge text-micro-badge text-[#10b981]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+<span>PFMS-MoSPI Hash Synced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RECOMMENDED OFFICER ACTION (HIGH-PRIORITY DIRECTIVE BANNER) -->
+<div class="px-unit-24 py-unit-12">
+<div class="bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-unit-16">
+<div class="flex items-start gap-unit-12">
+<div class="p-unit-8 bg-error-container/60 text-on-error-container rounded shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">assignment_late</span>
+</div>
+<div class="flex flex-col gap-unit-2">
+<div class="flex items-center gap-unit-8">
+<span class="font-micro-badge text-micro-badge uppercase tracking-wider px-unit-6 py-unit-2 bg-error-container text-on-error-container font-bold rounded">
+              Mandatory Statutory Protocol
+            </span>
+<span class="font-caption-strong text-caption-strong text-on-surface">Recommended Direct Action</span>
+</div>
+<p class="font-body-strong text-body-strong text-on-surface">
+            Summon Physical Measurement Book (e-MB) and Halt Non-Essential Financial Disbursals.
+          </p>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant max-w-4xl">
+            Disbursement velocity is at <strong>77.1% (₹1.85 Cr)</strong> while on-ground certified physical completion remains at only <strong>42.0% (-35.1% variance)</strong>. An unscheduled SOR rate amendment of <strong>+₹38.5 Lakh</strong> was logged without State Nodal Authority counter-signature.
+          </p>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap lg:flex-nowrap items-center gap-unit-8 shrink-0">
+<button class="px-unit-12 py-unit-8 bg-primary hover:bg-primary-container text-on-primary font-caption-strong text-caption-strong rounded transition-colors flex items-center gap-unit-6" onclick="handleOfficerAction('Inquest summons dispatched to Executing Agency', this)">
+<span class="material-symbols-outlined text-[16px]">search_check</span>
+<span>Investigate Discrepancy</span>
+</button>
+<button class="px-unit-12 py-unit-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded transition-colors flex items-center gap-unit-6" onclick="handleOfficerAction('Opening Statutory Inquiry Docket', this)">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Open Audit Inquest</span>
+</button>
+<button class="px-unit-12 py-unit-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded transition-colors flex items-center gap-unit-6" onclick="handleOfficerAction('Show Cause Notice drafted under GFR Section 133', this)">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Issue Show-Cause</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MAIN OPERATIONAL WORKSPACE (TWO COLUMNS: 65% / 35%) -->
+<div class="px-unit-24 py-unit-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-24 items-start">
+<!-- LEFT WORKSPACE: 65% (8 OF 12 COLS) - DETAILED RISK FACTORS BREAKDOWN -->
+<div class="lg:col-span-8 flex flex-col gap-unit-16">
+<div class="bg-surface-container-lowest p-unit-16 rounded shadow-sm">
+<div class="flex items-center justify-between pb-unit-12">
+<div>
+<h2 class="font-title-section text-title-section text-primary">Algorithmic Risk Breakdown</h2>
+<span class="font-caption-meta text-caption-meta text-outline">
+                6 Statutory inspection markers evaluated by Sentinel Risk Engine against GFR 2017 &amp; MoSPI Mandates
+              </span>
+</div>
+<div class="flex items-center gap-unit-8">
+<span class="px-unit-6 py-unit-2 bg-surface-container text-on-surface-variant font-micro-badge text-micro-badge rounded font-bold">
+                Weights: MoSPI-2024-v2
+              </span>
+</div>
+</div>
+<!-- FACTORS LIST -->
+<div class="flex flex-col divide-y divide-surface-container">
+<!-- Factor 1: Financial Anomaly (CRITICAL) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    1. Financial-Physical Decoupling
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-error-container text-on-error-container font-micro-badge text-micro-badge font-bold rounded">
+                    HIGH / CRITICAL
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-error">Impact Score: 32/35</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Disbursement velocity significantly outpaces verified physical execution milestones. Tranche 3 fund release was processed without corresponding stage verification.
+              </p>
+<!-- Supporting data card -->
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16 w-full md:w-auto">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Disbursed (PFMS)</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">₹1.85 Cr (77.1%)</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Certified Progress</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">42.0%</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Discrepancy Lead</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">+35.1% Financial Lead</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('PFMS ledger drilldown opened', this)">
+<span>Audit Tranche Ledger</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Factor 2: Delayed Progress (HIGH) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    2. Milestone Inactivity &amp; Schedule Slippage
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-error-container text-on-error-container font-micro-badge text-micro-badge font-bold rounded">
+                    HIGH SEVERITY
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-error">Impact Score: 22/25</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Civil construction has been dormant on-site for 68 consecutive days post plinth-beam casting, despite raw material procurements reported by KRIDL.
+              </p>
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Site Dormancy</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">68 Days Inactive</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Last Muster Roll</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">12-Jul-2024</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Milestone 3 (Lintel)</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">Overdue by 44 Days</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('Timeline telemetry inspector loaded', this)">
+<span>Inspect Timeline</span>
+<span class="material-symbols-outlined text-[14px]">history</span>
+</button>
+</div>
+</div>
+<!-- Factor 3: Documentation Issue (MEDIUM) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    3. Electronic Measurement Book (e-MB) Stagnation
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge font-bold rounded">
+                    MEDIUM / REVIEW
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">Impact Score: 12/15</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Implementing agency has ceased periodic digital telemetry uploads. Critical structural stability clearance certificate for first-floor slab remains unfiled.
+              </p>
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Recent Entries</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">0 e-MB in 60 Days</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Missing Sign-off</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">Executive Engineer (EE-PWD)</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('e-MB ledger verification initiated', this)">
+<span>Inspect e-MB Log</span>
+<span class="material-symbols-outlined text-[14px]">description</span>
+</button>
+</div>
+</div>
+<!-- Factor 4: Low Utilization / Cost Revision (MEDIUM) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    4. Unsanctioned Schedule of Rates (SOR) Revision
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge font-bold rounded">
+                    MEDIUM SEVERITY
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">Impact Score: 10/10</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Executing body submitted an escalated bill of quantities (+₹38.5 Lakh) citing market steel and cement price indices, without District Collector prior administrative approval.
+              </p>
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Unapproved Escalation</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">+₹38,50,000</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Submitting Agency</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">KRIDL Karnataka</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('SOR Schedule differential audit invoked', this)">
+<span>Examine Price Index</span>
+<span class="material-symbols-outlined text-[14px]">price_change</span>
+</button>
+</div>
+</div>
+<!-- Factor 5: Geographic & Cadastre Anomaly (LOW) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    5. Spatial Proximity &amp; Asset Duplication Alert
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-surface-container text-on-surface-variant font-micro-badge text-micro-badge rounded">
+                    LOW / MONITORED
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface-variant">Impact Score: 5/10</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Bhuvan spatial engine detected an existing state-funded Taluk Panchayat hall within 180 meters of the sanctioned cadastral plot, prompting review for asset redundancy.
+              </p>
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Cadastral Coordinates</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">13.1986° N, 77.5642° E</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Radius Conflict</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">180m from Existing Facility</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('GIS overlay launched in Bhuvan viewer', this)">
+<span>View Cadastral Map</span>
+<span class="material-symbols-outlined text-[14px]">map</span>
+</button>
+</div>
+</div>
+<!-- Factor 6: Audit Finding History (MEDIUM) -->
+<div class="py-unit-16 flex flex-col gap-unit-8">
+<div class="flex items-start justify-between gap-unit-8">
+<div class="flex items-center gap-unit-8">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-title-subsection text-title-subsection text-on-surface">
+                    6. Recurrent Audit Sampling Flag
+                  </h3>
+<span class="px-unit-6 py-unit-2 bg-surface-container-high text-on-surface-variant font-micro-badge text-micro-badge font-bold rounded">
+                    MEDIUM
+                  </span>
+</div>
+<span class="font-data-tabular text-data-tabular font-bold text-secondary">Impact Score: 3/5</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface pl-unit-16">
+                Internal Audit Note #IA-BLR-09 logged during Q1 FY 2024-25 raised concerns regarding vendor duplication on reinforcement cement orders.
+              </p>
+<div class="ml-unit-16 bg-surface-container-low p-unit-12 rounded flex flex-col md:flex-row items-center justify-between gap-unit-12">
+<div class="flex items-center gap-unit-16">
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Audit Memo Ref</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">IA-BLR-09 (2024-Q1)</span>
+</div>
+<div class="w-px h-8 bg-outline-variant"></div>
+<div>
+<span class="font-caption-meta text-caption-meta text-outline block">Status</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">Unreconciled Explanation</span>
+</div>
+</div>
+<button class="px-unit-8 py-unit-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-caption-strong text-caption-strong rounded text-[12px] flex items-center gap-unit-4 shrink-0" onclick="handleOfficerAction('Historical CAG/IA memos pulled', this)">
+<span>Read Prior Memo</span>
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT WORKSPACE: 35% (4 OF 12 COLS) - SNAPSHOT & EVIDENCE LEDGER -->
+<div class="lg:col-span-4 flex flex-col gap-unit-16">
+<!-- CARD A: PROJECT SNAPSHOT -->
+<div class="bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col gap-unit-12">
+<div class="flex items-center justify-between pb-unit-8">
+<span class="font-title-subsection text-title-subsection text-primary font-bold">
+              Project Registry Snapshot
+            </span>
+<span class="px-unit-6 py-unit-2 bg-surface-container text-outline font-micro-badge text-micro-badge rounded uppercase">
+              MoSPI Form II
+            </span>
+</div>
+<!-- Structured Key-Value Grid -->
+<div class="flex flex-col gap-unit-8">
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Sanctioned Outlay</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">₹2,40,00,000 (2.40 Cr)</span>
+</div>
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Disbursed Expenditure</span>
+<div class="text-right">
+<span class="font-data-tabular text-data-tabular font-bold text-error">₹1,85,00,000</span>
+<span class="font-micro-badge text-micro-badge text-error block">(77.08% Outlay)</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Verified Physical Progress</span>
+<div class="text-right">
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">42.0%</span>
+<span class="font-micro-badge text-micro-badge text-error block">Delayed Milestone</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Sanction Date</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">14-Oct-2023</span>
+</div>
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Target Completion</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">30-Nov-2024</span>
+</div>
+<div class="flex justify-between items-start py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline shrink-0">Executing Agency</span>
+<span class="font-caption-strong text-caption-strong text-on-surface text-right">
+                KRIDL Karnataka Ltd. (Govt Undertaking)
+              </span>
+</div>
+<div class="flex justify-between items-start py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline shrink-0">Constituency</span>
+<span class="font-caption-strong text-caption-strong text-on-surface text-right">
+                Bangalore Rural (KA-14) • Nelamangala Block
+              </span>
+</div>
+<div class="flex justify-between items-baseline py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Cadastral Reference</span>
+<span class="font-data-tabular text-data-tabular text-on-surface">Survey Plot 42/B, Nelamangala</span>
+</div>
+<div class="flex justify-between items-start py-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline shrink-0">Beneficiary Target</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant text-right">
+                14,200 rural residents across 6 Gram Panchayats
+              </span>
+</div>
+<div class="flex justify-between items-start py-unit-4 pt-unit-8">
+<span class="font-caption-meta text-caption-meta text-outline shrink-0">Nodal District Lead</span>
+<div class="text-right">
+<span class="font-caption-strong text-caption-strong text-on-surface block">D. K. Shivakumar, KAS</span>
+<span class="font-micro-badge text-micro-badge text-outline">District Planning Officer (DPO)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD B: AUDIT EVIDENCE & ATTACHMENTS TABLE -->
+<div class="bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col gap-unit-12">
+<div class="flex items-center justify-between pb-unit-8">
+<div class="flex items-center gap-unit-6">
+<span class="font-title-subsection text-title-subsection text-primary font-bold">
+                Statutory Evidence Ledger
+              </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-caption-meta text-caption-meta text-outline">4 Exhibits</span>
+</div>
+<!-- Exhibits -->
+<div class="flex flex-col gap-unit-8">
+<!-- Exhibit 1 -->
+<div class="p-unit-8 bg-surface-container-low rounded hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-unit-8 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">receipt</span>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-strong text-caption-strong text-on-surface truncate">
+                    PFMS Tranche 3 Payment Advice (₹45.0 L)
+                  </span>
+<span class="font-caption-meta text-caption-meta text-outline truncate">
+                    DOC-10291-MB • Disbursed 14-Aug-2024
+                  </span>
+</div>
+</div>
+<button class="px-unit-6 py-unit-2 text-secondary hover:bg-surface-container-high rounded font-micro-badge text-micro-badge uppercase shrink-0 transition-colors" onclick="handleOfficerAction('Opening PFMS Tranche voucher', this)">
+                View
+              </button>
+</div>
+<!-- Exhibit 2 -->
+<div class="p-unit-8 bg-surface-container-low rounded hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-unit-8 min-w-0">
+<span class="material-symbols-outlined text-[#10b981] text-[20px] shrink-0">satellite_alt</span>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-strong text-caption-strong text-on-surface truncate">
+                    ISRO Bhuvan Q2 Satellite Imagery
+                  </span>
+<span class="font-caption-meta text-caption-meta text-outline truncate">
+                    DOC-10291-GEO • 42% roof truss level confirmed
+                  </span>
+</div>
+</div>
+<button class="px-unit-6 py-unit-2 text-secondary hover:bg-surface-container-high rounded font-micro-badge text-micro-badge uppercase shrink-0 transition-colors" onclick="handleOfficerAction('Loading ISRO geo-coordinates in high-res viewer', this)">
+                Inspect
+              </button>
+</div>
+<!-- Exhibit 3 -->
+<div class="p-unit-8 bg-surface-container-low rounded hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-unit-8 min-w-0">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0">assignment_late</span>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-strong text-caption-strong text-on-surface truncate">
+                    Unapproved Rate Escalation Claim #4
+                  </span>
+<span class="font-caption-meta text-caption-meta text-outline truncate">
+                    DOC-10291-SOR • Submittal by KRIDL
+                  </span>
+</div>
+</div>
+<button class="px-unit-6 py-unit-2 text-error hover:bg-error-container/40 rounded font-micro-badge text-micro-badge uppercase shrink-0 transition-colors" onclick="handleOfficerAction('Examing SOR variance ledger', this)">
+                Audit
+              </button>
+</div>
+<!-- Exhibit 4 -->
+<div class="p-unit-8 bg-surface-container-low rounded hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-unit-8 min-w-0">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">map</span>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-strong text-caption-strong text-on-surface truncate">
+                    Bhoomi Cadastral Boundary Survey
+                  </span>
+<span class="font-caption-meta text-caption-meta text-outline truncate">
+                    DOC-10291-CAD • Survey Plot 42/B
+                  </span>
+</div>
+</div>
+<button class="px-unit-6 py-unit-2 text-secondary hover:bg-surface-container-high rounded font-micro-badge text-micro-badge uppercase shrink-0 transition-colors" onclick="handleOfficerAction('Plot survey record loaded', this)">
+                Open
+              </button>
+</div>
+</div>
+<!-- Verification Badge -->
+<div class="p-unit-8 bg-surface-container rounded flex items-center gap-unit-6 mt-unit-4">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">
+              Digital Evidence Encrypted under CAG-IT Standard 2022
+            </span>
+</div>
+</div>
+<!-- AUDIT LOG QUICK ENTRY MINI-FORM -->
+<div class="bg-surface-container-lowest p-unit-16 rounded shadow-sm flex flex-col gap-unit-8">
+<span class="font-caption-strong text-caption-strong text-on-surface">Officer Inspection Log Entry</span>
+<textarea class="w-full p-unit-8 bg-surface-container-low rounded text-body-default font-body-default text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary resize-none" id="officer-notes" placeholder="Record mandatory physical verification directive or remarks..." rows="2"></textarea>
+<div class="flex justify-between items-center pt-unit-4">
+<span class="font-caption-meta text-caption-meta text-outline">Logged to MoSPI Audit Trail</span>
+<button class="px-unit-12 py-unit-4 bg-primary text-on-primary rounded font-caption-strong text-caption-strong hover:bg-primary-container transition-colors text-[12px]" onclick="logNoteDirective()">
+              Commit Entry
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTORY GOVERNANCE FOOTER -->
+<div class="bg-surface-container-low px-unit-24 py-unit-16 mt-unit-24">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-unit-12">
+<div class="flex flex-col gap-unit-4 max-w-4xl">
+<p class="font-caption-meta text-caption-meta text-outline leading-relaxed">
+<strong>MoSPI Statutory Governance Disclaimer:</strong> Risk profiles are generated by the MPLADS Sentinel Statistical Modeling Engine based on automated feeds from PFMS, e-MB, and Bhuvan Geo-tagging. Risk scores highlight priority inspection targets under CAG Rule 144(A) and do not constitute formal charges of irregularity under GFR 2017 until verified by a designated District Inspection Officer.
+        </p>
+</div>
+<div class="flex flex-col items-start md:items-end gap-unit-2 shrink-0">
+<div class="flex items-center gap-unit-6 font-data-tabular text-data-tabular text-outline">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span>
+<span>SHA256: 7f8a9e21d8b...401e</span>
+</div>
+<span class="font-caption-meta text-caption-meta text-outline">
+          Sync Node: NIC-DEL-HQ-04 • Audit Ready
+        </span>
+</div>
+</div>
+</div>
+<script>
+    function handleOfficerAction(message, btnElement) {
+      const toast = document.getElementById('action-toast');
+      const toastMsg = document.getElementById('toast-message');
+      
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      if (btnElement) {
+        const originalText = btnElement.innerText;
+        btnElement.classList.add('opacity-75');
+        setTimeout(() => {
+          btnElement.classList.remove('opacity-75');
+        }, 1200);
+      }
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+
+    function logNoteDirective() {
+      const noteInput = document.getElementById('officer-notes');
+      if (noteInput && noteInput.value.trim() !== '') {
+        handleOfficerAction('Officer note committed to CAG immutable ledger');
+        noteInput.value = '';
+      } else {
+        handleOfficerAction('Please enter audit observation text before submitting');
+      }
+    }
+  </script>
+</div></main></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.SentinelAPI && window.SentinelAPI.renderRoleSwitcher) {
+    window.SentinelAPI.renderRoleSwitcher("project-detail");
+  }
+});
+</script>
+
+</body></html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-full"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'surface-container-low': '#f2f3ff', 'on-secondary-container': '#1d3989', 'surface-variant': '#dae2fd', 'on-error-container': '#93000a', 'secondary-fixed-dim': '#b6c4ff', 'tertiary': '#000000', 'error': '#ba1a1a', 'on-surface-variant': '#44474c', 'on-error': '#ffffff', 'tertiary-fixed': '#ffddba', 'primary': '#000000', 'inverse-primary': '#bac7e1', 'on-tertiary-fixed': '#2a1702', 'error-container': '#ffdad6', 'surface-tint': '#525f75', 'on-tertiary': '#ffffff', 'on-surface': '#131b2e', 'surface-dim': '#d2d9f4', 'surface-container-high': '#e2e7ff', 'primary-container': '#0e1c2f', 'secondary-container': '#8fa7fe', 'inverse-on-surface': '#eef0ff', 'on-primary-fixed-variant': '#3a475c', 'background': '#faf8ff', 'on-tertiary-fixed-variant': '#5a4226', 'on-primary-fixed': '#0e1c2f', 'surface-container-lowest': '#ffffff', 'surface-bright': '#faf8ff', 'outline': '#75777d', 'on-background': '#131b2e', 'outline-variant': '#c5c6cd', 'on-secondary-fixed-variant': '#264191', 'tertiary-container': '#2a1702', 'primary-fixed': '#d6e3fe', 'primary-fixed-dim': '#bac7e1', 'on-secondary': '#ffffff', 'surface-container-highest': '#dae2fd', 'secondary': '#4059aa', 'tertiary-fixed-dim': '#e4c09c', 'surface-container': '#eaedff', 'on-secondary-fixed': '#00164e', 'secondary-fixed': '#dce1ff', 'surface': '#faf8ff', 'inverse-surface': '#283044', 'on-primary': '#ffffff', 'on-tertiary-container': '#9d7e5e', 'on-primary-container': '#77849c' }, 'borderRadius': { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, 'spacing': { 'table-cell-y': '0.5rem', 'table-cell-x': '0.75rem', 'unit-16': '1rem', 'unit-20': '1.25rem', 'unit-4': '0.25rem', 'sidebar-width': '16rem', 'unit-6': '0.375rem', 'unit-8': '0.5rem', 'unit-12': '0.75rem', 'toolbar-height': '3.25rem', 'inspector-width': '22rem', 'unit-24': '1.5rem', 'unit-2': '0.125rem', 'unit-32': '2rem' }, 'fontFamily': { 'body-default': ['Public Sans'], 'caption-meta': ['Public Sans'], 'data-tabular': ['Public Sans'], 'title-subsection': ['Public Sans'], 'title-section': ['Public Sans'], 'title-page': ['Public Sans'], 'body-strong': ['Public Sans'], 'micro-badge': ['Public Sans'], 'caption-strong': ['Public Sans'] }, 'fontSize': { 'body-default': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0em', 'fontWeight': '400' }], 'caption-meta': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'data-tabular': ['13px', { 'lineHeight': '18px', 'letterSpacing': '0em', 'fontWeight': '500' }], 'title-subsection': ['14px', { 'lineHeight': '20px', 'letterSpacing': '-0.005em', 'fontWeight': '600' }], 'title-section': ['16px', { 'lineHeight': '24px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'title-page': ['20px', { 'lineHeight': '28px', 'letterSpacing': '-0.015em', 'fontWeight': '600' }], 'body-strong': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0em', 'fontWeight': '600' }], 'micro-badge': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.025em', 'fontWeight': '600' }], 'caption-strong': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.01em', 'fontWeight': '600' }] } } } };</script><script src="../assets/api.js"></script>
+</head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-sidebar-width bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col"><div class="h-toolbar-height px-unit-16 border-b border-outline-variant flex items-center gap-unit-12 bg-surface-container-low"><img alt="Brand logo. - Primary color: #0b192c
+- Font: publicSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UZVUhHU_R8MtVbE0IcN3EbU4mVm1ZArPgYOQYDAgWraaQFP108HDq1OEA61tuBaehPBfOY3-c1BL6HDLt-sILbjQN40gQ8zQjT5MoFdqycwoc4VLmFx9jF4SWW9lD2iLO0iiAEE9gQQn4U3XuWk1kZSxr16gPhaqm031ooy7XIDodDWbHtp-4tfB6mdyKeehQZgPW92_6NDPQq2MRgQjHLW1JZAXdW_HBJDFvWQreNouaJ84GJHe6qNCdD"/><div class="flex flex-col min-w-0"><span class="font-title-subsection text-title-subsection text-on-surface truncate leading-tight">MPLADS Sentinel</span><span class="font-micro-badge text-micro-badge text-on-surface-variant uppercase tracking-wider truncate">MoSPI • GOI</span></div></div><div class="px-unit-16 py-unit-8 bg-surface-container-low border-b border-outline-variant"><div class="flex items-center justify-between"><span class="font-caption-meta text-caption-meta text-on-surface-variant uppercase tracking-wider">Institutional Node</span><span class="h-2 w-2 rounded-full bg-secondary"></span></div><p class="font-caption-strong text-caption-strong text-on-surface truncate mt-unit-2">Central Audit Directorate</p></div><nav class="flex-1 px-unit-8 py-unit-8 space-y-unit-4 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-strong">
+  <div class="px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-blue-700 font-bold tracking-wider">Stakeholder Portals</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="consumer" href="../consumer_portal/">
+  <span class="material-symbols-outlined text-lg">person</span>
+  <span class="font-body-default text-body-default">Consumer (Citizen)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nodal" href="../nodal_head_portal/">
+  <span class="material-symbols-outlined text-lg">account_balance</span>
+  <span class="font-body-default text-body-default">Nodal Head (Sanctions)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executer" href="../site_executer_portal/">
+  <span class="material-symbols-outlined text-lg">engineering</span>
+  <span class="font-body-default text-body-default">Site Executer (Field)</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Operational Units</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="../overview_dashboard_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dashboard</span>
+  <span class="font-body-default text-body-default">HQ Overview</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="../projects_explorer_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">folder_managed</span>
+  <span class="font-body-default text-body-default">Projects Explorer</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="../risk_analytics_portfolio_risk_telemetry_anomaly_intelligence/">
+  <span class="material-symbols-outlined text-lg">query_stats</span>
+  <span class="font-body-default text-body-default">Risk Analytics</span>
+</a>
+<a aria-current="page" class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg transition-colors bg-primary-container text-on-primary font-body-strong shadow-sm" data-path="spatial" href="../geographic_analysis_spatial_risk_intelligence/">
+  <span class="material-symbols-outlined text-lg">travel_explore</span>
+  <span class="font-body-default text-body-default">Spatial Risk</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audits" href="../investigation_queue_case_management_review_triage/">
+  <span class="material-symbols-outlined text-lg">fact_check</span>
+  <span class="font-body-default text-body-default">Audits & Cases</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assistant" href="../ai_audit_assistant_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">smart_toy</span>
+  <span class="font-body-default text-body-default">AI Assistant</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Governance</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-status" href="../data_system_status_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dns</span>
+  <span class="font-body-default text-body-default">System Status</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="login" href="../authorized_officer_login_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">logout</span>
+  <span class="font-body-default text-body-default">Officer Sign Out</span>
+</a>
+</nav><div class="p-unit-12 border-t border-outline-variant bg-surface-container-low"><div class="flex items-center gap-unit-8 text-on-surface-variant"><span class="material-symbols-outlined text-unit-16 text-secondary">shield</span><div class="flex flex-col min-w-0"><span class="font-caption-strong text-caption-strong text-on-surface">Statutory Clearance</span><span class="font-caption-meta text-caption-meta truncate">NIC/CIPA Verified Host</span></div></div></div></aside><div class="pl-sidebar-width"><header class="fixed top-0 left-sidebar-width right-0 h-toolbar-height bg-surface-container-lowest border-b border-outline-variant z-40 px-unit-20 flex items-center justify-between"><div class="flex items-center gap-unit-16 flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-unit-12 top-1/2 -translate-y-1/2 text-on-surface-variant text-unit-20">search</span><input class="w-full h-8 pl-9 pr-unit-12 bg-surface-container-low border border-outline-variant rounded font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" placeholder="Search constituency, work code, nodal bank or contractor... (Ctrl+K)" type="text"/><div class="absolute right-unit-8 top-1/2 -translate-y-1/2 flex items-center gap-unit-2"><kbd class="px-unit-4 py-unit-2 bg-surface-container-high text-on-surface-variant font-caption-meta text-caption-meta rounded border border-outline-variant">Ctrl</kbd><kbd class="px-unit-4 py-unit-2 bg-surface-container-high text-on-surface-variant font-caption-meta text-caption-meta rounded border border-outline-variant">K</kbd></div></div></div><div class="flex items-center gap-unit-16"><div class="flex items-center gap-unit-8 px-unit-8 py-unit-4 bg-surface-container rounded border border-outline-variant"><span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span><span class="font-caption-meta text-caption-meta text-on-surface-variant font-medium">Live 08:42 AM IST</span></div><button class="relative p-unit-6 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded transition-colors" title="Statutory Alerts"><span class="material-symbols-outlined text-unit-20">notifications</span><span class="absolute top-unit-2 right-unit-2 h-4 w-4 bg-error text-on-error font-micro-badge text-micro-badge rounded-full flex items-center justify-center font-bold">5</span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-unit-12 pl-unit-4"><div class="text-right hidden sm:block min-w-0"><p class="font-body-strong text-body-strong text-on-surface truncate leading-tight">Rajiv Sundaram, IAS</p><p class="font-caption-meta text-caption-meta text-on-surface-variant truncate leading-none mt-unit-2">Joint Secy. &amp; Audit Director, MoSPI</p></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1WL4F2wgPBUKMYSfLufozITKXoCTVbMaMsu-FZ5p8YUTh3q4Y98h1Am_uQmCklvixLfF9bgAedD6aG750EXmxeytSLJaa2D8-13oG6ess4KOEDRyBuhYoAdIwhBChyFvQ1Slwzbc9_Vxe4diHpwMkv9Go89yYJXRRIzRejQtALdv5GzQ-xZ6nZUyHBlGPy9YHFXOquClgI88EPLAFHChar0c0G6F_9wkXGD-Gelf_JAwcFcXGf249IGQrdj"/></div></div></header><main class="relative pt-toolbar-height bg-background min-h-screen px-unit-24 py-unit-16"><div class="flex flex-col w-full space-y-unit-16">
+<!-- MoSPI Statutory Banner -->
+<div class="bg-surface-container-high rounded px-unit-16 py-unit-8 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-unit-12">
+<span class="material-symbols-outlined text-unit-20 text-on-surface-variant flex-shrink-0">gavel</span>
+<p class="font-caption-meta text-caption-meta text-on-surface">
+<span class="font-caption-strong text-caption-strong uppercase tracking-wider text-on-surface mr-unit-4">Confidential Government Decision-Support:</span>
+        Spatial clusters and analytical signals represent geographic risk concentrations under CAG Statutory Rule 144(A) and GFR 2017. They do not establish fraud or contractor misconduct without certified ground inquest.
+      </p>
+</div>
+<span class="font-micro-badge text-micro-badge uppercase tracking-widest px-unit-8 py-unit-2 bg-surface-container-lowest text-on-surface-variant rounded shadow-sm flex-shrink-0">Sec. 144(A) Compliant</span>
+</div>
+<!-- Page Header & Global Geospatial Controls -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-unit-16">
+<div class="space-y-unit-4">
+<div class="flex items-center gap-unit-6 text-on-surface-variant font-caption-meta text-caption-meta">
+<span>Core Monitoring</span>
+<span class="material-symbols-outlined text-unit-12">chevron_right</span>
+<span>Spatial Intelligence</span>
+<span class="material-symbols-outlined text-unit-12">chevron_right</span>
+<span class="text-on-surface font-caption-strong text-caption-strong">Geographic Risk Analysis</span>
+</div>
+<h1 class="font-title-page text-title-page text-on-surface font-bold tracking-tight">Geographic Analysis</h1>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-2xl">
+        Geospatial distribution, anomaly clusters, and execution status across parliamentary constituencies and implementation blocks.
+      </p>
+</div>
+<!-- Right Controls -->
+<div class="flex flex-wrap items-center gap-unit-8">
+<!-- Period Selector -->
+<button class="h-8 px-unit-12 bg-surface-container-lowest text-on-surface rounded flex items-center gap-unit-8 hover:bg-surface-container-high transition-colors shadow-sm font-data-tabular text-data-tabular">
+<span class="material-symbols-outlined text-unit-16 text-secondary">calendar_today</span>
+<span>FY 2024–25 (Active Outlay: ₹3,920.40 Cr)</span>
+<span class="material-symbols-outlined text-unit-16 text-on-surface-variant">arrow_drop_down</span>
+</button>
+<!-- Location Filter -->
+<button class="h-8 px-unit-12 bg-surface-container-lowest text-on-surface rounded flex items-center gap-unit-8 hover:bg-surface-container-high transition-colors shadow-sm font-body-strong text-body-strong">
+<span class="material-symbols-outlined text-unit-16 text-secondary">location_on</span>
+<span>State: Karnataka (Selected)</span>
+<span class="material-symbols-outlined text-unit-16 text-on-surface-variant">arrow_drop_down</span>
+</button>
+<!-- Layer Toggles -->
+<div class="h-8 bg-surface-container-lowest rounded p-unit-2 flex items-center shadow-sm">
+<button class="px-unit-8 py-1 rounded bg-primary-container text-on-primary-container font-micro-badge text-micro-badge flex items-center gap-unit-4">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+          Risk Clusters
+        </button>
+<button class="px-unit-8 py-1 rounded text-on-surface-variant hover:text-on-surface font-micro-badge text-micro-badge transition-colors">
+          Constituency Polygons
+        </button>
+<button class="px-unit-8 py-1 rounded text-on-surface-variant hover:text-on-surface font-micro-badge text-micro-badge transition-colors">
+          Bhuvan Satellite
+        </button>
+</div>
+<!-- Export Report -->
+<button class="h-8 px-unit-12 bg-surface-container text-on-secondary-container hover:bg-secondary-container hover:text-on-surface transition-colors rounded flex items-center gap-unit-6 font-body-strong text-body-strong shadow-sm">
+<span class="material-symbols-outlined text-unit-16">file_download</span>
+<span>Export Geospatial Report</span>
+</button>
+</div>
+</div>
+<!-- Primary Cartographic & Regional Breakdown Canvas -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-unit-16 items-start">
+<!-- Primary Interactive Map (8 cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded overflow-hidden shadow-md flex flex-col relative">
+<!-- Map Operational Header -->
+<div class="px-unit-16 py-unit-8 bg-surface-container-low flex flex-wrap items-center justify-between gap-unit-8 z-10">
+<div class="flex items-center gap-unit-8">
+<span class="material-symbols-outlined text-unit-16 text-secondary">explore</span>
+<span class="font-caption-meta text-caption-meta text-on-surface font-mono tracking-tight">
+            12.9716° N, 77.5946° E | Datum: WGS-84 / EPSG:4326 | ISRO Bhuvan Sync: T+4m
+          </span>
+</div>
+<div class="flex items-center gap-unit-12">
+<!-- Layer check pills -->
+<div class="flex items-center gap-unit-6">
+<label class="flex items-center gap-unit-4 cursor-pointer">
+<span class="material-symbols-outlined text-unit-16 text-secondary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-micro-badge text-micro-badge text-on-surface">Cadastral Mesh</span>
+</label>
+<label class="flex items-center gap-unit-4 cursor-pointer">
+<span class="material-symbols-outlined text-unit-16 text-secondary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-micro-badge text-micro-badge text-on-surface">Constituency Bounds</span>
+</label>
+<label class="flex items-center gap-unit-4 cursor-pointer">
+<span class="material-symbols-outlined text-unit-16 text-secondary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-micro-badge text-micro-badge text-on-surface">e-MB Geo-tags</span>
+</label>
+</div>
+<!-- Zoom & Map Canvas Controls -->
+<div class="flex items-center bg-surface-container rounded p-0.5 shadow-sm">
+<button class="p-1 hover:bg-surface-container-highest text-on-surface rounded" title="Zoom In"><span class="material-symbols-outlined text-unit-16">add</span></button>
+<button class="p-1 hover:bg-surface-container-highest text-on-surface rounded" title="Zoom Out"><span class="material-symbols-outlined text-unit-16">remove</span></button>
+<button class="p-1 hover:bg-surface-container-highest text-on-surface rounded" title="Reset Frame"><span class="material-symbols-outlined text-unit-16">restart_alt</span></button>
+<button class="p-1 hover:bg-surface-container-highest text-on-surface rounded" title="Fullscreen Analysis"><span class="material-symbols-outlined text-unit-16">fullscreen</span></button>
+</div>
+</div>
+</div>
+<!-- Vector Geospatial Interactive Map Graphic Canvas -->
+<div class="relative w-full h-[580px] bg-slate-950 overflow-hidden select-none">
+<!-- Grid Pattern Overlay -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#8fa7fe" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+<!-- Cartographic Vector Presentation of Peninsular India / Karnataka Basin -->
+<svg class="w-full h-full object-cover" viewbox="0 0 800 600">
+<!-- Background landmass representation -->
+<path d="M 280,40 L 420,50 L 510,90 L 570,140 L 620,240 L 610,360 L 560,450 L 480,540 L 430,590 L 390,560 L 320,480 L 260,370 L 220,250 L 240,130 Z" fill="#0b192c" opacity="0.95"></path>
+<!-- Subtle Topographical Elevation Contours -->
+<path d="M 290,120 Q 360,140 430,120 T 520,180" fill="none" opacity="0.4" stroke="#1d3989" stroke-dasharray="2,2" stroke-width="0.75"></path>
+<path d="M 270,190 Q 340,210 420,180 T 540,230" fill="none" opacity="0.4" stroke="#1d3989" stroke-dasharray="2,2" stroke-width="0.75"></path>
+<path d="M 260,260 Q 330,300 440,250 T 530,310" fill="none" opacity="0.4" stroke="#1d3989" stroke-dasharray="2,2" stroke-width="0.75"></path>
+<path d="M 290,340 Q 370,360 450,320 T 500,400" fill="none" opacity="0.4" stroke="#1d3989" stroke-dasharray="2,2" stroke-width="0.75"></path>
+<!-- District / Parliamentary Boundaries -->
+<!-- Karnataka highlighted boundaries -->
+<polygon fill="#13233a" points="320,310 390,290 440,310 460,380 430,460 370,470 330,420 310,360" stroke="#4059aa" stroke-width="1.5"></polygon>
+<!-- Bangalore Rural Zone (KA-14 focus polygon) -->
+<polygon fill="#2a1702" fill-opacity="0.6" points="395,370 435,365 448,395 432,420 400,410" stroke="#ba1a1a" stroke-width="2"></polygon>
+<!-- Secondary region boundary polygons -->
+<polygon fill="#0e1c2f" points="460,140 520,130 550,160 510,190 460,170" stroke="#3a475c" stroke-width="1"></polygon> <!-- Varanasi -->
+<polygon fill="#0e1c2f" points="530,170 590,165 610,210 560,230 525,200" stroke="#3a475c" stroke-width="1"></polygon> <!-- Muzaffarpur -->
+<polygon fill="#0e1c2f" points="350,110 400,90 420,130 380,150 340,135" stroke="#3a475c" stroke-width="1"></polygon> <!-- Jaipur Rural -->
+<polygon fill="#0e1c2f" points="270,270 320,260 345,295 305,320 265,300" stroke="#3a475c" stroke-width="1"></polygon> <!-- Pune -->
+<polygon fill="#0e1c2f" points="370,480 420,470 440,510 400,530 365,510" stroke="#3a475c" stroke-width="1"></polygon> <!-- Coimbatore -->
+<!-- Buffer Radius Circles (Cadastral Radius Buffer) -->
+<circle cx="418" cy="390" fill="#ba1a1a" fill-opacity="0.12" r="42" stroke="#ba1a1a" stroke-dasharray="3,3" stroke-width="1"></circle>
+<circle cx="565" cy="195" fill="#ffddba" fill-opacity="0.1" r="28" stroke="#e4c09c" stroke-dasharray="2,2" stroke-width="1"></circle>
+<!-- Pulsing Target Node for Bangalore Rural KA-14 -->
+<circle cx="418" cy="390" fill="#ba1a1a" fill-opacity="0.3" r="18">
+<animate attributename="r" dur="3s" repeatcount="indefinite" values="12;24;12"></animate>
+<animate attributename="opacity" dur="3s" repeatcount="indefinite" values="0.6;0.1;0.6"></animate>
+</circle>
+<circle cx="418" cy="390" fill="#ba1a1a" r="5" stroke="#ffffff" stroke-width="1.5"></circle>
+<!-- Secondary Map Nodes -->
+<!-- Muzaffarpur -->
+<circle cx="565" cy="195" fill="#ba1a1a" r="4" stroke="#ffffff" stroke-width="1"></circle>
+<text fill="#faf8ff" font-family="Public Sans" font-size="9" font-weight="600" x="575" y="198">Muzaffarpur (BR-22) [11 Critical]</text>
+<!-- Varanasi -->
+<circle cx="495" cy="165" fill="#e4c09c" r="4" stroke="#ffffff" stroke-width="1"></circle>
+<text fill="#faf8ff" font-family="Public Sans" font-size="9" font-weight="500" x="505" y="168">Varanasi (UP-77) [9 High]</text>
+<!-- Jaipur Rural -->
+<circle cx="375" cy="120" fill="#e4c09c" r="4" stroke="#ffffff" stroke-width="1"></circle>
+<text fill="#faf8ff" font-family="Public Sans" font-size="9" font-weight="500" x="385" y="123">Jaipur Rural (RJ-06) [5 Warning]</text>
+<!-- Pune -->
+<circle cx="295" cy="285" fill="#8fa7fe" r="4" stroke="#ffffff" stroke-width="1"></circle>
+<text fill="#faf8ff" font-family="Public Sans" font-size="9" font-weight="500" x="305" y="288">Pune (MH-34) [3 Normal]</text>
+<!-- Coimbatore -->
+<circle cx="395" cy="495" fill="#8fa7fe" r="4" stroke="#ffffff" stroke-width="1"></circle>
+<text fill="#faf8ff" font-family="Public Sans" font-size="9" font-weight="500" x="405" y="498">Coimbatore (TN-TN-20) [6 Warning]</text>
+</svg>
+<!-- Prominent Selected Hotspot Interactive Callout Card (Floating overlay pinned to KA-14) -->
+<div class="absolute left-1/2 top-1/2 -translate-x-12 -translate-y-24 w-80 bg-surface-container-lowest rounded shadow-xl p-unit-12 text-on-surface z-20">
+<div class="flex items-center justify-between pb-unit-6 border-b border-surface-container">
+<div class="flex items-center gap-unit-6">
+<span class="h-2 w-2 rounded-full bg-error animate-ping"></span>
+<span class="font-caption-strong text-caption-strong text-error uppercase tracking-wider">Critical Anomaly Hotspot</span>
+</div>
+<span class="font-micro-badge text-micro-badge px-unit-6 py-0.5 bg-error-container text-on-error-container rounded font-bold">KA-14</span>
+</div>
+<div class="mt-unit-8 space-y-unit-6">
+<div>
+<p class="font-body-strong text-body-strong text-on-surface leading-tight">Bangalore Rural (KA-14)</p>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant">Nodal District: Doddaballapur Hub • MP: Dr. C.N. Manjunath</p>
+</div>
+<div class="grid grid-cols-2 gap-unit-6 py-unit-6 px-unit-8 bg-surface-container-low rounded">
+<div>
+<span class="font-micro-badge text-micro-badge text-on-surface-variant block uppercase">Active Works</span>
+<span class="font-data-tabular text-data-tabular font-bold text-on-surface">184 / ₹44.20 Cr</span>
+</div>
+<div>
+<span class="font-micro-badge text-micro-badge text-on-surface-variant block uppercase">Risk Density</span>
+<span class="font-data-tabular text-data-tabular font-bold text-error">14 High (7.6%)</span>
+</div>
+</div>
+<div class="space-y-unit-2 text-caption-meta">
+<div class="flex items-start gap-unit-6">
+<span class="material-symbols-outlined text-unit-16 text-error flex-shrink-0 mt-0.5">report_problem</span>
+<p class="text-on-surface-variant leading-tight">
+<strong class="text-on-surface">Primary Anomaly:</strong> Financial-Physical Decoupling. Tranche 3 released at +35.1% lead over validated e-MB geo-photos.
+                </p>
+</div>
+<div class="flex items-center justify-between font-micro-badge text-micro-badge pt-unit-4 border-t border-surface-container text-on-surface-variant">
+<span>Key Work: P-10291 (Samudaya Bhavana)</span>
+<span class="text-secondary font-bold">Inspect Node →</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Quick Compass / North Arrow -->
+<div class="absolute right-unit-16 bottom-unit-16 bg-surface-container-lowest/90 backdrop-blur rounded p-unit-8 shadow-sm flex flex-col items-center">
+<span class="font-micro-badge text-micro-badge font-bold text-on-surface">N</span>
+<span class="material-symbols-outlined text-unit-20 text-secondary">navigation</span>
+</div>
+</div>
+<!-- Map Operational Status & Legend Footer Bar -->
+<div class="px-unit-16 py-unit-8 bg-surface-container-low flex flex-wrap items-center justify-between gap-unit-12">
+<div class="flex flex-wrap items-center gap-unit-16 font-caption-meta text-caption-meta text-on-surface-variant">
+<div class="flex items-center gap-unit-6">
+<span class="h-2.5 w-2.5 rounded-full bg-error"></span>
+<span class="text-on-surface font-medium">Critical Anomaly (&gt;75 Risk)</span>
+</div>
+<div class="flex items-center gap-unit-6">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface font-medium">Schedule Dormancy (&gt;60d)</span>
+</div>
+<div class="flex items-center gap-unit-6">
+<span class="h-2.5 w-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">Verified Normal Execution</span>
+</div>
+<div class="flex items-center gap-unit-6">
+<span class="h-2.5 w-2.5 rounded-full border border-dashed border-error"></span>
+<span class="text-on-surface font-medium">Cadastral Radius Buffer (&lt;200m)</span>
+</div>
+</div>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">
+          Lambert Conformal Conic | Survey of India Datum | NIC-Bhuvan API v3.4
+        </span>
+</div>
+</div>
+<!-- Side Summary Panel (4 cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded shadow-md flex flex-col divide-y divide-surface-container">
+<!-- Panel Header -->
+<div class="p-unit-16 flex items-center justify-between">
+<div>
+<span class="font-micro-badge text-micro-badge uppercase tracking-wider text-on-surface-variant block">Selected Constituency Ledger</span>
+<h2 class="font-title-section text-title-section text-on-surface font-bold">Karnataka — KA-14</h2>
+</div>
+<button class="px-unit-8 py-1 rounded text-on-secondary-container bg-surface-container hover:bg-surface-container-high transition-colors font-caption-strong text-caption-strong">
+          All India View
+        </button>
+</div>
+<!-- Essential Metrics 2x2 Grid -->
+<div class="p-unit-16">
+<div class="grid grid-cols-2 gap-unit-12">
+<!-- Total Projects -->
+<div class="bg-surface-container-low p-unit-12 rounded">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant block">Total Projects</span>
+<span class="font-data-tabular text-title-page font-bold text-on-surface block mt-unit-2">184</span>
+<span class="font-micro-badge text-micro-badge text-on-surface-variant">Across 6 Gram Taluks</span>
+</div>
+<!-- High-Risk Projects -->
+<div class="bg-error-container/40 p-unit-12 rounded">
+<span class="font-caption-meta text-caption-meta text-on-error-container block">High-Risk Projects</span>
+<span class="font-data-tabular text-title-page font-bold text-error block mt-unit-2">14</span>
+<span class="font-micro-badge text-micro-badge text-on-error-container font-semibold">Mandatory Review • &gt;75</span>
+</div>
+<!-- Completed Works -->
+<div class="bg-surface-container-low p-unit-12 rounded">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant block">Completed Works</span>
+<span class="font-data-tabular text-title-page font-bold text-on-surface block mt-unit-2">92</span>
+<span class="font-micro-badge text-micro-badge text-secondary font-medium">50.0% Verified Handoff</span>
+</div>
+<!-- Delayed / Stalled -->
+<div class="bg-surface-container-high/60 p-unit-12 rounded">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant block">Delayed / Stalled</span>
+<span class="font-data-tabular text-title-page font-bold text-on-tertiary-fixed-variant block mt-unit-2">28</span>
+<span class="font-micro-badge text-micro-badge text-on-tertiary-fixed-variant font-medium">&gt;60d Inactive e-MB</span>
+</div>
+</div>
+</div>
+<!-- Execution Breakdown Horizontal Bar -->
+<div class="p-unit-16 space-y-unit-12">
+<div class="flex items-center justify-between">
+<span class="font-title-subsection text-title-subsection text-on-surface">Execution Breakdown</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">184 Sanctioned Works</span>
+</div>
+<!-- Segmented bar -->
+<div class="h-3 w-full bg-surface-container rounded flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 50.0%;" title="Completed (50.0%)"></div>
+<div class="bg-secondary h-full" style="width: 27.2%;" title="On Track (27.2%)"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 15.2%;" title="Delayed (15.2%)"></div>
+<div class="bg-error h-full" style="width: 7.6%;" title="Critical Risk (7.6%)"></div>
+</div>
+<!-- Legend breakdown -->
+<div class="grid grid-cols-2 gap-y-unit-8 gap-x-unit-12 text-caption-meta pt-unit-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-6">
+<span class="h-2 w-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Completed</span>
+</div>
+<span class="font-mono font-medium text-on-surface">92 (50.0%)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-6">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface">On Track</span>
+</div>
+<span class="font-mono font-medium text-on-surface">50 (27.2%)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-6">
+<span class="h-2 w-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface">Delayed</span>
+</div>
+<span class="font-mono font-medium text-on-surface">28 (15.2%)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-unit-6">
+<span class="h-2 w-2 rounded-full bg-error"></span>
+<span class="text-error font-semibold">Critical Risk</span>
+</div>
+<span class="font-mono font-bold text-error">14 (7.6%)</span>
+</div>
+</div>
+</div>
+<!-- Priority Field Verifications -->
+<div class="p-unit-16 space-y-unit-12">
+<div class="flex items-center justify-between">
+<span class="font-title-subsection text-title-subsection text-on-surface">Priority Field Verifications</span>
+<span class="font-micro-badge text-micro-badge px-unit-6 py-0.5 bg-error-container text-on-error-container rounded font-bold">2 Immediate</span>
+</div>
+<!-- Verification Items -->
+<div class="space-y-unit-8">
+<!-- Item 1 -->
+<div class="p-unit-12 bg-surface-container-low rounded space-y-unit-4 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface">P-10291: Samudaya Bhavana</span>
+<span class="font-micro-badge text-micro-badge px-unit-6 py-0.5 bg-error text-on-error rounded font-bold">CAG 144(A)</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              Doddaballapur Taluk. Discrepancy: 88% fiscal disbursements released versus only 34% verified on 3D LiDAR satellite survey.
+            </p>
+<div class="flex items-center justify-between font-micro-badge text-micro-badge pt-unit-2 text-on-surface-variant">
+<span>Sanction: ₹1.45 Cr</span>
+<span class="text-error font-bold">Audit Alert Active</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-unit-12 bg-surface-container-low rounded space-y-unit-4 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface">P-10440: Solar Micro-Grid</span>
+<span class="font-micro-badge text-micro-badge px-unit-6 py-0.5 bg-surface-container-highest text-on-surface-variant rounded font-semibold">Pending e-MB</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant leading-relaxed">
+              Hoskote Block 2. Work delayed &gt;74 days. Vendor entity re-assigned without district nodal authorization record.
+            </p>
+<div class="flex items-center justify-between font-micro-badge text-micro-badge pt-unit-2 text-on-surface-variant">
+<span>Sanction: ₹0.85 Cr</span>
+<span class="text-on-tertiary-fixed-variant font-bold">Dormancy Notice</span>
+</div>
+</div>
+</div>
+<!-- Action Directive Trigger -->
+<button class="w-full h-9 bg-primary text-on-primary hover:bg-primary-container font-body-strong text-body-strong rounded flex items-center justify-center gap-unit-8 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-unit-16">assignment_turned_in</span>
+<span>Issue Field Inspection Directive</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Regional Concentration & District Audit Ledger -->
+<div class="bg-surface-container-lowest rounded shadow-md overflow-hidden flex flex-col">
+<!-- Section Header & Ledger Toolbar -->
+<div class="p-unit-16 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-unit-12">
+<div>
+<h3 class="font-title-section text-title-section text-on-surface font-bold">Regional Concentration &amp; District Audit Ledger</h3>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant mt-unit-2">
+          Cross-district anomaly incidence, fiscal disbursement velocity, and physical progress telemetry across priority constituencies.
+        </p>
+</div>
+<div class="flex items-center gap-unit-8 flex-wrap">
+<!-- Inline search -->
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-unit-8 top-1/2 -translate-y-1/2 text-unit-16 text-on-surface-variant">search</span>
+<input class="w-full h-8 pl-7 pr-unit-8 bg-surface-container-lowest rounded font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container shadow-sm text-xs" placeholder="Search constituency, MP, district..." type="text"/>
+</div>
+<!-- Sort dropdown -->
+<div class="h-8 px-unit-8 bg-surface-container-lowest rounded flex items-center gap-unit-6 text-on-surface font-caption-strong text-caption-strong shadow-sm cursor-pointer">
+<span class="material-symbols-outlined text-unit-16 text-on-surface-variant">sort</span>
+<span>Sort: Anomaly Severity</span>
+<span class="material-symbols-outlined text-unit-16 text-on-surface-variant">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-caption-strong text-caption-strong uppercase tracking-wider text-xs">
+<th class="py-unit-8 px-unit-16">Constituency &amp; Administrative Node</th>
+<th class="py-unit-8 px-unit-12 text-center">Total Works</th>
+<th class="py-unit-8 px-unit-12">Anomaly Concentration</th>
+<th class="py-unit-8 px-unit-16">Physical Progress</th>
+<th class="py-unit-8 px-unit-12 text-center">Dormant (&gt;60d)</th>
+<th class="py-unit-8 px-unit-16 text-right">Sanctioned / Disbursed</th>
+<th class="py-unit-8 px-unit-16 text-right">Audit Cluster Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-default text-body-default">
+<!-- Row 1: Bangalore Rural (Selected) -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-error"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Bangalore Rural (KA-14)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Karnataka • Doddaballapur Hub</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">184</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge font-bold">
+<span class="material-symbols-outlined text-unit-12">warning</span>
+<span>14 Critical (7.6%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">92 completed</span>
+<span class="font-mono text-on-surface">50.0%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-primary-container h-full rounded" style="width: 50%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-error font-semibold">28</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹44.20 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹32.80 Cr (74.2%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-primary-container text-on-primary-container rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold shadow-sm">
+                Active Focus
+              </button>
+</td>
+</tr>
+<!-- Row 2: Muzaffarpur -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-error"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Muzaffarpur (BR-22)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Bihar • Tirhut Division</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">212</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-error-container text-on-error-container font-micro-badge text-micro-badge font-bold">
+<span class="material-symbols-outlined text-unit-12">warning</span>
+<span>11 Critical (5.2%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">114 completed</span>
+<span class="font-mono text-on-surface">53.7%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 53.7%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-on-tertiary-fixed-variant font-semibold">34</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹48.60 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹38.10 Cr (78.3%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-surface-container text-on-surface rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold hover:bg-surface-container-high transition-colors">
+                Inspect Cluster
+              </button>
+</td>
+</tr>
+<!-- Row 3: Varanasi -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-tertiary-fixed-dim"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Varanasi (UP-77)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Uttar Pradesh • Varanasi Urban Nodal</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">246</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-micro-badge text-micro-badge font-semibold">
+<span class="material-symbols-outlined text-unit-12">error_outline</span>
+<span>9 High (3.6%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">148 completed</span>
+<span class="font-mono text-on-surface">60.1%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 60.1%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-on-surface-variant font-semibold">22</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹58.90 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹41.20 Cr (69.9%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-surface-container text-on-surface rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold hover:bg-surface-container-high transition-colors">
+                Inspect Cluster
+              </button>
+</td>
+</tr>
+<!-- Row 4: Coimbatore -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Coimbatore (TN-20)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Tamil Nadu • West Kongu Region</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">168</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-surface-container-highest text-on-surface font-micro-badge text-micro-badge font-semibold">
+<span>6 Warning (3.5%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">102 completed</span>
+<span class="font-mono text-on-surface">60.7%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 60.7%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-on-surface-variant font-semibold">18</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹39.40 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹28.50 Cr (72.3%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-surface-container text-on-surface rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold hover:bg-surface-container-high transition-colors">
+                Inspect Cluster
+              </button>
+</td>
+</tr>
+<!-- Row 5: Pune -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Pune (MH-34)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Maharashtra • Pune Metropolitan</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">195</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-micro-badge text-micro-badge font-semibold">
+<span>3 Normal (1.5%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">138 completed</span>
+<span class="font-mono text-on-surface">70.7%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 70.7%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-on-surface-variant font-semibold">12</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹46.80 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹39.50 Cr (84.4%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-surface-container text-on-surface rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold hover:bg-surface-container-high transition-colors">
+                Inspect Cluster
+              </button>
+</td>
+</tr>
+<!-- Row 6: Jaipur Rural -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-unit-12 px-unit-16">
+<div class="flex items-center gap-unit-8">
+<span class="h-2 w-2 rounded-full bg-tertiary-fixed-dim"></span>
+<div>
+<div class="font-body-strong text-body-strong text-on-surface">Jaipur Rural (RJ-06)</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant">Rajasthan • Amber &amp; Shahpura Blocks</div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular font-semibold text-on-surface">178</td>
+<td class="py-unit-12 px-unit-12">
+<div class="inline-flex items-center gap-unit-6 px-unit-8 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-micro-badge text-micro-badge font-semibold">
+<span class="material-symbols-outlined text-unit-12">error_outline</span>
+<span>5 Warning (2.8%)</span>
+</div>
+</td>
+<td class="py-unit-12 px-unit-16">
+<div class="w-36 space-y-1">
+<div class="flex justify-between font-caption-meta text-caption-meta">
+<span class="text-on-surface font-medium">105 completed</span>
+<span class="font-mono text-on-surface">58.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 58.9%;"></div>
+</div>
+</div>
+</td>
+<td class="py-unit-12 px-unit-12 text-center font-data-tabular text-data-tabular text-on-tertiary-fixed-variant font-semibold">24</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<div class="font-data-tabular text-data-tabular font-bold text-on-surface">₹41.10 Cr</div>
+<div class="font-caption-meta text-caption-meta text-on-surface-variant font-mono">₹31.20 Cr (75.9%)</div>
+</td>
+<td class="py-unit-12 px-unit-16 text-right">
+<button class="h-7 px-unit-8 bg-surface-container text-on-surface rounded font-micro-badge text-micro-badge uppercase tracking-wider font-semibold hover:bg-surface-container-high transition-colors">
+                Inspect Cluster
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Filtering Meta -->
+<div class="p-unit-12 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-unit-8">
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">
+        Showing 6 of 543 Parliamentary Constituencies | Filtered by: Active FY24 Outlay &gt; ₹30 Cr
+      </span>
+<div class="flex items-center gap-unit-4">
+<button class="h-7 w-7 rounded bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-unit-16">chevron_left</span>
+</button>
+<button class="h-7 w-7 rounded bg-primary text-on-primary font-caption-strong text-caption-strong flex items-center justify-center shadow-sm">1</button>
+<button class="h-7 w-7 rounded bg-surface-container-lowest text-on-surface font-caption-strong text-caption-strong flex items-center justify-center hover:bg-surface-container shadow-sm">2</button>
+<button class="h-7 w-7 rounded bg-surface-container-lowest text-on-surface font-caption-strong text-caption-strong flex items-center justify-center hover:bg-surface-container shadow-sm">3</button>
+<span class="px-1 text-on-surface-variant font-mono">...</span>
+<button class="h-7 w-7 rounded bg-surface-container-lowest text-on-surface font-caption-strong text-caption-strong flex items-center justify-center hover:bg-surface-container shadow-sm">91</button>
+<button class="h-7 w-7 rounded bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-unit-16">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Footer Metadata -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-unit-8 pt-unit-8 pb-unit-16 font-caption-meta text-caption-meta text-on-surface-variant">
+<div class="flex items-center gap-unit-8">
+<span class="material-symbols-outlined text-unit-16 text-secondary">satellite_alt</span>
+<p>
+        Geographic spatial intelligence synchronized with Survey of India &amp; ISRO Bhuvan Geo-portal. Audit telemetry is for executive decision-support under CAG Circular 08/2022 and GFR 2017.
+      </p>
+</div>
+<div class="font-mono text-xs text-on-surface-variant flex-shrink-0">
+      Node: NIC-DEL-HQ-04 • Verification Token: #GEO-8F2A-2026
+    </div>
+</div>
+</div></main></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.SentinelAPI && window.SentinelAPI.renderRoleSwitcher) {
+    window.SentinelAPI.renderRoleSwitcher("spatial");
+  }
+});
+</script>
+
+</body></html>

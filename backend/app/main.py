@@ -18,12 +18,15 @@ _backend_dir = str(Path(__file__).resolve().parent.parent)
 if _backend_dir not in sys.path:
     sys.path.insert(0, _backend_dir)
 
+# pyrefly: ignore [missing-import]
 from fastapi import FastAPI, status, HTTPException, Request
+# pyrefly: ignore [missing-import]
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+# pyrefly: ignore [missing-import]
+from fastapi.responses import JSONResponse, RedirectResponse
 
 from app.database import check_db_connection, engine
-from app.routes import projects_router, analytics_router, high_risk_router, agencies_router
+from app.routes import projects_router, analytics_router, high_risk_router, agencies_router, roles_router
 try:
     from app.config import settings
 except ImportError:
@@ -95,12 +98,16 @@ app.add_middleware(
 @app.get(
     "/",
     tags=["Health & Status"],
-    summary="Root API Information"
+    summary="Root API Information / Sentinel Portal"
 )
-def root_info() -> Dict[str, Any]:
+def root_info(request: Request) -> Any:
     """
-    Returns API operational metadata, version, documentation links, and key endpoints.
+    Returns API operational metadata or redirects browser clients to the Sentinel Dashboard.
     """
+    accept_header = request.headers.get("accept", "")
+    if "text/html" in accept_header:
+        return RedirectResponse(url="/ui/")
+
     return {
         "status": "online",
         "service": "MPLADS Governance & Analytics API",
@@ -110,7 +117,7 @@ def root_info() -> Dict[str, Any]:
         "openapi_url": "/openapi.json",
         "health_check": "/health",
         "endpoints": {
-            "ui": "/ui",
+            "ui": "/ui/",
             "projects": "/projects",
             "project_detail": "/projects/{id}",
             "analytics": "/analytics",
@@ -161,17 +168,86 @@ app.include_router(high_risk_router)
 app.include_router(high_risk_router, prefix="/api/v1")
 app.include_router(agencies_router)
 app.include_router(agencies_router, prefix="/api/v1")
+app.include_router(roles_router)
+app.include_router(roles_router, prefix="/api/v1")
 
 
 # =============================================================================
-# Mount Frontend UI Static Files
+# Frontend UI Shortcuts and Routes
 # =============================================================================
 
+# pyrefly: ignore [missing-import]
 from fastapi.staticfiles import StaticFiles
 
 _frontend_dir = os.path.join(_backend_dir, "..", "frontend")
 if not os.path.exists(_frontend_dir):
     os.makedirs(_frontend_dir, exist_ok=True)
+
+@app.get("/ui/overview", include_in_schema=False)
+def redirect_to_overview():
+    return RedirectResponse(url="/ui/overview_dashboard_mplads_sentinel/")
+
+@app.get("/ui/projects", include_in_schema=False)
+def redirect_to_projects():
+    return RedirectResponse(url="/ui/projects_explorer_mplads_sentinel/")
+
+@app.get("/ui/project-detail", include_in_schema=False)
+def redirect_to_project_detail(id: Optional[str] = None):
+    url = "/ui/project_risk_profile_p_10291_multi_purpose_community_hall/"
+    if id:
+        url += f"?id={id}"
+    return RedirectResponse(url=url)
+
+@app.get("/ui/analytics", include_in_schema=False)
+def redirect_to_analytics():
+    return RedirectResponse(url="/ui/risk_analytics_portfolio_risk_telemetry_anomaly_intelligence/")
+
+@app.get("/ui/spatial", include_in_schema=False)
+def redirect_to_spatial():
+    return RedirectResponse(url="/ui/geographic_analysis_spatial_risk_intelligence/")
+
+@app.get("/ui/audits", include_in_schema=False)
+@app.get("/ui/investigations", include_in_schema=False)
+def redirect_to_investigations():
+    return RedirectResponse(url="/ui/investigation_queue_case_management_review_triage/")
+
+@app.get("/ui/assistant", include_in_schema=False)
+def redirect_to_assistant():
+    return RedirectResponse(url="/ui/ai_audit_assistant_mplads_sentinel/")
+
+@app.get("/ui/system-status", include_in_schema=False)
+def redirect_to_system_status():
+    return RedirectResponse(url="/ui/data_system_status_mplads_sentinel/")
+
+@app.get("/ui/consumer", include_in_schema=False)
+@app.get("/ui/consumer/", include_in_schema=False)
+def redirect_to_consumer():
+    return RedirectResponse(url="/ui/consumer_portal/")
+
+@app.get("/ui/nodal-head", include_in_schema=False)
+@app.get("/ui/nodal-head/", include_in_schema=False)
+def redirect_to_nodal_head():
+    return RedirectResponse(url="/ui/nodal_head_portal/")
+
+@app.get("/ui/site-executer", include_in_schema=False)
+@app.get("/ui/site-executer/", include_in_schema=False)
+def redirect_to_site_executer():
+    return RedirectResponse(url="/ui/site_executer_portal/")
+
+@app.get("/ui/overview", include_in_schema=False)
+@app.get("/ui/overview/", include_in_schema=False)
+def redirect_to_overview():
+    return RedirectResponse(url="/ui/overview_dashboard_mplads_sentinel/")
+
+@app.get("/ui/projects", include_in_schema=False)
+@app.get("/ui/projects/", include_in_schema=False)
+def redirect_to_projects():
+    return RedirectResponse(url="/ui/projects_explorer_mplads_sentinel/")
+
+@app.get("/ui/login", include_in_schema=False)
+def redirect_to_login():
+    return RedirectResponse(url="/ui/authorized_officer_login_mplads_sentinel/")
+
 app.mount("/ui", StaticFiles(directory=_frontend_dir, html=True), name="ui")
 
 
@@ -205,6 +281,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 
 if __name__ == "__main__":
+    # pyrefly: ignore [missing-import]
     import uvicorn
     host = settings.APP_HOST
     port = settings.APP_PORT

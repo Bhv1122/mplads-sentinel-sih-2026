@@ -1,0 +1,966 @@
+<!DOCTYPE html><html lang="en" class="h-full"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary-fixed":"#d3e4ff","on-tertiary":"#ffffff","primary-fixed-dim":"#bac7e1","on-tertiary-container":"#6d85a9","primary":"#000000","on-primary-fixed-variant":"#3a475c","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface-dim":"#cbdbf5","surface-bright":"#f8f9ff","primary-container":"#0e1c2f","error-container":"#ffdad6","primary-fixed":"#d6e3fe","surface-variant":"#d3e4fe","on-background":"#0b1c30","secondary-container":"#b3d1fd","error":"#ba1a1a","on-tertiary-fixed-variant":"#2f4869","inverse-primary":"#bac7e1","on-secondary-fixed":"#001c38","outline-variant":"#c5c6cd","on-tertiary-fixed":"#001c39","surface-container":"#e5eeff","on-primary-fixed":"#0e1c2f","on-secondary-container":"#3b5a7f","on-secondary":"#ffffff","on-surface":"#0b1c30","surface":"#f8f9ff","on-surface-variant":"#44474c","background":"#f8f9ff","on-secondary-fixed-variant":"#29486d","inverse-surface":"#213145","outline":"#75777d","tertiary":"#000000","on-error-container":"#93000a","secondary":"#426086","secondary-fixed-dim":"#aac9f4","on-error":"#ffffff","surface-container-highest":"#d3e4fe","tertiary-fixed":"#d4e3ff","surface-container-low":"#eff4ff","surface-tint":"#525f75","tertiary-container":"#001c39","surface-container-high":"#dce9ff","tertiary-fixed-dim":"#afc8ef","inverse-on-surface":"#eaf1ff","on-primary-container":"#77849c"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-tablet":"1rem","xs":"0.25rem","2xl":"2rem","xl":"1.5rem","3xl":"2.5rem","base":"1rem","margin-mobile":"0.75rem","md":"0.75rem","sm":"0.5rem","2xs":"0.125rem","margin-desktop":"1.5rem","gutter-table":"0.5rem","lg":"1.25rem"},fontFamily:{"label-code":["JetBrains Mono"],"headline-sm":["Public Sans"],"headline-lg":["Public Sans"],"headline-xl-mobile":["Public Sans"],"table-header":["Public Sans"],"body-lg":["Public Sans"],"headline-lg-mobile":["Public Sans"],"body-md":["Public Sans"],"headline-md":["Public Sans"],"headline-xl":["Public Sans"],"label-numeric-md":["JetBrains Mono"],"body-sm":["Public Sans"],"label-numeric-lg":["JetBrains Mono"],"label-numeric-sm":["JetBrains Mono"]},fontSize:{"label-code":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"500"}],"headline-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-xl-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"700"}],"table-header":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.06em",fontWeight:"700"}],"body-lg":["1rem",{lineHeight:"1.5rem",fontWeight:"400"}],"headline-lg-mobile":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"400"}],"headline-md":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-xl":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.025em",fontWeight:"700"}],"label-numeric-md":["0.875rem",{lineHeight:"1.25rem",fontWeight:"500"}],"body-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}],"label-numeric-lg":["1.25rem",{lineHeight:"1.5rem",letterSpacing:"-0.02em",fontWeight:"600"}],"label-numeric-sm":["0.75rem",{lineHeight:"1rem",fontWeight:"400"}]}}}}</script><script src="../assets/api.js"></script>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-md flex items-start gap-sm bg-surface-container-lowest"><img alt="MPLADS Sentinel Shield Logo" class="h-8 w-auto object-contain flex-shrink-0 mt-2xs" src="https://lh3.googleusercontent.com/aida/AEtjO1VhH7wdcogRRhR39oP8iyEJbJID7kD-kqGt7ib-gjGz0wWRVV5yDz0Ds9iVFmeRfsqFw5xmmo-IAxr3dbjP9rVZkkE8d2N7d6rTlH_IT2c-bFLR6i8NYkXfWnagzLMvJOTHfCo_WDobH3UTyuWNyaMFNGK_1icSeLaeGUOd0y5mfBcn9W-g0rxcIAx7bEoMdZ6-gEqTywglF4hvtRKd5dTHIEDGKq82sshg_AyXmXjPfWT5W2TBcKGj1X5j"><div class="min-w-0"><h1 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface truncate">MPLADS SENTINEL</h1><p class="font-table-header text-table-header uppercase text-on-surface-variant line-clamp-2">MoSPI / Audit Decision Support</p></div></div><nav class="flex-1 px-unit-8 py-unit-8 space-y-unit-4 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-strong">
+  <div class="px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-blue-700 font-bold tracking-wider">Stakeholder Portals</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="consumer" href="../consumer_portal/">
+  <span class="material-symbols-outlined text-lg">person</span>
+  <span class="font-body-default text-body-default">Consumer (Citizen)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nodal" href="../nodal_head_portal/">
+  <span class="material-symbols-outlined text-lg">account_balance</span>
+  <span class="font-body-default text-body-default">Nodal Head (Sanctions)</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executer" href="../site_executer_portal/">
+  <span class="material-symbols-outlined text-lg">engineering</span>
+  <span class="font-body-default text-body-default">Site Executer (Field)</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Operational Units</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="../overview_dashboard_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dashboard</span>
+  <span class="font-body-default text-body-default">HQ Overview</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="../projects_explorer_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">folder_managed</span>
+  <span class="font-body-default text-body-default">Projects Explorer</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="../risk_analytics_portfolio_risk_telemetry_anomaly_intelligence/">
+  <span class="material-symbols-outlined text-lg">query_stats</span>
+  <span class="font-body-default text-body-default">Risk Analytics</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="spatial" href="../geographic_analysis_spatial_risk_intelligence/">
+  <span class="material-symbols-outlined text-lg">travel_explore</span>
+  <span class="font-body-default text-body-default">Spatial Risk</span>
+</a>
+<a aria-current="page" class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg transition-colors bg-primary-container text-on-primary font-body-strong shadow-sm" data-path="audits" href="../investigation_queue_case_management_review_triage/">
+  <span class="material-symbols-outlined text-lg">fact_check</span>
+  <span class="font-body-default text-body-default">Audits & Cases</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assistant" href="../ai_audit_assistant_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">smart_toy</span>
+  <span class="font-body-default text-body-default">AI Assistant</span>
+</a>
+  <div class="pt-unit-8 px-unit-8 pb-unit-2 font-micro-badge text-micro-badge uppercase text-outline tracking-wider">Governance</div>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="system-status" href="../data_system_status_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">dns</span>
+  <span class="font-body-default text-body-default">System Status</span>
+</a>
+<a class="flex items-center gap-unit-12 px-unit-12 py-unit-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="login" href="../authorized_officer_login_mplads_sentinel/">
+  <span class="material-symbols-outlined text-lg">logout</span>
+  <span class="font-body-default text-body-default">Officer Sign Out</span>
+</a>
+</nav></div><div class="p-sm bg-surface-container space-y-xs flex-shrink-0"><div class="p-xs rounded bg-surface-container-lowest flex items-center justify-between"><div class="flex items-center gap-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><div class="min-w-0"><p class="font-label-numeric-sm text-label-numeric-sm text-on-surface truncate">Synced: 09 Sep 2026, 08:42 AM</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">24,381 Projects Monitored</p></div></div><span class="material-symbols-outlined text-base text-secondary">sync</span></div><div class="pt-xs flex items-center gap-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAffuK6WNYBFm7YBMzskLzY-bbQMajOagTygyG3O9xyHmq730bBOyio9mNWVG8ClfhhUfVs7WGveZ-DUZVpKGYB6mJrNsHFum6YgWr5y9Bm090iy8NtdXs3O3HUHx4d1k1TDpZz0Ke2KMcJGnqP7oB8LAIvolJB0qJcFZkZeBUYYUoRpcOBiFsAqUkt1MlaQTEQtp454oysGjz2ykCmvLNMrt_BAlQST_MT8k4MaEJY2l_gMZs8nVDZ1w"><div class="min-w-0 flex-1"><p class="font-headline-sm text-headline-sm text-on-surface truncate">Rajiv Sundaram, IAS</p><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Joint Secretary &amp; Audit Director, MoSPI</p></div><span class="px-xs py-2xs rounded bg-primary-container text-on-primary-container font-label-code text-label-code uppercase flex-shrink-0">Officer</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-md"><div class="flex items-center gap-xs px-sm py-2xs rounded bg-surface-container"><span class="material-symbols-outlined text-base text-secondary">account_balance</span><span class="font-table-header text-table-header uppercase tracking-wider text-on-surface-variant">GOVERNMENT OF INDIA | MINISTRY OF STATISTICS &amp; PROGRAMME IMPLEMENTATION (MoSPI)</span></div></div><div class="flex-1 max-w-lg mx-lg"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-sm text-base text-on-surface-variant">search</span><input class="w-full h-8 pl-9 pr-14 rounded bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low" placeholder="Search projects, agencies, districts..." type="text"><span class="absolute right-sm px-xs py-2xs rounded bg-surface-container text-on-surface-variant font-label-code text-label-code">Ctrl + K</span></div></div><div class="flex items-center gap-md"><div class="flex items-center gap-xs px-xs py-2xs rounded bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-base">cloud_done</span><span class="font-label-numeric-sm text-label-numeric-sm">● Sync: Live (08:42 AM)</span></div><button class="relative p-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button"><span class="material-symbols-outlined text-base">notifications</span><span class="absolute -top-1 -right-1 px-xs py-2xs rounded bg-error text-on-error font-label-numeric-sm text-label-numeric-sm">12</span></button><button class="p-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Statutory &amp; Audit Documentation" type="button"><span class="material-symbols-outlined text-base">help_outline</span></button><div class="flex items-center gap-xs pl-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAffuK6WNYBFm7YBMzskLzY-bbQMajOagTygyG3O9xyHmq730bBOyio9mNWVG8ClfhhUfVs7WGveZ-DUZVpKGYB6mJrNsHFum6YgWr5y9Bm090iy8NtdXs3O3HUHx4d1k1TDpZz0Ke2KMcJGnqP7oB8LAIvolJB0qJcFZkZeBUYYUoRpcOBiFsAqUkt1MlaQTEQtp454oysGjz2ykCmvLNMrt_BAlQST_MT8k4MaEJY2l_gMZs8nVDZ1w"><span class="material-symbols-outlined text-base text-on-surface-variant">arrow_drop_down</span></div></div></header><main class="relative pt-16 flex-1 w-full px-lg bg-surface"><div class="my-xs py-xs px-sm rounded bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center gap-xs"><span class="material-symbols-outlined text-base text-secondary">verified_user</span><span><strong>Confidential Government Decision-Support:</strong> Analytical signals represent risk indicators and do not establish fraud or misconduct. Human ground verification required under GFR 2017 Rule 14.</span></div><div class="flex flex-col w-full">
+<!-- BREADCRUMB & METADATA BAR -->
+<div class="flex items-center justify-between pb-unit-8 border-b border-outline-variant/30">
+<div class="flex items-center gap-unit-6 text-caption-meta font-caption-meta text-on-surface-variant">
+<span>Projects</span>
+<span class="material-symbols-outlined text-unit-12 text-outline">chevron_right</span>
+<span>Investigation Queue</span>
+<span class="material-symbols-outlined text-unit-12 text-outline">chevron_right</span>
+<span class="font-caption-strong text-caption-strong text-on-surface">Active Triage Ledger</span>
+</div>
+<div class="flex items-center gap-unit-12">
+<div class="flex items-center gap-unit-4 px-unit-6 py-unit-2 rounded bg-surface-container text-caption-meta font-caption-meta text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Sync: 14:15 IST • Automatic Anomaly Pipeline v4.2</span>
+</div>
+<div class="flex items-center gap-unit-4 text-caption-meta font-caption-meta text-on-surface-variant">
+<span>Authority: <strong>CAG Statutory Rule 144(A)</strong></span>
+</div>
+</div>
+</div>
+<!-- TITLE & ACTIONS HEADER -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-unit-16 pt-unit-12 pb-unit-16">
+<div class="flex flex-col gap-unit-4">
+<div class="flex items-center gap-unit-8">
+<h1 class="font-title-page text-title-page text-on-surface tracking-tight">Investigation Queue</h1>
+<span class="px-unit-8 py-unit-2 rounded bg-primary-container text-on-primary-container font-caption-strong text-caption-strong tracking-wide">
+          128 Open Cases
+        </span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-3xl">
+        Statutory anomaly triage and case escalation ledger for designated audit authorities and field inspection teams under CAG Rule 144(A).
+      </p>
+</div>
+<!-- Toolbar Action CTAs -->
+<div class="flex items-center gap-unit-8 self-start md:self-auto flex-shrink-0">
+<button class="h-8 px-unit-12 rounded bg-surface-container-lowest text-on-surface border border-outline-variant/60 hover:bg-surface-container-low transition-colors font-body-strong text-body-strong flex items-center gap-unit-6" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span>
+<span>Batch Export</span>
+</button>
+<button class="h-8 px-unit-12 rounded bg-surface-container-lowest text-on-surface border border-outline-variant/60 hover:bg-surface-container-low transition-colors font-body-strong text-body-strong flex items-center gap-unit-6" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">assignment_turned_in</span>
+<span>Auto-Assign Queue</span>
+</button>
+<button class="h-8 px-unit-12 rounded bg-primary text-on-primary hover:bg-slate-800 transition-colors font-body-strong text-body-strong flex items-center gap-unit-6 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_box</span>
+<span>Create Investigation Memo</span>
+</button>
+</div>
+</div>
+<!-- COMPACT CASE SUMMARY METRIC RIBBON -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/40 rounded border border-outline-variant/40 overflow-hidden mb-unit-16">
+<!-- Metric 1: Critical -->
+<div class="bg-surface-container-lowest p-unit-12 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase tracking-wider">Critical Anomalies</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+</div>
+<div class="mt-unit-6 flex items-baseline gap-unit-8">
+<span class="font-title-page text-[26px] leading-tight text-error">14</span>
+<span class="font-micro-badge text-micro-badge text-error uppercase tracking-wide px-unit-4 py-0.5 rounded bg-error-container/40">Action Mandatory</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant mt-unit-4 truncate">
+        Immediate show-cause / e-MB payment lock
+      </p>
+</div>
+<!-- Metric 2: High -->
+<div class="bg-surface-container-lowest p-unit-12 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase tracking-wider">High Risk</span>
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+</div>
+<div class="mt-unit-6 flex items-baseline gap-unit-8">
+<span class="font-title-page text-[26px] leading-tight text-on-surface">38</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Across 11 Sectors</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant mt-unit-4 truncate">
+        Physical-financial mismatch gap &gt;25%
+      </p>
+</div>
+<!-- Metric 3: Medium -->
+<div class="bg-surface-container-lowest p-unit-12 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase tracking-wider">Medium Flagged</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-unit-6 flex items-baseline gap-unit-8">
+<span class="font-title-page text-[26px] leading-tight text-on-surface">52</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Field Verification</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant mt-unit-4 truncate">
+        Rate revision / missing administrative sign-off
+      </p>
+</div>
+<!-- Metric 4: Total Review -->
+<div class="bg-surface-container-lowest p-unit-12 flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-caption-strong text-caption-strong text-on-surface-variant uppercase tracking-wider">Active Portfolio</span>
+<span class="material-symbols-outlined text-[16px] text-outline">account_tree</span>
+</div>
+<div class="mt-unit-6 flex items-baseline gap-unit-8">
+<span class="font-title-page text-[26px] leading-tight text-on-surface">128</span>
+<span class="font-caption-meta text-caption-meta text-on-surface-variant">Total Open</span>
+</div>
+<p class="font-caption-meta text-caption-meta text-on-surface-variant mt-unit-4 truncate">
+        Monitored across 28 States &amp; 412 Constituencies
+      </p>
+</div>
+</div>
+<!-- MULTI-FACETED FILTER & TRIAGE TOOLBAR -->
+<div class="bg-surface-container-lowest rounded border border-outline-variant/50 mb-unit-12">
+<!-- Top Row: Global Search and Dropdown Filters -->
+<div class="p-unit-8 border-b border-outline-variant/30 flex flex-wrap items-center gap-unit-8">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-unit-8 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant">search</span>
+<input class="w-full h-8 pl-8 pr-12 rounded bg-surface-container-low/60 text-on-surface placeholder:text-on-surface-variant font-body-default text-caption-meta border border-transparent focus:border-secondary focus:bg-surface-container-lowest focus:outline-none transition-all" id="queueSearchInput" placeholder="Search Case ID, Work ID, contractor, or parliamentary constituency... (Ctrl + K)" type="text">
+<span class="absolute right-unit-6 top-1/2 -translate-y-1/2 px-unit-4 py-0.5 rounded bg-surface-container text-outline text-[10px] font-mono">⌘K</span>
+</div>
+<!-- Filter: Risk Level -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="">Risk: All Levels</option>
+<option value="critical">Critical (&gt;75)</option>
+<option value="high">High (60–75)</option>
+<option value="medium">Medium (40–60)</option>
+<option value="monitored">Monitored (&lt;40)</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Status -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="">Status: All Active</option>
+<option value="new">New (Fresh Triage)</option>
+<option value="under_review">Under Active Review</option>
+<option value="waiting_response">Awaiting Contractor / e-MB</option>
+<option value="resolved">Reconciled / Closed</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Priority -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="">Priority: All</option>
+<option value="critical">Critical Priority</option>
+<option value="high">High Priority</option>
+<option value="medium">Medium Priority</option>
+<option value="low">Low Priority</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Assigned Officer -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="">Assigned: All Officers</option>
+<option value="unassigned">⚠️ Unassigned (24)</option>
+<option value="d_shivakumar">D. Shivakumar, KAS</option>
+<option value="meenakshi_rao">Meenakshi Rao, CAG Lead</option>
+<option value="rajeshwar_dayal">Rajeshwar Dayal, Dir-Audit</option>
+<option value="pn_verma">P. N. Verma, Tech Evaluator</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Location / State -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="">Geography: All States</option>
+<option value="KA">Karnataka</option>
+<option value="UP">Uttar Pradesh</option>
+<option value="BR">Bihar</option>
+<option value="TN">Tamil Nadu</option>
+<option value="MH">Maharashtra</option>
+<option value="JH">Jharkhand</option>
+<option value="OD">Odisha</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Age -->
+<div class="relative">
+<select class="h-8 pl-unit-8 pr-7 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-default text-caption-meta appearance-none focus:outline-none focus:border-secondary cursor-pointer hover:bg-surface-container-low/40 transition-colors">
+<option value="30">Created: Past 30 Days</option>
+<option value="7">Past 7 Days</option>
+<option value="q2">Q2 FY 2024-25</option>
+<option value="all">All Active Open</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<button class="h-8 px-unit-8 rounded text-caption-meta font-caption-meta text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1 ml-auto" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+<span>Reset Filters</span>
+</button>
+</div>
+<!-- Bottom Row: Quick Filter Presets and View Toggle -->
+<div class="px-unit-8 py-unit-4 flex items-center justify-between flex-wrap gap-unit-8 bg-surface-container-low/30">
+<div class="flex items-center gap-unit-4 overflow-x-auto">
+<button class="px-unit-8 py-1 rounded text-caption-strong font-caption-strong bg-primary text-on-primary text-xs" type="button">
+          All Cases (128)
+        </button>
+<button class="px-unit-8 py-1 rounded text-caption-meta font-caption-meta text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs flex items-center gap-1.5" type="button">
+<span>Unassigned</span>
+<span class="px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 font-mono text-[10px]">24</span>
+</button>
+<button class="px-unit-8 py-1 rounded text-caption-meta font-caption-meta text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs flex items-center gap-1.5" type="button">
+<span>Critical Priority</span>
+<span class="px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-mono text-[10px]">14</span>
+</button>
+<button class="px-unit-8 py-1 rounded text-caption-meta font-caption-meta text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs flex items-center gap-1.5" type="button">
+<span>Awaiting Field Report</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface font-mono text-[10px]">31</span>
+</button>
+<button class="px-unit-8 py-1 rounded text-caption-meta font-caption-meta text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs flex items-center gap-1.5" type="button">
+<span>Show-Cause Issued</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface font-mono text-[10px]">19</span>
+</button>
+</div>
+<!-- State switcher for testing: Table vs Empty State -->
+<div class="flex items-center gap-unit-6 text-caption-meta font-caption-meta">
+<span class="text-on-surface-variant text-[11px] uppercase tracking-wider">Queue Mode:</span>
+<div class="inline-flex rounded border border-outline-variant/60 p-0.5 bg-surface-container-lowest">
+<button class="px-2 py-0.5 text-xs rounded font-caption-strong bg-primary text-on-primary" id="showDataBtn" type="button">
+            Active Ledger (8)
+          </button>
+<button class="px-2 py-0.5 text-xs rounded font-caption-meta text-on-surface-variant hover:text-on-surface" id="showEmptyBtn" type="button">
+            Empty State
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRIMARY DATA VIEW CONTAINER -->
+<div class="bg-surface-container-lowest rounded border border-outline-variant/50 overflow-hidden shadow-sm" id="casesTableContainer">
+<div class="overflow-x-auto min-w-[1000px]">
+<table class="w-full text-left border-collapse">
+<!-- Table Head -->
+<thead>
+<tr class="bg-surface-container-low/70 border-b border-outline-variant/60 text-caption-strong font-caption-strong text-on-surface-variant">
+<th class="w-10 px-unit-8 py-unit-8 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox">
+</th>
+<th class="w-32 px-unit-8 py-unit-8 tracking-wider">CASE ID</th>
+<th class="w-64 px-unit-8 py-unit-8 tracking-wider">PROJECT &amp; LOCATION</th>
+<th class="w-32 px-unit-8 py-unit-8 tracking-wider">RISK SCORE</th>
+<th class="px-unit-8 py-unit-8 tracking-wider">STATUTORY ANOMALY INDICATOR</th>
+<th class="w-24 px-unit-8 py-unit-8 tracking-wider">PRIORITY</th>
+<th class="w-40 px-unit-8 py-unit-8 tracking-wider">ASSIGNED OFFICER</th>
+<th class="w-32 px-unit-8 py-unit-8 tracking-wider">AGE / CREATED</th>
+<th class="w-32 px-unit-8 py-unit-8 tracking-wider">STATUS</th>
+<th class="w-28 px-unit-8 py-unit-8 text-right tracking-wider pr-unit-12">ACTION</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody class="divide-y divide-outline-variant/30 text-body-default font-body-default">
+<!-- ROW 1: Bangalore Rural (Critical) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0891</span>
+<span class="block text-[10px] font-mono text-outline">SEC-A / URG</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Multi-Purpose Community Hall</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-10291</span>
+<span>•</span>
+<span class="truncate">Bangalore Rural, Karnataka</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-mono text-xs font-bold text-error">84/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-error tracking-wider">Critical Flag</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                PFMS Tranche 3 released at 77.1% while verified physical progress is 42.0% (-35.1% deviation).
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: CAG-DIS-03 | GFR Rule 144(A)</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Critical
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">D. Shivakumar</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">KAS (Dy. Commissioner)</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">14-Oct-2024</div>
+<div class="text-[11px] text-error font-caption-meta">4 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Under Review
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-primary text-on-primary hover:bg-slate-800 text-xs font-body-strong transition-colors" type="button">
+                  Investigate
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: Muzaffarpur (Critical Unassigned) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group bg-amber-50/20">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0894</span>
+<span class="block text-[10px] font-mono text-error font-semibold">ACTION NEEDED</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Primary Health Center Upgrade</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-08412</span>
+<span>•</span>
+<span class="truncate">Muzaffarpur, Bihar</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-mono text-xs font-bold text-error">81/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-error tracking-wider">Critical Flag</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Electronic Measurement Book (e-MB) dormant for 68 consecutive days post-plinth beam with zero muster logs.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: DORM-EMB-68 | Physical Stoppage</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Critical
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-error font-mono text-[11px] font-semibold border border-error/20">
+<span class="material-symbols-outlined text-[13px]">person_add</span>
+                Unassigned
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">12-Oct-2024</div>
+<div class="text-[11px] text-error font-caption-meta">6 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                New Case
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Assign Officer
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Varanasi (High) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0887</span>
+<span class="block text-[10px] font-mono text-outline">SEC-B / REG</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Skill Development &amp; Training Facility</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-11044</span>
+<span>•</span>
+<span class="truncate">Varanasi, Uttar Pradesh</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-mono text-xs font-bold text-amber-700">76/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-amber-700 tracking-wider">High Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Unsanctioned SOR rate amendment (+₹38.50 L) submitted without mandatory District Collector financial concurrence.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: SOR-DEV-38 | CVC Circular 08/2022</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                High
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">Meenakshi Rao</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">CAG Senior Lead</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">08-Oct-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">10 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-purple-100 text-purple-900 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
+                Awaiting DC Reply
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Investigate
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Coimbatore (High) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0873</span>
+<span class="block text-[10px] font-mono text-outline">SEC-C / GIS</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Drinking Water Purification Plant</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-09520</span>
+<span>•</span>
+<span class="truncate">Coimbatore, Tamil Nadu</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-mono text-xs font-bold text-amber-700">72/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-amber-700 tracking-wider">High Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Cadastral overlap: ISRO Bhuvan satellite detects an existing operational Taluk facility within 180m radius.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: BHUVAN-OVL-180 | Duplicate Asset</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                High
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">Rajeshwar Dayal</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">Director - Statutory Audit</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">04-Oct-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">14 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Under Review
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Investigate
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Pune (Medium) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0852</span>
+<span class="block text-[10px] font-mono text-outline">SEC-A / FIN</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Zilla Parishad High School Science Wing</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-12409</span>
+<span>•</span>
+<span class="truncate">Pune, Maharashtra</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs font-bold text-on-surface">68/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-secondary tracking-wider">Medium Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Material procurement expenditure logged without matching geo-tagged site muster rolls for cement/TMT bars.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: MAT-LOG-09 | Non-compliance Annex IV</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Medium
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">P. N. Verma</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">Technical Evaluator</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">28-Sep-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">20 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-blue-50 text-blue-900 border border-blue-200 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                Awaiting e-MB
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Investigate
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Ranchi (Medium) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0839</span>
+<span class="block text-[10px] font-mono text-outline">SEC-C / GIS</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Rural Connectivity Road (Package 04)</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-13110</span>
+<span>•</span>
+<span class="truncate">Ranchi, Jharkhand</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs font-bold text-on-surface">59/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-secondary tracking-wider">Medium Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Multiple works (4 culverts) sanctioned under identical GPS cadastral survey benchmark coordinates.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: GPS-CLONE-04 | Survey Fraud Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Medium
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">Meenakshi Rao</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">CAG Senior Lead</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">24-Sep-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">24 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Under Review
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Investigate
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 7: Cuttack (Medium / Unassigned) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0818</span>
+<span class="block text-[10px] font-mono text-outline">SEC-A / URG</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Anganwadi Integrated Development Center</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-07823</span>
+<span>•</span>
+<span class="truncate">Cuttack, Odisha</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-mono text-xs font-bold text-on-surface">54/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-secondary tracking-wider">Medium Risk</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface font-body-default leading-snug line-clamp-2">
+                Delayed completion date revised twice (+180 days) without recorded penalty deduction under liquidated damages clause.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: LIQ-DAM-180 | Contract Variance</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Medium
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-mono text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-outline">person_add</span>
+                Unassigned
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">19-Sep-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">29 days open</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-caption-strong text-[11px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                New Case
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container-highest border border-outline-variant/80 text-on-surface hover:bg-surface-container text-xs font-body-strong transition-colors" type="button">
+                  Assign Officer
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 8: Jaipur (Resolved / Historical Reference) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group opacity-75">
+<td class="px-unit-8 py-unit-8 text-center">
+<input class="row-checkbox rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox">
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="font-mono text-xs font-semibold text-on-surface">CAS-2024-0792</span>
+<span class="block text-[10px] font-mono text-outline">SEC-B / REC</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<div class="font-body-strong text-body-strong text-on-surface line-clamp-1">Solar Micro-Grid Installation</div>
+<div class="flex items-center gap-1.5 text-caption-meta font-caption-meta text-on-surface-variant">
+<span class="font-mono text-[11px] text-secondary">P-06511</span>
+<span>•</span>
+<span class="truncate">Jaipur Rural, Rajasthan</span>
+</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span class="font-mono text-xs font-bold text-on-surface">42/100</span>
+</div>
+<span class="text-[10px] uppercase font-caption-strong text-emerald-700 tracking-wider">Resolved</span>
+</td>
+<td class="px-unit-8 py-unit-8">
+<p class="text-xs text-on-surface-variant font-body-default leading-snug line-clamp-2">
+                Physical asset geo-tag verification successfully reconciled against State Power Board grid meter certification.
+              </p>
+<span class="text-[10px] text-outline font-mono mt-0.5 block">Audit Code: RECON-SOLAR-OK | Case Closed</span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-caption-strong text-[11px]">
+                Low
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-body-strong text-on-surface">Rajeshwar Dayal</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">Director - Statutory Audit</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<div class="text-xs font-mono text-on-surface">09-Sep-2024</div>
+<div class="text-[11px] text-on-surface-variant font-caption-meta">Closed 3d ago</div>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-caption-strong text-[11px]">
+<span class="material-symbols-outlined text-[13px] text-emerald-700">check_circle</span>
+                Reconciled
+              </span>
+</td>
+<td class="px-unit-8 py-unit-8 whitespace-nowrap text-right pr-unit-12">
+<div class="flex items-center justify-end gap-1">
+<button class="h-7 px-2.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface text-xs font-body-strong transition-colors" type="button">
+                  Dossier
+                </button>
+<button class="h-7 w-7 rounded border border-outline-variant/60 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" title="Quick Actions" type="button">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- TABLE BOTTOM CONTROLS & PAGINATION -->
+<div class="px-unit-12 py-unit-8 bg-surface-container-low/40 border-t border-outline-variant/50 flex flex-col sm:flex-row items-center justify-between gap-unit-12 text-caption-meta font-caption-meta text-on-surface-variant">
+<div class="flex items-center gap-unit-12">
+<span>Showing <strong class="text-on-surface font-semibold">1–8</strong> of <strong class="text-on-surface font-semibold">128</strong> open triage records</span>
+<div class="flex items-center gap-unit-4 border-l border-outline-variant/60 pl-unit-12">
+<span>Rows per page:</span>
+<select class="h-7 px-1.5 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-mono text-xs focus:outline-none">
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-unit-4">
+<span class="text-xs text-on-surface-variant mr-unit-8">Page 1 of 16</span>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest flex items-center justify-center text-outline cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[14px]">first_page</span>
+</button>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest flex items-center justify-center text-outline cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+</button>
+<button class="h-7 w-7 rounded bg-primary text-on-primary font-mono text-xs font-semibold flex items-center justify-center" type="button">
+          1
+        </button>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-mono text-xs flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-mono text-xs flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+<button class="h-7 w-7 rounded border border-outline-variant/50 bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EMPTY STATE CONTAINER (Toggleable for QA / Filter clearing) -->
+<div class="hidden bg-surface-container-lowest rounded border border-outline-variant/50 p-unit-32 text-center my-unit-8" id="casesEmptyContainer">
+<div class="max-w-md mx-auto flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-unit-12">
+<span class="material-symbols-outlined text-[28px]">task_alt</span>
+</div>
+<h3 class="font-title-section text-title-section text-on-surface mb-unit-4">No Active Inquest Items In View</h3>
+<p class="font-body-default text-body-default text-on-surface-variant mb-unit-16 text-sm">
+        All flagged statutory anomalies for the selected filter criteria have been reconciled or assigned to inspection officers.
+      </p>
+<div class="flex items-center gap-unit-8">
+<button class="h-8 px-unit-12 rounded bg-primary text-on-primary font-body-strong text-body-strong hover:bg-slate-800 transition-colors" id="resetFromEmptyBtn" type="button">
+          Clear Filter Selection
+        </button>
+<button class="h-8 px-unit-12 rounded bg-surface-container-lowest border border-outline-variant/60 text-on-surface font-body-strong text-body-strong hover:bg-surface-container-low transition-colors" type="button">
+          View Reconciled Archive
+        </button>
+</div>
+</div>
+</div>
+<!-- BATCH ACTION FLOATING DOCK (Appears when rows selected) -->
+<div class="hidden mt-unit-12 px-unit-16 py-unit-8 rounded bg-primary text-on-primary flex items-center justify-between shadow-md" id="batchActionDock">
+<div class="flex items-center gap-unit-12">
+<span class="font-caption-strong text-caption-strong text-secondary-fixed flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="selectedCountText">0</span> cases selected for batch execution
+      </span>
+</div>
+<div class="flex items-center gap-unit-8">
+<button class="h-7 px-unit-8 rounded bg-slate-800 hover:bg-slate-700 text-xs text-on-primary font-body-strong transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">person_add</span>
+        Bulk Assign Officer
+      </button>
+<button class="h-7 px-unit-8 rounded bg-slate-800 hover:bg-slate-700 text-xs text-on-primary font-body-strong transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">assignment_late</span>
+        Issue Batch Show-Cause
+      </button>
+<button class="h-7 px-unit-8 rounded bg-error hover:bg-red-700 text-xs text-on-error font-body-strong transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+        Freeze Tranche Disbursal
+      </button>
+<button class="h-7 px-unit-8 rounded text-xs text-slate-300 hover:text-white font-body-default ml-unit-4" id="clearSelectionBtn" type="button">
+        Deselect
+      </button>
+</div>
+</div>
+<!-- STATUTORY LEGAL & AUDIT FOOTER STRIP -->
+<div class="mt-unit-16 pt-unit-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-unit-8 font-caption-meta text-caption-meta text-on-surface-variant pb-unit-12">
+<div class="flex items-center gap-unit-6">
+<span class="material-symbols-outlined text-[15px] text-secondary">gavel</span>
+<span>Mandatory Procedure: Inquests logged adhere strictly to Comptroller and Auditor General (CAG) Guidelines &amp; GFR 2017 Rule 144(A).</span>
+</div>
+<div class="flex items-center gap-unit-12 font-mono text-[11px]">
+<span>SHA-256 Checksum: <span class="text-on-surface">8f9b2c...e041</span></span>
+<span>•</span>
+<span>Session Signer: <span class="text-on-surface font-semibold">Rajiv Sundaram, IAS</span></span>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions for Queue Mode switcher and Checkbox batch operations
+  const showDataBtn = document.getElementById('showDataBtn');
+  const showEmptyBtn = document.getElementById('showEmptyBtn');
+  const resetFromEmptyBtn = document.getElementById('resetFromEmptyBtn');
+  const casesTableContainer = document.getElementById('casesTableContainer');
+  const casesEmptyContainer = document.getElementById('casesEmptyContainer');
+
+  function setViewMode(isEmpty) {
+    if (isEmpty) {
+      casesTableContainer.classList.add('hidden');
+      casesEmptyContainer.classList.remove('hidden');
+      showEmptyBtn.className = 'px-2 py-0.5 text-xs rounded font-caption-strong bg-primary text-on-primary';
+      showDataBtn.className = 'px-2 py-0.5 text-xs rounded font-caption-meta text-on-surface-variant hover:text-on-surface';
+    } else {
+      casesTableContainer.classList.remove('hidden');
+      casesEmptyContainer.classList.add('hidden');
+      showDataBtn.className = 'px-2 py-0.5 text-xs rounded font-caption-strong bg-primary text-on-primary';
+      showEmptyBtn.className = 'px-2 py-0.5 text-xs rounded font-caption-meta text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  showDataBtn?.addEventListener('click', () => setViewMode(false));
+  showEmptyBtn?.addEventListener('click', () => setViewMode(true));
+  resetFromEmptyBtn?.addEventListener('click', () => setViewMode(false));
+
+  // Checkbox management and Dock presentation
+  const selectAll = document.getElementById('selectAllCheckbox');
+  const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+  const batchDock = document.getElementById('batchActionDock');
+  const countText = document.getElementById('selectedCountText');
+  const clearSelectionBtn = document.getElementById('clearSelectionBtn');
+
+  function updateDock() {
+    const checked = document.querySelectorAll('.row-checkbox:checked').length;
+    if (checked > 0) {
+      batchDock.classList.remove('hidden');
+      countText.innerText = checked;
+    } else {
+      batchDock.classList.add('hidden');
+      if (selectAll) selectAll.checked = false;
+    }
+  }
+
+  selectAll?.addEventListener('change', (e) => {
+    rowCheckboxes.forEach(cb => cb.checked = e.target.checked);
+    updateDock();
+  });
+
+  rowCheckboxes.forEach(cb => {
+    cb.addEventListener('change', updateDock);
+  });
+
+  clearSelectionBtn?.addEventListener('click', () => {
+    rowCheckboxes.forEach(cb => cb.checked = false);
+    if (selectAll) selectAll.checked = false;
+    updateDock();
+  });
+</script></main></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.SentinelAPI && window.SentinelAPI.renderRoleSwitcher) {
+    window.SentinelAPI.renderRoleSwitcher("audits");
+  }
+});
+</script>
+
+</body></html>
