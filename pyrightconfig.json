@@ -1,0 +1,19 @@
+{
+  "include": [
+    "backend",
+    "data",
+    "scripts",
+    "features",
+    "database"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    ".pytest_cache"
+  ],
+  "extraPaths": [
+    "backend",
+    "."
+  ],
+  "pythonVersion": "3.14",
+  "reportMissingImports": "warning"
+}

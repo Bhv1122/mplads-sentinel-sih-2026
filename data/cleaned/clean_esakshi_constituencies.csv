@@ -1,0 +1,544 @@
+constituency_id,state_id,state_name,constituency_name,raw_caption,reservation_category,canonical_state_key
+1,35,Andaman And Nicobar Islands,Andaman And Nicobar Islands,ANDAMAN AND NICOBAR ISLANDS,General,andaman and nicobar islands
+2,2,Andhra Pradesh,Anakapalle,ANAKAPALLE,General,andhra pradesh
+3,2,Andhra Pradesh,Hindupur,HINDUPUR,General,andhra pradesh
+4,2,Andhra Pradesh,Vijayawada,VIJAYAWADA,General,andhra pradesh
+5,2,Andhra Pradesh,Nandyal,NANDYAL,General,andhra pradesh
+7,2,Andhra Pradesh,Amalapuram,AMALAPURAM(SC),SC,andhra pradesh
+8,2,Andhra Pradesh,Bapatla,BAPATLA,General,andhra pradesh
+9,2,Andhra Pradesh,Araku,ARAKU(ST),ST,andhra pradesh
+10,2,Andhra Pradesh,Nellore,NELLORE(SC),SC,andhra pradesh
+11,2,Andhra Pradesh,Tirupati,TIRUPATI(SC),SC,andhra pradesh
+12,2,Andhra Pradesh,Anantapur,ANANTAPUR,General,andhra pradesh
+13,2,Andhra Pradesh,Srikakulam,SRIKAKULAM,General,andhra pradesh
+14,2,Andhra Pradesh,Ongole,ONGOLE,General,andhra pradesh
+15,2,Andhra Pradesh,Eluru,ELURU,General,andhra pradesh
+16,2,Andhra Pradesh,Narasapuram,NARASAPURAM,General,andhra pradesh
+17,2,Andhra Pradesh,Rajahmundry,RAJAHMUNDRY,General,andhra pradesh
+18,2,Andhra Pradesh,Guntur,GUNTUR,General,andhra pradesh
+19,2,Andhra Pradesh,Narasaraopet,NARASARAOPET,General,andhra pradesh
+20,2,Andhra Pradesh,Visakhapatnam,VISAKHAPATNAM,General,andhra pradesh
+21,2,Andhra Pradesh,Kadapa,KADAPA,General,andhra pradesh
+22,2,Andhra Pradesh,Machilipatnam,MACHILIPATNAM,General,andhra pradesh
+23,2,Andhra Pradesh,Kurnool,KURNOOL,General,andhra pradesh
+24,2,Andhra Pradesh,Vizianagaram,VIZIANAGARAM,General,andhra pradesh
+25,2,Andhra Pradesh,Chittoor,CHITTOOR,General,andhra pradesh
+26,2,Andhra Pradesh,Rajampet,RAJAMPET,General,andhra pradesh
+27,2,Andhra Pradesh,Kakinada,KAKINADA,General,andhra pradesh
+28,3,Arunachal Pradesh,Arunachal West,ARUNACHAL WEST,General,arunachal pradesh
+29,3,Arunachal Pradesh,Arunachal East,ARUNACHAL EAST,General,arunachal pradesh
+30,5,Assam,Barpeta,BARPETA,General,assam
+31,5,Assam,Darrang-udalguri,DARRANG-UDALGURI,General,assam
+32,5,Assam,Lakhimpur,LAKHIMPUR,General,assam
+33,5,Assam,Dibrugarh,DIBRUGARH,General,assam
+34,5,Assam,Jorhat,JORHAT,General,assam
+35,5,Assam,Diphu,DIPHU (ST),ST,assam
+36,5,Assam,Karimganj,KARIMGANJ (SC),SC,assam
+37,5,Assam,Dhubri,DHUBRI,General,assam
+38,5,Assam,Nowgong,NOWGONG,General,assam
+39,5,Assam,Silchar,SILCHAR,General,assam
+40,5,Assam,Kaziranga,KAZIRANGA,General,assam
+41,5,Assam,Kokrajhar,KOKRAJHAR (ST),ST,assam
+42,5,Assam,Sonitpur,SONITPUR,General,assam
+43,5,Assam,Guwahati,GUWAHATI,General,assam
+44,6,Bihar,Araria,ARARIA,General,bihar
+45,6,Bihar,Katihar,KATIHAR,General,bihar
+46,6,Bihar,Muzaffarpur,MUZAFFARPUR,General,bihar
+47,6,Bihar,Vaishali,VAISHALI,General,bihar
+48,6,Bihar,Pataliputra,PATALIPUTRA,General,bihar
+49,6,Bihar,Patna Sahib,PATNA SAHIB,General,bihar
+50,6,Bihar,Karakat,KARAKAT,General,bihar
+51,6,Bihar,Siwan,SIWAN,General,bihar
+52,6,Bihar,Arrah,ARRAH,General,bihar
+53,6,Bihar,Kishanganj,KISHANGANJ,General,bihar
+54,6,Bihar,Jamui,JAMUI(SC),SC,bihar
+55,6,Bihar,Purvi Champaran,PURVI CHAMPARAN,General,bihar
+56,6,Bihar,Sheohar,SHEOHAR,General,bihar
+57,6,Bihar,Purnea,PURNEA,General,bihar
+58,6,Bihar,Sasaram,SASARAM(SC),SC,bihar
+59,6,Bihar,Hajipur,HAJIPUR(SC),SC,bihar
+60,6,Bihar,Bhagalpur,BHAGALPUR,General,bihar
+61,6,Bihar,Jahanabad,JAHANABAD,General,bihar
+62,6,Bihar,Jhanjharpur,JHANJHARPUR,General,bihar
+63,6,Bihar,Madhubani,MADHUBANI,General,bihar
+64,6,Bihar,Nalanda,NALANDA,General,bihar
+65,6,Bihar,Madhepura,MADHEPURA,General,bihar
+66,6,Bihar,Munger,MUNGER,General,bihar
+67,6,Bihar,Ujjarpur,UJJARPUR,General,bihar
+68,6,Bihar,Samastipur,SAMASTIPUR(SC),SC,bihar
+69,6,Bihar,Banka,BANKA,General,bihar
+70,6,Bihar,Aurangabad_br,AURANGABAD_BR,General,bihar
+71,6,Bihar,Khagaria,KHAGARIA,General,bihar
+72,6,Bihar,Sitamarhi,SITAMARHI,General,bihar
+73,6,Bihar,Supaul,SUPAUL,General,bihar
+74,6,Bihar,Darbhanga,DARBHANGA,General,bihar
+75,6,Bihar,Saran,SARAN,General,bihar
+76,6,Bihar,Maharajganj_br,MAHARAJGANJ_BR,General,bihar
+77,6,Bihar,Begusarai,BEGUSARAI,General,bihar
+78,6,Bihar,Valmiki Nagar,VALMIKI NAGAR,General,bihar
+79,6,Bihar,Paschim Champaran,PASCHIM CHAMPARAN,General,bihar
+80,6,Bihar,Buxar,BUXAR,General,bihar
+81,6,Bihar,Nawada,NAWADA,General,bihar
+82,6,Bihar,Gaya,GAYA (SC),SC,bihar
+83,6,Bihar,Gopalganj,GOPALGANJ (SC),SC,bihar
+84,7,Chandigarh,Chandigarh,CHANDIGARH,General,chandigarh
+85,8,Chhattisgarh,Raigarh,RAIGARH(ST),ST,chhattisgarh
+86,8,Chhattisgarh,Durg,DURG,General,chhattisgarh
+87,8,Chhattisgarh,Korba,KORBA,General,chhattisgarh
+88,8,Chhattisgarh,Kanker,KANKER(ST),ST,chhattisgarh
+89,8,Chhattisgarh,Janjgir Champa,JANJGIR CHAMPA(SC),SC,chhattisgarh
+90,8,Chhattisgarh,Mahasamund,MAHASAMUND,General,chhattisgarh
+91,8,Chhattisgarh,Bilaspur,BILASPUR,General,chhattisgarh
+92,8,Chhattisgarh,Bastar,BASTAR(ST),ST,chhattisgarh
+93,8,Chhattisgarh,Raipur,RAIPUR,General,chhattisgarh
+94,8,Chhattisgarh,Rajnandgaon,RAJNANDGAON,General,chhattisgarh
+95,8,Chhattisgarh,Sarguja,SARGUJA(ST),ST,chhattisgarh
+98,11,Delhi,North West Delhi,NORTH WEST DELHI(SC),SC,delhi
+99,11,Delhi,Chandini Chowk,CHANDINI CHOWK,General,delhi
+100,11,Delhi,East Delhi,EAST DELHI,General,delhi
+101,11,Delhi,North East Delhi,NORTH EAST DELHI,General,delhi
+102,11,Delhi,West Delhi,WEST DELHI,General,delhi
+103,11,Delhi,New Delhi,NEW DELHI,General,delhi
+104,11,Delhi,South Delhi,SOUTH DELHI,General,delhi
+105,12,Goa,South Goa,SOUTH GOA,General,goa
+106,12,Goa,North Goa,NORTH GOA,General,goa
+107,27,Gujarat,Banaskantha,BANASKANTHA,General,gujarat
+108,27,Gujarat,Vadodara,VADODARA,General,gujarat
+109,27,Gujarat,Porbandar,PORBANDAR,General,gujarat
+110,27,Gujarat,Mahesana,MAHESANA,General,gujarat
+111,27,Gujarat,Valsad,VALSAD(ST),ST,gujarat
+112,27,Gujarat,Amreli,AMRELI,General,gujarat
+113,27,Gujarat,Bardoli,BARDOLI(ST),ST,gujarat
+114,27,Gujarat,Surat,SURAT,General,gujarat
+115,27,Gujarat,Anand,ANAND,General,gujarat
+116,27,Gujarat,Dahod,DAHOD(ST),ST,gujarat
+117,27,Gujarat,Patan,PATAN,General,gujarat
+118,27,Gujarat,Surendranagar,SURENDRANAGAR,General,gujarat
+119,27,Gujarat,Bhavnagar,BHAVNAGAR,General,gujarat
+120,27,Gujarat,Jamnagar,JAMNAGAR,General,gujarat
+121,27,Gujarat,Navsari,NAVSARI,General,gujarat
+122,27,Gujarat,Junagadh,JUNAGADH,General,gujarat
+123,27,Gujarat,Kheda,KHEDA,General,gujarat
+124,27,Gujarat,Ahmedabad East,AHMEDABAD EAST,General,gujarat
+125,27,Gujarat,Ahmedabad West,AHMEDABAD WEST(SC),SC,gujarat
+126,27,Gujarat,Gandhinagar,GANDHINAGAR,General,gujarat
+127,27,Gujarat,Kachchh,KACHCHH(SC),SC,gujarat
+128,27,Gujarat,Rajkot,RAJKOT,General,gujarat
+129,27,Gujarat,Sabarkantha,SABARKANTHA,General,gujarat
+130,27,Gujarat,Chhota Udaipur,CHHOTA UDAIPUR(ST),ST,gujarat
+131,27,Gujarat,Panchmahal,PANCHMAHAL,General,gujarat
+132,27,Gujarat,Bharuch,BHARUCH,General,gujarat
+133,14,Haryana,Sonepat,SONEPAT,General,haryana
+134,14,Haryana,Kurukshetra,KURUKSHETRA,General,haryana
+135,14,Haryana,Hisar,HISAR,General,haryana
+136,14,Haryana,Karnal,KARNAL,General,haryana
+137,14,Haryana,Sirsa,SIRSA(SC),SC,haryana
+138,14,Haryana,Gurgaon,GURGAON,General,haryana
+139,14,Haryana,Ambala,AMBALA (SC),SC,haryana
+140,14,Haryana,Faridabad,FARIDABAD,General,haryana
+141,14,Haryana,Bhiwani Mahendragarh,BHIWANI MAHENDRAGARH,General,haryana
+142,14,Haryana,Rohtak,ROHTAK,General,haryana
+143,15,Himachal Pradesh,Hamirpur_hp,HAMIRPUR_HP,General,himachal pradesh
+144,15,Himachal Pradesh,Kangra,KANGRA,General,himachal pradesh
+145,15,Himachal Pradesh,Shimla,SHIMLA (SC),SC,himachal pradesh
+146,15,Himachal Pradesh,Mandi,MANDI,General,himachal pradesh
+147,16,Jammu And Kashmir,Anantnag,ANANTNAG,General,jammu and kashmir
+148,16,Jammu And Kashmir,Udhampur,UDHAMPUR,General,jammu and kashmir
+149,16,Jammu And Kashmir,Baramullah,BARAMULLAH,General,jammu and kashmir
+150,16,Jammu And Kashmir,Jammu,JAMMU,General,jammu and kashmir
+151,16,Jammu And Kashmir,Srinagar,SRINAGAR,General,jammu and kashmir
+152,17,Jharkhand,Hazaribagh,HAZARIBAGH,General,jharkhand
+153,17,Jharkhand,Godda,GODDA,General,jharkhand
+154,17,Jharkhand,Dhanbad,DHANBAD,General,jharkhand
+155,17,Jharkhand,Giridih,GIRIDIH,General,jharkhand
+156,17,Jharkhand,Singhbhum,SINGHBHUM(ST),ST,jharkhand
+157,17,Jharkhand,Lohardaga,LOHARDAGA(ST),ST,jharkhand
+158,17,Jharkhand,Ranchi,RANCHI,General,jharkhand
+159,17,Jharkhand,Dumka,DUMKA(ST),ST,jharkhand
+160,17,Jharkhand,Chatra,CHATRA,General,jharkhand
+161,17,Jharkhand,Jamshedpur,JAMSHEDPUR,General,jharkhand
+162,17,Jharkhand,Palamu,PALAMU(SC),SC,jharkhand
+163,17,Jharkhand,Rajmahal,RAJMAHAL(ST),ST,jharkhand
+164,17,Jharkhand,Khunti,KHUNTI(ST),ST,jharkhand
+165,17,Jharkhand,Kodarma,KODARMA,General,jharkhand
+166,18,Karnataka,Bangalore Rural,BANGALORE RURAL,General,karnataka
+167,18,Karnataka,Bellary,BELLARY(ST),ST,karnataka
+168,18,Karnataka,Raichur,RAICHUR(ST),ST,karnataka
+169,18,Karnataka,Bagalkot,BAGALKOT,General,karnataka
+170,18,Karnataka,Koppal,KOPPAL,General,karnataka
+171,18,Karnataka,Chikballapur,CHIKBALLAPUR,General,karnataka
+172,18,Karnataka,Gulbarga,GULBARGA(SC),SC,karnataka
+173,18,Karnataka,Dakshina Kannada,DAKSHINA KANNADA,General,karnataka
+174,18,Karnataka,Shimoga,SHIMOGA,General,karnataka
+175,18,Karnataka,Belgaum,BELGAUM,General,karnataka
+176,18,Karnataka,Chikkodi,CHIKKODI,General,karnataka
+177,18,Karnataka,Mysore,MYSORE,General,karnataka
+178,18,Karnataka,Udupi Chikmagalur,UDUPI CHIKMAGALUR,General,karnataka
+179,18,Karnataka,Hassan,HASSAN,General,karnataka
+180,18,Karnataka,Haveri,HAVERI,General,karnataka
+181,18,Karnataka,Bangalore North,BANGALORE NORTH,General,karnataka
+182,18,Karnataka,Bangalore South,BANGALORE SOUTH,General,karnataka
+183,18,Karnataka,Bangalore Central,BANGALORE CENTRAL,General,karnataka
+184,18,Karnataka,Bidar,BIDAR,General,karnataka
+185,18,Karnataka,Kolar,KOLAR(SC),SC,karnataka
+186,18,Karnataka,Davanagere,DAVANAGERE,General,karnataka
+187,18,Karnataka,Dharwad,DHARWAD,General,karnataka
+188,18,Karnataka,Mandya,MANDYA,General,karnataka
+189,18,Karnataka,Tumkur,TUMKUR,General,karnataka
+190,18,Karnataka,Chamarajanagar,CHAMARAJANAGAR(SC),SC,karnataka
+191,18,Karnataka,Bijapur,BIJAPUR(SC),SC,karnataka
+192,18,Karnataka,Chitradurga,CHITRADURGA(SC),SC,karnataka
+193,18,Karnataka,Uttara Kannada,UTTARA KANNADA,General,karnataka
+194,36,Kerala,Kannur,KANNUR,General,kerala
+195,36,Kerala,Thiruvananthapuram,THIRUVANANTHAPURAM,General,kerala
+196,36,Kerala,Attingal,ATTINGAL,General,kerala
+197,36,Kerala,Wayanad,WAYANAD,General,kerala
+198,36,Kerala,Pathanamthitta,PATHANAMTHITTA,General,kerala
+199,36,Kerala,Ernakulam,ERNAKULAM,General,kerala
+200,36,Kerala,Chalakudy,CHALAKUDY,General,kerala
+201,36,Kerala,Kasaragod,KASARAGOD,General,kerala
+202,36,Kerala,Kottayam,KOTTAYAM,General,kerala
+203,36,Kerala,Malappuram,MALAPPURAM,General,kerala
+204,36,Kerala,Ponnani,PONNANI,General,kerala
+205,36,Kerala,Vadakara,VADAKARA,General,kerala
+206,36,Kerala,Kozhikode,KOZHIKODE,General,kerala
+207,36,Kerala,Alappuzha,ALAPPUZHA,General,kerala
+208,36,Kerala,Mavelikkara,MAVELIKKARA(SC),SC,kerala
+209,36,Kerala,Kollam,KOLLAM,General,kerala
+210,36,Kerala,Thrissur,THRISSUR,General,kerala
+211,36,Kerala,Alathur,ALATHUR(SC),SC,kerala
+212,36,Kerala,Palakkad,PALAKKAD,General,kerala
+213,36,Kerala,Idukki,IDUKKI,General,kerala
+214,130,Ladakh,Ladakh,LADAKH,General,ladakh
+215,19,Lakshadweep,Lakshadweep,LAKSHADWEEP(ST),ST,lakshadweep
+216,20,Madhya Pradesh,Betul,BETUL(ST),ST,madhya pradesh
+217,20,Madhya Pradesh,Morena,MORENA,General,madhya pradesh
+218,20,Madhya Pradesh,Bhopal,BHOPAL,General,madhya pradesh
+219,20,Madhya Pradesh,Tikamgarh,TIKAMGARH(SC),SC,madhya pradesh
+220,20,Madhya Pradesh,Guna,GUNA,General,madhya pradesh
+221,20,Madhya Pradesh,Shahdol,SHAHDOL (ST),ST,madhya pradesh
+222,20,Madhya Pradesh,Khandwa,KHANDWA,General,madhya pradesh
+223,20,Madhya Pradesh,Dhar,DHAR(ST),ST,madhya pradesh
+224,20,Madhya Pradesh,Bhind,BHIND(SC),SC,madhya pradesh
+225,20,Madhya Pradesh,Indore,INDORE,General,madhya pradesh
+226,20,Madhya Pradesh,Jabalpur,JABALPUR,General,madhya pradesh
+227,20,Madhya Pradesh,Vidisha,VIDISHA,General,madhya pradesh
+228,20,Madhya Pradesh,Sagar,SAGAR,General,madhya pradesh
+229,20,Madhya Pradesh,Rewa,REWA,General,madhya pradesh
+230,20,Madhya Pradesh,Ratlam,RATLAM(ST),ST,madhya pradesh
+231,20,Madhya Pradesh,Chhindwara,CHHINDWARA,General,madhya pradesh
+232,20,Madhya Pradesh,Mandla,MANDLA(ST),ST,madhya pradesh
+233,20,Madhya Pradesh,Mandsour,MANDSOUR,General,madhya pradesh
+234,20,Madhya Pradesh,Ujjain,UJJAIN(SC),SC,madhya pradesh
+235,20,Madhya Pradesh,Damoh,DAMOH,General,madhya pradesh
+236,20,Madhya Pradesh,Dewas,DEWAS(SC),SC,madhya pradesh
+237,20,Madhya Pradesh,Gwalior,GWALIOR,General,madhya pradesh
+238,20,Madhya Pradesh,Hoshangabad,HOSHANGABAD,General,madhya pradesh
+239,20,Madhya Pradesh,Khargone,KHARGONE(ST),ST,madhya pradesh
+240,20,Madhya Pradesh,Sidhi,SIDHI,General,madhya pradesh
+241,20,Madhya Pradesh,Rajgarh,RAJGARH,General,madhya pradesh
+242,20,Madhya Pradesh,Balaghat,BALAGHAT,General,madhya pradesh
+243,20,Madhya Pradesh,Khajuraho,KHAJURAHO,General,madhya pradesh
+244,20,Madhya Pradesh,Satna,SATNA,General,madhya pradesh
+245,21,Maharashtra,Raver,RAVER,General,maharashtra
+246,21,Maharashtra,Jalgaon,JALGAON,General,maharashtra
+247,21,Maharashtra,Ratnagiri-sindhudurg,RATNAGIRI-SINDHUDURG,General,maharashtra
+248,21,Maharashtra,Dhule,DHULE,General,maharashtra
+249,21,Maharashtra,Latur,LATUR(SC),SC,maharashtra
+250,21,Maharashtra,Nagpur,NAGPUR,General,maharashtra
+251,21,Maharashtra,Ramtek,RAMTEK(SC),SC,maharashtra
+252,21,Maharashtra,Baramati,BARAMATI,General,maharashtra
+253,21,Maharashtra,Maval,MAVAL,General,maharashtra
+254,21,Maharashtra,Shirur,SHIRUR,General,maharashtra
+255,21,Maharashtra,Pune,PUNE,General,maharashtra
+256,21,Maharashtra,Yavatmal-washim,YAVATMAL-WASHIM,General,maharashtra
+257,21,Maharashtra,Wardha,WARDHA,General,maharashtra
+258,21,Maharashtra,Aurangabad_mh,AURANGABAD_MH,General,maharashtra
+259,21,Maharashtra,Chandrapur,CHANDRAPUR,General,maharashtra
+260,21,Maharashtra,Jalna,JALNA,General,maharashtra
+261,21,Maharashtra,Parbhani,PARBHANI,General,maharashtra
+262,21,Maharashtra,Amravati,AMRAVATI(SC),SC,maharashtra
+263,21,Maharashtra,Beed,BEED,General,maharashtra
+264,21,Maharashtra,Raigad,RAIGAD,General,maharashtra
+265,21,Maharashtra,Mumbai South,MUMBAI SOUTH,General,maharashtra
+266,21,Maharashtra,Akola,AKOLA,General,maharashtra
+267,21,Maharashtra,Mumbai North,MUMBAI NORTH,General,maharashtra
+268,21,Maharashtra,Mumbai North-central,MUMBAI NORTH-CENTRAL,General,maharashtra
+269,21,Maharashtra,Mumbai North East,MUMBAI NORTH EAST,General,maharashtra
+270,21,Maharashtra,Mumbai North West,MUMBAI NORTH WEST,General,maharashtra
+271,21,Maharashtra,Mumbai South Central,MUMBAI SOUTH CENTRAL,General,maharashtra
+272,21,Maharashtra,Buldhana,BULDHANA,General,maharashtra
+273,21,Maharashtra,Gadchiroli-chimur,GADCHIROLI-CHIMUR(ST),ST,maharashtra
+274,21,Maharashtra,Nanded,NANDED,General,maharashtra
+275,21,Maharashtra,Ahmednagar,AHMEDNAGAR,General,maharashtra
+276,21,Maharashtra,Shirdi,SHIRDI(SC),SC,maharashtra
+277,21,Maharashtra,Dindori,DINDORI(ST),ST,maharashtra
+278,21,Maharashtra,Nashik,NASHIK,General,maharashtra
+279,21,Maharashtra,Osmanabad,OSMANABAD,General,maharashtra
+280,21,Maharashtra,Madha,MADHA,General,maharashtra
+281,21,Maharashtra,Satara,SATARA,General,maharashtra
+282,21,Maharashtra,Bhandara-gondiya,BHANDARA-GONDIYA,General,maharashtra
+283,21,Maharashtra,Hingoli,HINGOLI,General,maharashtra
+284,21,Maharashtra,Kolhapur,KOLHAPUR,General,maharashtra
+285,21,Maharashtra,Hatkanangle,HATKANANGLE,General,maharashtra
+286,21,Maharashtra,Solapur,SOLAPUR(SC),SC,maharashtra
+287,21,Maharashtra,Nandurbar,NANDURBAR(ST),ST,maharashtra
+288,21,Maharashtra,Sangli,SANGLI,General,maharashtra
+289,21,Maharashtra,Bhiwandi,BHIWANDI,General,maharashtra
+290,21,Maharashtra,Kalyan,KALYAN,General,maharashtra
+291,21,Maharashtra,Thane,THANE,General,maharashtra
+292,21,Maharashtra,Palghar,PALGHAR(ST),ST,maharashtra
+293,22,Manipur,Outer Manipur,OUTER MANIPUR(ST),ST,manipur
+294,22,Manipur,Inner Manipur,INNER MANIPUR,General,manipur
+295,23,Meghalaya,Tura,TURA,General,meghalaya
+296,23,Meghalaya,Shillong,SHILLONG,General,meghalaya
+297,13,Mizoram,Mizoram,MIZORAM (ST),ST,mizoram
+298,24,Nagaland,Nagaland,NAGALAND,General,nagaland
+299,25,Odisha,Cuttack,CUTTACK,General,odisha
+300,25,Odisha,Jagatsinghpur,JAGATSINGHPUR(SC),SC,odisha
+301,25,Odisha,Aska,ASKA,General,odisha
+302,25,Odisha,Berhampur,BERHAMPUR,General,odisha
+303,25,Odisha,Bolangir,BOLANGIR,General,odisha
+304,25,Odisha,Balasore,BALASORE,General,odisha
+305,25,Odisha,Nabarangpur,NABARANGPUR(ST),ST,odisha
+306,25,Odisha,Keonjhar,KEONJHAR(ST),ST,odisha
+307,25,Odisha,Kalahandi,KALAHANDI,General,odisha
+308,25,Odisha,Puri,PURI,General,odisha
+309,25,Odisha,Sambalpur,SAMBALPUR,General,odisha
+310,25,Odisha,Jajpur,JAJPUR(SC),SC,odisha
+311,25,Odisha,Sundargarh,SUNDARGARH (ST),ST,odisha
+312,25,Odisha,Bhadrak,BHADRAK(SC),SC,odisha
+313,25,Odisha,Kendrapara,KENDRAPARA,General,odisha
+314,25,Odisha,Mayurbhanj,MAYURBHANJ (ST),ST,odisha
+315,25,Odisha,Bargarh,BARGARH,General,odisha
+316,25,Odisha,Kandhamal,KANDHAMAL,General,odisha
+317,25,Odisha,Bhubaneswar,BHUBANESWAR,General,odisha
+318,25,Odisha,Dhenkanal,DHENKANAL,General,odisha
+319,25,Odisha,Koraput,KORAPUT(ST),ST,odisha
+547,26,Puducherry,Puducherry,PUDUCHERRY,General,puducherry
+321,1,Punjab,Bhatinda,BHATINDA,General,punjab
+322,1,Punjab,Gurdaspur,GURDASPUR,General,punjab
+323,1,Punjab,Amritsar,AMRITSAR,General,punjab
+324,1,Punjab,Hoshiarpur,HOSHIARPUR(SC),SC,punjab
+325,1,Punjab,Firozpur,FIROZPUR,General,punjab
+326,1,Punjab,Fatehgarh Sahib,FATEHGARH SAHIB(SC),SC,punjab
+327,1,Punjab,Sangrur,SANGRUR,General,punjab
+328,1,Punjab,Patiala,PATIALA,General,punjab
+329,1,Punjab,Anandpur Sahib,ANANDPUR SAHIB,General,punjab
+330,1,Punjab,Faridkot,FARIDKOT(SC),SC,punjab
+331,1,Punjab,Jalandhar,JALANDHAR(SC),SC,punjab
+332,1,Punjab,Ludhiana,LUDHIANA,General,punjab
+333,1,Punjab,Khadoor Sahib,KHADOOR SAHIB,General,punjab
+334,28,Rajasthan,Ajmer,AJMER,General,rajasthan
+335,28,Rajasthan,Barmer,BARMER,General,rajasthan
+336,28,Rajasthan,Jhalawar-baran,JHALAWAR-BARAN,General,rajasthan
+337,28,Rajasthan,Kota,KOTA,General,rajasthan
+338,28,Rajasthan,Nagaur,NAGAUR,General,rajasthan
+339,28,Rajasthan,Udaipur,UDAIPUR(ST),ST,rajasthan
+340,28,Rajasthan,Dausa,DAUSA(ST),ST,rajasthan
+341,28,Rajasthan,Chittorgarh,CHITTORGARH,General,rajasthan
+342,28,Rajasthan,Churu,CHURU,General,rajasthan
+343,28,Rajasthan,Tonk-sawai Madhopur,TONK-SAWAI MADHOPUR,General,rajasthan
+344,28,Rajasthan,Bikaner,BIKANER(SC),SC,rajasthan
+345,28,Rajasthan,Jalore,JALORE,General,rajasthan
+346,28,Rajasthan,Sikar,SIKAR,General,rajasthan
+347,28,Rajasthan,Jodhpur,JODHPUR,General,rajasthan
+348,28,Rajasthan,Bharatpur,BHARATPUR(SC),SC,rajasthan
+349,28,Rajasthan,Rajsamand,RAJSAMAND,General,rajasthan
+350,28,Rajasthan,Karauli-dholpur,KARAULI-DHOLPUR(SC),SC,rajasthan
+351,28,Rajasthan,Alwar,ALWAR,General,rajasthan
+352,28,Rajasthan,Banswara,BANSWARA(ST),ST,rajasthan
+353,28,Rajasthan,Bhilwara,BHILWARA,General,rajasthan
+354,28,Rajasthan,Jhunjhunu,JHUNJHUNU,General,rajasthan
+355,28,Rajasthan,Ganganagar,GANGANAGAR(SC),SC,rajasthan
+356,28,Rajasthan,Jaipur Rural,JAIPUR RURAL,General,rajasthan
+357,28,Rajasthan,Jaipur,JAIPUR,General,rajasthan
+358,28,Rajasthan,Pali,PALI,General,rajasthan
+359,29,Sikkim,Sikkim,SIKKIM,General,sikkim
+360,30,Tamil Nadu,Tirunelveli,TIRUNELVELI,General,tamil nadu
+361,30,Tamil Nadu,Kancheepuram,KANCHEEPURAM(SC),SC,tamil nadu
+362,30,Tamil Nadu,Sriperumbudur,SRIPERUMBUDUR,General,tamil nadu
+363,30,Tamil Nadu,Madurai,MADURAI,General,tamil nadu
+364,30,Tamil Nadu,Arakkonam,ARAKKONAM,General,tamil nadu
+365,30,Tamil Nadu,Vellore,VELLORE,General,tamil nadu
+366,30,Tamil Nadu,Tiruppur,TIRUPPUR,General,tamil nadu
+367,30,Tamil Nadu,Chidambaram,CHIDAMBARAM(SC),SC,tamil nadu
+368,30,Tamil Nadu,Tenkasi,TENKASI(SC),SC,tamil nadu
+369,30,Tamil Nadu,Salem,SALEM,General,tamil nadu
+370,30,Tamil Nadu,Namakkal,NAMAKKAL,General,tamil nadu
+371,30,Tamil Nadu,Cuddalore,CUDDALORE,General,tamil nadu
+372,30,Tamil Nadu,Tiruchirappalli,TIRUCHIRAPPALLI,General,tamil nadu
+373,30,Tamil Nadu,Viluppuram,VILUPPURAM(SC),SC,tamil nadu
+374,30,Tamil Nadu,Kallakurichi,KALLAKURICHI,General,tamil nadu
+375,30,Tamil Nadu,Krishnagiri,KRISHNAGIRI,General,tamil nadu
+376,30,Tamil Nadu,Virudhunagar,VIRUDHUNAGAR,General,tamil nadu
+377,30,Tamil Nadu,Theni,THENI,General,tamil nadu
+378,30,Tamil Nadu,Chennai Central,CHENNAI CENTRAL,General,tamil nadu
+379,30,Tamil Nadu,Chennai North,CHENNAI NORTH,General,tamil nadu
+380,30,Tamil Nadu,Chennai South,CHENNAI SOUTH,General,tamil nadu
+381,30,Tamil Nadu,Mayiladuthurai,MAYILADUTHURAI,General,tamil nadu
+382,30,Tamil Nadu,Thanjavur,THANJAVUR,General,tamil nadu
+383,30,Tamil Nadu,Arani,ARANI,General,tamil nadu
+384,30,Tamil Nadu,Tiruvannamalai,TIRUVANNAMALAI,General,tamil nadu
+385,30,Tamil Nadu,Karur,KARUR,General,tamil nadu
+386,30,Tamil Nadu,Dindigul,DINDIGUL,General,tamil nadu
+387,30,Tamil Nadu,Kanniyakumari,KANNIYAKUMARI,General,tamil nadu
+388,30,Tamil Nadu,Erode,ERODE,General,tamil nadu
+389,30,Tamil Nadu,Dharamapuri,DHARAMAPURI,General,tamil nadu
+390,30,Tamil Nadu,Coimbatore,COIMBATORE,General,tamil nadu
+391,30,Tamil Nadu,Pollachi,POLLACHI,General,tamil nadu
+392,30,Tamil Nadu,Tiruvallur,TIRUVALLUR(SC),SC,tamil nadu
+393,30,Tamil Nadu,Thoothukkudi,THOOTHUKKUDI,General,tamil nadu
+394,30,Tamil Nadu,Sivaganga,SIVAGANGA,General,tamil nadu
+395,30,Tamil Nadu,Ramanathapuram,RAMANATHAPURAM,General,tamil nadu
+396,30,Tamil Nadu,Nilgiris,NILGIRIS(SC),SC,tamil nadu
+397,30,Tamil Nadu,Nagapattinam,NAGAPATTINAM(SC),SC,tamil nadu
+398,30,Tamil Nadu,Perambalur,PERAMBALUR,General,tamil nadu
+399,129,Telangana,Adilabad,ADILABAD(ST),ST,telangana
+400,129,Telangana,Hyderabad,HYDERABAD,General,telangana
+401,129,Telangana,Secunderabad,SECUNDERABAD,General,telangana
+402,129,Telangana,Karimnagar,KARIMNAGAR,General,telangana
+403,129,Telangana,Khammam,KHAMMAM,General,telangana
+404,129,Telangana,Mahabubnagar,MAHABUBNAGAR,General,telangana
+405,129,Telangana,Medak,MEDAK,General,telangana
+406,129,Telangana,Nizamabad,NIZAMABAD,General,telangana
+407,129,Telangana,Chelvella,CHELVELLA,General,telangana
+408,129,Telangana,Warangel,WARANGEL(SC),SC,telangana
+409,129,Telangana,Mahabubabad,MAHABUBABAD,General,telangana
+410,129,Telangana,Nagarkurnool,NAGARKURNOOL(SC),SC,telangana
+411,129,Telangana,Malkajgiri,MALKAJGIRI,General,telangana
+412,129,Telangana,Zahirabad,ZAHIRABAD,General,telangana
+413,129,Telangana,Peddapalle,PEDDAPALLE,General,telangana
+414,129,Telangana,Nalgonda,NALGONDA,General,telangana
+415,129,Telangana,Bhongir,BHONGIR,General,telangana
+97,10,The Dadra And Nagar Haveli And Daman And Diu,Daman And Diu,DAMAN AND DIU,General,dadra and nagar haveli and daman and diu
+548,10,The Dadra And Nagar Haveli And Daman And Diu,Dadra & Nagar Haveli,DADRA & NAGAR HAVELI (ST),ST,dadra and nagar haveli and daman and diu
+416,31,Tripura,Tripura West,TRIPURA WEST,General,tripura
+417,31,Tripura,Tripura East,TRIPURA EAST(ST),ST,tripura
+418,33,Uttar Pradesh,Aligarh,ALIGARH,General,uttar pradesh
+419,33,Uttar Pradesh,Barabanki,BARABANKI(SC),SC,uttar pradesh
+420,33,Uttar Pradesh,Etawah,ETAWAH(SC),SC,uttar pradesh
+421,33,Uttar Pradesh,Fatehpur,FATEHPUR,General,uttar pradesh
+422,33,Uttar Pradesh,Firozabad,FIROZABAD,General,uttar pradesh
+423,33,Uttar Pradesh,Bansgaon,BANSGAON(SC),SC,uttar pradesh
+424,33,Uttar Pradesh,Gorakhpur,GORAKHPUR,General,uttar pradesh
+425,33,Uttar Pradesh,Hardoi,HARDOI (SC),SC,uttar pradesh
+426,33,Uttar Pradesh,Misrikh,MISRIKH(SC),SC,uttar pradesh
+427,33,Uttar Pradesh,Unnao,UNNAO,General,uttar pradesh
+428,33,Uttar Pradesh,Jaunpur,JAUNPUR,General,uttar pradesh
+429,33,Uttar Pradesh,Machhlishahr,MACHHLISHAHR(SC),SC,uttar pradesh
+430,33,Uttar Pradesh,Meerut,MEERUT,General,uttar pradesh
+431,33,Uttar Pradesh,Robertsganj,ROBERTSGANJ(SC),SC,uttar pradesh
+432,33,Uttar Pradesh,Amroha,AMROHA,General,uttar pradesh
+433,33,Uttar Pradesh,Ghosi,GHOSI,General,uttar pradesh
+434,33,Uttar Pradesh,Sant Kabir Nagar,SANT KABIR NAGAR,General,uttar pradesh
+435,33,Uttar Pradesh,Baghpat,BAGHPAT,General,uttar pradesh
+436,33,Uttar Pradesh,Chandauli,CHANDAULI,General,uttar pradesh
+437,33,Uttar Pradesh,Badaun,BADAUN,General,uttar pradesh
+438,33,Uttar Pradesh,Gonda,GONDA,General,uttar pradesh
+439,33,Uttar Pradesh,Kaiserganj,KAISERGANJ,General,uttar pradesh
+440,33,Uttar Pradesh,Kannauj,KANNAUJ,General,uttar pradesh
+441,33,Uttar Pradesh,Muzaffarnagar,MUZAFFARNAGAR,General,uttar pradesh
+442,33,Uttar Pradesh,Agra,AGRA(SC),SC,uttar pradesh
+443,33,Uttar Pradesh,Fatehpur Sikri,FATEHPUR SIKRI,General,uttar pradesh
+444,33,Uttar Pradesh,Allahabad,ALLAHABAD,General,uttar pradesh
+445,33,Uttar Pradesh,Phulpur,PHULPUR,General,uttar pradesh
+446,33,Uttar Pradesh,Bahraich,BAHRAICH(SC),SC,uttar pradesh
+447,33,Uttar Pradesh,Ballia,BALLIA,General,uttar pradesh
+448,33,Uttar Pradesh,Salempur,SALEMPUR,General,uttar pradesh
+449,33,Uttar Pradesh,Farrukhabad,FARRUKHABAD,General,uttar pradesh
+450,33,Uttar Pradesh,Ghaziabad,GHAZIABAD,General,uttar pradesh
+451,33,Uttar Pradesh,Akbarpur,AKBARPUR,General,uttar pradesh
+452,33,Uttar Pradesh,Kanpur,KANPUR,General,uttar pradesh
+453,33,Uttar Pradesh,Mathura,MATHURA,General,uttar pradesh
+454,33,Uttar Pradesh,Mirzapur,MIRZAPUR,General,uttar pradesh
+455,33,Uttar Pradesh,Rampur,RAMPUR,General,uttar pradesh
+456,33,Uttar Pradesh,Sitapur,SITAPUR,General,uttar pradesh
+457,33,Uttar Pradesh,Varanasi,VARANASI,General,uttar pradesh
+458,33,Uttar Pradesh,Amethi,AMETHI,General,uttar pradesh
+459,33,Uttar Pradesh,Kushi Nagar,KUSHI NAGAR,General,uttar pradesh
+460,33,Uttar Pradesh,Faizabad,FAIZABAD,General,uttar pradesh
+461,33,Uttar Pradesh,Ghazipur,GHAZIPUR,General,uttar pradesh
+462,33,Uttar Pradesh,Lucknow,LUCKNOW,General,uttar pradesh
+463,33,Uttar Pradesh,Mohanlalganj,MOHANLALGANJ(SC),SC,uttar pradesh
+464,33,Uttar Pradesh,Pilibhit,PILIBHIT,General,uttar pradesh
+465,33,Uttar Pradesh,Saharanpur,SAHARANPUR,General,uttar pradesh
+466,33,Uttar Pradesh,Kaushambi,KAUSHAMBI(SC),SC,uttar pradesh
+467,33,Uttar Pradesh,Hamirpur_up,HAMIRPUR_UP,General,uttar pradesh
+468,33,Uttar Pradesh,Azamgarh,AZAMGARH,General,uttar pradesh
+469,33,Uttar Pradesh,Lalganj,LALGANJ (SC),SC,uttar pradesh
+470,33,Uttar Pradesh,Aonla,AONLA,General,uttar pradesh
+471,33,Uttar Pradesh,Bareilly,BAREILLY,General,uttar pradesh
+472,33,Uttar Pradesh,Deoria,DEORIA,General,uttar pradesh
+473,33,Uttar Pradesh,Jhansi,JHANSI,General,uttar pradesh
+474,33,Uttar Pradesh,Kheri,KHERI,General,uttar pradesh
+475,33,Uttar Pradesh,Dhaurahra,DHAURAHRA,General,uttar pradesh
+476,33,Uttar Pradesh,Pratapgarh,PRATAPGARH,General,uttar pradesh
+477,33,Uttar Pradesh,Shahjahanpur,SHAHJAHANPUR(SC),SC,uttar pradesh
+478,33,Uttar Pradesh,Gautam Buddha Nagar,GAUTAM BUDDHA NAGAR,General,uttar pradesh
+479,33,Uttar Pradesh,Maharajganj_up,MAHARAJGANJ_UP,General,uttar pradesh
+480,33,Uttar Pradesh,Sambhal,SAMBHAL,General,uttar pradesh
+481,33,Uttar Pradesh,Banda,BANDA,General,uttar pradesh
+482,33,Uttar Pradesh,Etah,ETAH,General,uttar pradesh
+483,33,Uttar Pradesh,Kairana,KAIRANA,General,uttar pradesh
+484,33,Uttar Pradesh,Basti,BASTI,General,uttar pradesh
+485,33,Uttar Pradesh,Bijnor,BIJNOR,General,uttar pradesh
+486,33,Uttar Pradesh,Nagina,NAGINA(SC),SC,uttar pradesh
+487,33,Uttar Pradesh,Bulandshahr,BULANDSHAHR(SC),SC,uttar pradesh
+488,33,Uttar Pradesh,Jalaun,JALAUN(SC),SC,uttar pradesh
+489,33,Uttar Pradesh,Mainpuri,MAINPURI,General,uttar pradesh
+490,33,Uttar Pradesh,Rae Bareli,RAE BARELI,General,uttar pradesh
+491,33,Uttar Pradesh,Domariyaganj,DOMARIYAGANJ,General,uttar pradesh
+492,33,Uttar Pradesh,Ambedkar Nagar,AMBEDKAR NAGAR,General,uttar pradesh
+493,33,Uttar Pradesh,Bhadohi,BHADOHI,General,uttar pradesh
+494,33,Uttar Pradesh,Moradabad,MORADABAD,General,uttar pradesh
+495,33,Uttar Pradesh,Sultanpur,SULTANPUR,General,uttar pradesh
+496,33,Uttar Pradesh,Shrawasti,SHRAWASTI,General,uttar pradesh
+497,33,Uttar Pradesh,Hathras,HATHRAS (SC),SC,uttar pradesh
+498,32,Uttarakhand,Nainital Udham Singh Nag.,NAINITAL UDHAM SINGH NAG.,General,uttarakhand
+499,32,Uttarakhand,Garhwal,GARHWAL,General,uttarakhand
+500,32,Uttarakhand,Hardwar,HARDWAR,General,uttarakhand
+501,32,Uttarakhand,Tehri Garhwal,TEHRI GARHWAL,General,uttarakhand
+502,32,Uttarakhand,Almora,ALMORA(SC),SC,uttarakhand
+503,34,West Bengal,Arambag,ARAMBAG(SC),SC,west bengal
+504,34,West Bengal,Hooghly,HOOGHLY,General,west bengal
+505,34,West Bengal,Sreerampur,SREERAMPUR,General,west bengal
+506,34,West Bengal,Purulia,PURULIA,General,west bengal
+507,34,West Bengal,Bankura,BANKURA,General,west bengal
+508,34,West Bengal,Bishnupur,BISHNUPUR(SC),SC,west bengal
+509,34,West Bengal,Krishnanagar,KRISHNANAGAR,General,west bengal
+510,34,West Bengal,Ranaghat,RANAGHAT(SC),SC,west bengal
+511,34,West Bengal,Darjeeling,DARJEELING,General,west bengal
+512,34,West Bengal,Birbhum,BIRBHUM,General,west bengal
+513,34,West Bengal,Bolpur,BOLPUR(SC),SC,west bengal
+514,34,West Bengal,Coochbehar,COOCHBEHAR(SC),SC,west bengal
+515,34,West Bengal,Kanthi,KANTHI,General,west bengal
+516,34,West Bengal,Tamluk,TAMLUK,General,west bengal
+517,34,West Bengal,Alipurduars,ALIPURDUARS(ST),ST,west bengal
+518,34,West Bengal,Howrah,HOWRAH,General,west bengal
+519,34,West Bengal,Uluberia,ULUBERIA,General,west bengal
+520,34,West Bengal,Balurghat,BALURGHAT,General,west bengal
+521,34,West Bengal,Baharampur,BAHARAMPUR,General,west bengal
+522,34,West Bengal,Jangipur,JANGIPUR,General,west bengal
+523,34,West Bengal,Murshidabad,MURSHIDABAD,General,west bengal
+524,34,West Bengal,Diamond Harbour,DIAMOND HARBOUR,General,west bengal
+525,34,West Bengal,Jadavpur,JADAVPUR,General,west bengal
+526,34,West Bengal,Joynagar,JOYNAGAR(SC),SC,west bengal
+527,34,West Bengal,Mathurapur,MATHURAPUR(SC),SC,west bengal
+528,34,West Bengal,Kolkata Dakshin,KOLKATA DAKSHIN,General,west bengal
+529,34,West Bengal,Kolkata Uttar,KOLKATA UTTAR,General,west bengal
+530,34,West Bengal,Jalpaiguri,JALPAIGURI(SC),SC,west bengal
+531,34,West Bengal,Maldaha Dakshin,MALDAHA DAKSHIN,General,west bengal
+532,34,West Bengal,Maldaha Uttar,MALDAHA UTTAR,General,west bengal
+533,34,West Bengal,Medinipur,MEDINIPUR,General,west bengal
+534,34,West Bengal,Ghatal,GHATAL,General,west bengal
+535,34,West Bengal,Barasat,BARASAT,General,west bengal
+536,34,West Bengal,Barrackpur,BARRACKPUR,General,west bengal
+537,34,West Bengal,Basirhat,BASIRHAT,General,west bengal
+538,34,West Bengal,Dum Dum,DUM DUM,General,west bengal
+539,34,West Bengal,Bangaon,BANGAON(SC),SC,west bengal
+540,34,West Bengal,Raiganj,RAIGANJ,General,west bengal
+541,34,West Bengal,Jhargram,JHARGRAM(ST),ST,west bengal
+542,34,West Bengal,Asansol,ASANSOL,General,west bengal
+543,34,West Bengal,Bardhaman-durgapur,BARDHAMAN-DURGAPUR,General,west bengal
+544,34,West Bengal,Bardhaman Purba,BARDHAMAN PURBA(SC),SC,west bengal

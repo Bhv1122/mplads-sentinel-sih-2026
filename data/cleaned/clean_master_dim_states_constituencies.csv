@@ -1,0 +1,37 @@
+state_id,state_name,canonical_state_key,category,total_lok_sabha_seats,general_seats,sc_reserved_seats,st_reserved_seats,sc_seat_share_pct,st_seat_share_pct,statutory_sc_allocation_pct,statutory_st_allocation_pct,cumulative_released_cr,cumulative_expenditure_cr,unspent_balance_cr,utilization_pct,works_completed_count
+35,Andaman And Nicobar Islands,andaman and nicobar islands,Union Territory,1,1,0,0,0.0,0.0,15.0,7.5,145.0,141.2,3.8,97.38,2680
+2,Andhra Pradesh,andhra pradesh,State,25,21,3,1,12.0,4.0,15.0,7.5,4275.0,4120.45,154.55,96.38,78920
+3,Arunachal Pradesh,arunachal pradesh,State,2,2,0,0,0.0,0.0,15.0,7.5,385.0,368.12,16.88,95.62,6450
+5,Assam,assam,State,14,11,1,2,7.14,14.29,15.0,7.5,2490.0,2360.8,129.2,94.81,46200
+6,Bihar,bihar,State,40,34,6,0,15.0,0.0,15.0,7.5,6780.0,6245.3,534.7,92.11,98700
+7,Chandigarh,chandigarh,Union Territory,1,1,0,0,0.0,0.0,15.0,7.5,150.0,147.8,2.2,98.53,2920
+8,Chhattisgarh,chhattisgarh,State,11,6,1,4,9.09,36.36,15.0,7.5,1920.0,1845.6,74.4,96.12,37200
+11,Delhi,delhi,Union Territory,7,6,1,0,14.29,0.0,15.0,7.5,1360.0,1315.6,44.4,96.74,26200
+12,Goa,goa,State,2,2,0,0,0.0,0.0,15.0,7.5,390.0,381.25,8.75,97.76,6180
+27,Gujarat,gujarat,State,26,20,2,4,7.69,15.38,15.0,7.5,4690.0,4540.1,149.9,96.8,86100
+14,Haryana,haryana,State,10,8,2,0,20.0,0.0,15.0,7.5,1810.0,1735.4,74.6,95.88,34500
+15,Himachal Pradesh,himachal pradesh,State,4,3,1,0,25.0,0.0,15.0,7.5,790.0,765.2,24.8,96.86,17400
+16,Jammu And Kashmir,jammu and kashmir,Union Territory,5,5,0,0,0.0,0.0,15.0,7.5,1080.0,1015.4,64.6,94.02,21100
+17,Jharkhand,jharkhand,State,14,8,1,5,7.14,35.71,15.0,7.5,2410.0,2270.5,139.5,94.21,40800
+18,Karnataka,karnataka,State,28,21,5,2,17.86,7.14,15.0,7.5,4920.0,4760.3,159.7,96.75,89400
+36,Kerala,kerala,State,20,18,2,0,10.0,0.0,15.0,7.5,3580.0,3495.8,84.2,97.65,70100
+130,Ladakh,ladakh,Union Territory,1,1,0,0,0.0,0.0,15.0,7.5,140.0,131.2,8.8,93.71,2720
+19,Lakshadweep,lakshadweep,Union Territory,1,0,0,1,0.0,100.0,15.0,7.5,145.0,139.8,5.2,96.41,2390
+20,Madhya Pradesh,madhya pradesh,State,29,19,4,6,13.79,20.69,15.0,7.5,5110.0,4890.4,219.6,95.7,92400
+21,Maharashtra,maharashtra,State,48,39,5,4,10.42,8.33,15.0,7.5,8290.0,7980.2,309.8,96.26,147200
+22,Manipur,manipur,State,2,1,0,1,0.0,50.0,15.0,7.5,375.0,352.1,22.9,93.89,6500
+23,Meghalaya,meghalaya,State,2,2,0,0,0.0,0.0,15.0,7.5,380.0,361.4,18.6,95.11,6200
+13,Mizoram,mizoram,State,1,0,0,1,0.0,100.0,15.0,7.5,240.0,232.8,7.2,97.0,4300
+24,Nagaland,nagaland,State,1,1,0,0,0.0,0.0,15.0,7.5,240.0,229.5,10.5,95.62,4100
+25,Odisha,odisha,State,21,13,3,5,14.29,23.81,15.0,7.5,3610.0,3445.6,164.4,95.45,69800
+26,Puducherry,puducherry,Union Territory,1,1,0,0,0.0,0.0,15.0,7.5,250.0,244.6,5.4,97.84,4620
+1,Punjab,punjab,State,13,9,4,0,30.77,0.0,15.0,7.5,2310.0,2225.1,84.9,96.32,43800
+28,Rajasthan,rajasthan,State,25,18,4,3,16.0,12.0,15.0,7.5,4410.0,4250.7,159.3,96.39,82400
+29,Sikkim,sikkim,State,1,1,0,0,0.0,0.0,15.0,7.5,245.0,238.9,6.1,97.51,4600
+30,Tamil Nadu,tamil nadu,State,39,32,7,0,17.95,0.0,15.0,7.5,6890.0,6680.5,209.5,96.96,131800
+129,Telangana,telangana,State,17,14,2,1,11.76,5.88,15.0,7.5,2960.0,2845.2,114.8,96.12,55800
+10,The Dadra And Nagar Haveli And Daman And Diu,dadra and nagar haveli and daman and diu,Union Territory,2,1,0,1,0.0,50.0,15.0,7.5,245.0,239.4,5.6,97.71,4350
+31,Tripura,tripura,State,2,1,0,1,0.0,50.0,15.0,7.5,390.0,374.8,15.2,96.1,6800
+33,Uttar Pradesh,uttar pradesh,State,80,63,17,0,21.25,0.0,15.0,7.5,13910.0,13120.8,789.2,94.33,241200
+32,Uttarakhand,uttarakhand,State,5,4,1,0,20.0,0.0,15.0,7.5,925.0,892.4,32.6,96.48,19200
+34,West Bengal,west bengal,State,42,30,10,2,23.81,4.76,15.0,7.5,7180.0,6810.3,369.7,94.85,129400

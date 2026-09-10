@@ -1,0 +1,23 @@
+risk_score_id,project_id,factor_category,factor_name,factor_weight,factor_impact,mitigation_recommendation,is_mitigated
+1,MPLADS-2024-0001,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+2,MPLADS-2024-0002,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+3,MPLADS-2024-0003,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+4,MPLADS-2024-0004,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+5,MPLADS-2024-0005,Contractor Inaction,Contractor Default on Foundation Milestone,0.45,Critical,Issue final contractual show-cause notice and invoke bank guarantee if unresponsive within 14 days.,False
+5,MPLADS-2024-0005,Monsoon Seasonality,Heavy Seasonal Waterlogging in Excavation Pit,0.25,Medium,Deploy high-capacity dewatering pumps and construct diversion channel.,True
+6,MPLADS-2024-0006,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+7,MPLADS-2024-0007,Delay in Tendering,Prolonged Technical Evaluation Window,0.35,Medium,Expedite site handover and advance mobilization to contractor.,False
+8,MPLADS-2024-0008,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+9,MPLADS-2024-0009,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+10,MPLADS-2024-0010,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+11,MPLADS-2024-0011,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+12,MPLADS-2024-0012,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+13,MPLADS-2024-0013,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+14,MPLADS-2024-0014,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+15,MPLADS-2024-0015,Delay in Tendering,Prolonged Technical Evaluation Window,0.35,Medium,Expedite site handover and advance mobilization to contractor.,False
+16,MPLADS-2024-0016,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+17,MPLADS-2024-0017,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+18,MPLADS-2024-0018,Contractor Inaction,Contractor Default on Foundation Milestone,0.45,Critical,Issue final contractual show-cause notice and invoke bank guarantee if unresponsive within 14 days.,False
+18,MPLADS-2024-0018,Monsoon Seasonality,Heavy Seasonal Waterlogging in Excavation Pit,0.25,Medium,Deploy high-capacity dewatering pumps and construct diversion channel.,True
+19,MPLADS-2024-0019,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True
+20,MPLADS-2024-0020,Agency Past Performance,Experienced DRDA Division with Strong Completion Track Record,0.1,Low,Maintain standard monthly progress reviews.,True

@@ -1,0 +1,37 @@
+state_id,state_name,canonical_state_key,entitlement_cr,released_cr,expenditure_cr,unspent_balance_cr,utilization_rate_pct,works_recommended,works_sanctioned,works_completed,sanction_rate_pct,completion_rate_pct,is_utilization_valid,is_workflow_valid
+2,Andhra Pradesh,andhra pradesh,4550.0,4275.0,4120.45,154.55,96.38,88450,82110,78920,92.83,96.11,True,True
+3,Arunachal Pradesh,arunachal pradesh,415.0,385.0,368.12,16.88,95.62,7420,6910,6450,93.13,93.34,True,True
+5,Assam,assam,2680.0,2490.0,2360.8,129.2,94.81,54100,49800,46200,92.05,92.77,True,True
+6,Bihar,bihar,7240.0,6780.0,6245.3,534.7,92.11,122400,109200,98700,89.22,90.38,True,True
+22,Chhattisgarh,chhattisgarh,2040.0,1920.0,1845.6,74.4,96.12,42100,39500,37200,93.82,94.18,True,True
+30,Goa,goa,415.0,390.0,381.25,8.75,97.76,6850,6420,6180,93.72,96.26,True,True
+24,Gujarat,gujarat,4920.0,4690.0,4540.1,149.9,96.8,94200,89400,86100,94.9,96.31,True,True
+7,Haryana,haryana,1920.0,1810.0,1735.4,74.6,95.88,38900,36100,34500,92.8,95.57,True,True
+8,Himachal Pradesh,himachal pradesh,830.0,790.0,765.2,24.8,96.86,19400,18200,17400,93.81,95.6,True,True
+20,Jharkhand,jharkhand,2580.0,2410.0,2270.5,139.5,94.21,48200,43900,40800,91.08,92.94,True,True
+29,Karnataka,karnataka,5180.0,4920.0,4760.3,159.7,96.75,98500,93200,89400,94.62,95.92,True,True
+32,Kerala,kerala,3720.0,3580.0,3495.8,84.2,97.65,76200,72800,70100,95.54,96.29,True,True
+23,Madhya Pradesh,madhya pradesh,5420.0,5110.0,4890.4,219.6,95.7,104500,97800,92400,93.59,94.48,True,True
+27,Maharashtra,maharashtra,8740.0,8290.0,7980.2,309.8,96.26,165400,154800,147200,93.59,95.09,True,True
+14,Manipur,manipur,415.0,375.0,352.1,22.9,93.89,7800,7100,6500,91.03,91.55,True,True
+17,Meghalaya,meghalaya,415.0,380.0,361.4,18.6,95.11,7200,6700,6200,93.06,92.54,True,True
+15,Mizoram,mizoram,260.0,240.0,232.8,7.2,97.0,4800,4500,4300,93.75,95.56,True,True
+13,Nagaland,nagaland,260.0,240.0,229.5,10.5,95.62,4600,4300,4100,93.48,95.35,True,True
+21,Odisha,odisha,3840.0,3610.0,3445.6,164.4,95.45,79400,74200,69800,93.45,94.07,True,True
+4,Punjab,punjab,2450.0,2310.0,2225.1,84.9,96.32,49200,46100,43800,93.7,95.01,True,True
+9,Rajasthan,rajasthan,4680.0,4410.0,4250.7,159.3,96.39,92100,86800,82400,94.25,94.93,True,True
+11,Sikkim,sikkim,260.0,245.0,238.9,6.1,97.51,5100,4800,4600,94.12,95.83,True,True
+33,Tamil Nadu,tamil nadu,7180.0,6890.0,6680.5,209.5,96.96,142100,136400,131800,95.99,96.63,True,True
+36,Telangana,telangana,3120.0,2960.0,2845.2,114.8,96.12,62400,58900,55800,94.39,94.74,True,True
+16,Tripura,tripura,415.0,390.0,374.8,15.2,96.1,7600,7200,6800,94.74,94.44,True,True
+10,Uttar Pradesh,uttar pradesh,14820.0,13910.0,13120.8,789.2,94.33,284500,259800,241200,91.32,92.84,True,True
+18,Uttarakhand,uttarakhand,980.0,925.0,892.4,32.6,96.48,21400,20100,19200,93.93,95.52,True,True
+19,West Bengal,west bengal,7620.0,7180.0,6810.3,369.7,94.85,148200,138500,129400,93.45,93.43,True,True
+35,Andaman And Nicobar Islands,andaman and nicobar islands,155.0,145.0,141.2,3.8,97.38,2900,2750,2680,94.83,97.45,True,True
+1,Chandigarh,chandigarh,155.0,150.0,147.8,2.2,98.53,3100,2980,2920,96.13,97.99,True,True
+26,Dadra & Nagar Haveli And Daman & Diu,dadra and nagar haveli and daman and diu,260.0,245.0,239.4,5.6,97.71,4700,4500,4350,95.74,96.67,True,True
+38,Delhi,delhi,1420.0,1360.0,1315.6,44.4,96.74,28400,27100,26200,95.42,96.68,True,True
+12,Jammu And Kashmir,jammu and kashmir,1150.0,1080.0,1015.4,64.6,94.02,24800,22900,21100,92.34,92.14,True,True
+37,Ladakh,ladakh,155.0,140.0,131.2,8.8,93.71,3200,2950,2720,92.19,92.2,True,True
+31,Lakshadweep,lakshadweep,155.0,145.0,139.8,5.2,96.41,2600,2480,2390,95.38,96.37,True,True
+34,Puducherry,puducherry,260.0,250.0,244.6,5.4,97.84,4900,4750,4620,96.94,97.26,True,True

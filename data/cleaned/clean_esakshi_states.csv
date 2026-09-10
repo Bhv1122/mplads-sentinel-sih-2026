@@ -1,0 +1,37 @@
+state_id,state_name,category,canonical_state_key
+35,Andaman And Nicobar Islands,Union Territory,andaman and nicobar islands
+2,Andhra Pradesh,State,andhra pradesh
+3,Arunachal Pradesh,State,arunachal pradesh
+5,Assam,State,assam
+6,Bihar,State,bihar
+7,Chandigarh,Union Territory,chandigarh
+8,Chhattisgarh,State,chhattisgarh
+11,Delhi,Union Territory,delhi
+12,Goa,State,goa
+27,Gujarat,State,gujarat
+14,Haryana,State,haryana
+15,Himachal Pradesh,State,himachal pradesh
+16,Jammu And Kashmir,Union Territory,jammu and kashmir
+17,Jharkhand,State,jharkhand
+18,Karnataka,State,karnataka
+36,Kerala,State,kerala
+130,Ladakh,Union Territory,ladakh
+19,Lakshadweep,Union Territory,lakshadweep
+20,Madhya Pradesh,State,madhya pradesh
+21,Maharashtra,State,maharashtra
+22,Manipur,State,manipur
+23,Meghalaya,State,meghalaya
+13,Mizoram,State,mizoram
+24,Nagaland,State,nagaland
+25,Odisha,State,odisha
+26,Puducherry,Union Territory,puducherry
+1,Punjab,State,punjab
+28,Rajasthan,State,rajasthan
+29,Sikkim,State,sikkim
+30,Tamil Nadu,State,tamil nadu
+129,Telangana,State,telangana
+10,The Dadra And Nagar Haveli And Daman And Diu,Union Territory,dadra and nagar haveli and daman and diu
+31,Tripura,State,tripura
+33,Uttar Pradesh,State,uttar pradesh
+32,Uttarakhand,State,uttarakhand
+34,West Bengal,State,west bengal

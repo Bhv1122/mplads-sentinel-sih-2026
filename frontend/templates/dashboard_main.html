@@ -1,0 +1,335 @@
+<main class="w-full pt-16 bg-background min-h-[884px] px-margin-screen py-space-xl" data-stitch-vh="min-h-[884px]===min-h-screen"><div class="flex flex-col w-full">
+<!-- Statutory Administrative Notice Banner -->
+<div class="mb-space-lg bg-surface-container-low border-l-4 border-primary px-space-base py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Statutory Ledger: Section 7(B) Periodic Verification Active. Public Works Audit Cadre Session #44-A.</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary tracking-wider uppercase">Official Internal Record</div>
+</div>
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg mb-space-xl border-b border-outline-variant gap-space-sm">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Executive Monitoring Dashboard</h1>
+<p class="font-body-md text-body-md text-secondary mt-space-2xs">
+        Consolidated overview of Member of Parliament Local Area Development Scheme (MPLADS) active works and risk metrics.
+      </p>
+</div>
+<div class="text-left md:text-right font-tabular-data text-tabular-data text-secondary whitespace-nowrap">
+      Data updated: 24 Oct 2024, 08:30 IST | Financial Year: 2024-25
+    </div>
+</div>
+<!-- Top Metric Cards Grid (Exactly Four Equal-Sized Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-grid mb-space-2xl">
+<!-- Card 1: Total Projects -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-base flex flex-col justify-between h-32">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Total Projects</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display text-display text-on-surface font-tabular-data leading-none">18,420</span>
+<span class="font-body-sm text-body-sm text-secondary mt-space-xs">Sanctioned in active cycle</span>
+</div>
+</div>
+<!-- Card 2: High Risk -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-base flex flex-col justify-between h-32">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">High Risk</span>
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display text-display text-error font-tabular-data leading-none">312</span>
+<span class="font-body-sm text-body-sm text-secondary mt-space-xs">Flagged for priority review</span>
+</div>
+</div>
+<!-- Card 3: Delayed Projects -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-base flex flex-col justify-between h-32">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Delayed Projects</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display text-display text-on-surface font-tabular-data leading-none">1,894</span>
+<span class="font-body-sm text-body-sm text-secondary mt-space-xs">Exceeding scheduled timeline</span>
+</div>
+</div>
+<!-- Card 4: Fund Utilization -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-base flex flex-col justify-between h-32">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Fund Utilization</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display text-display text-on-surface font-tabular-data leading-none">73.4%</span>
+<span class="font-body-sm text-body-sm text-secondary mt-space-xs">Of ₹5,230 Cr total allocation</span>
+</div>
+</div>
+</div>
+<!-- Middle Row: Risk Distribution (40%) & Recent High-Risk Projects Table (60%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-2xl items-start">
+<!-- Left Column: Risk Distribution (Approx 40% -> 5 cols of 12) -->
+<div class="lg:col-span-5 bg-surface-container-lowest border border-outline-variant p-space-lg flex flex-col">
+<div class="pb-space-sm border-b border-outline-variant mb-space-lg flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-on-surface">Risk Distribution</h2>
+<span class="font-label-sm text-label-sm text-secondary">Total: 18,420 Units</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-lg">
+<!-- SVG Donut Chart -->
+<div class="relative w-40 h-40 flex-shrink-0 flex items-center justify-center">
+<svg aria-label="Risk breakdown donut chart" class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+<!-- Total perimeter = 2 * PI * 38 = 238.76 -->
+<!-- Low (17,494): 94.97% -> 226.75 px -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#e5eeff" stroke-width="16"></circle>
+<circle cx="50" cy="50" fill="none" r="38" stroke="#16a34a" stroke-dasharray="226.75 238.76" stroke-dashoffset="0" stroke-width="16"></circle>
+<!-- Medium (614): 3.33% -> 7.95 px -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#d97706" stroke-dasharray="7.95 238.76" stroke-dashoffset="-226.75" stroke-width="16"></circle>
+<!-- High (228): 1.24% -> 2.96 px -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#ea580c" stroke-dasharray="2.96 238.76" stroke-dashoffset="-234.7" stroke-width="16"></circle>
+<!-- Critical (84): 0.46% -> 1.10 px -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#dc2626" stroke-dasharray="1.10 238.76" stroke-dashoffset="-237.66" stroke-width="16"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Low Risk</span>
+<span class="font-title-sm text-title-sm text-on-surface font-tabular-data">95.0%</span>
+</div>
+</div>
+<!-- Legend Table / List -->
+<div class="flex-1 w-full flex flex-col gap-space-xs">
+<!-- Low -->
+<div class="flex items-center justify-between py-space-2xs border-b border-outline-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-[#16a34a] rounded-[1px] flex-shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Low</span>
+</div>
+<div class="text-right">
+<span class="font-tabular-data text-tabular-data text-on-surface font-semibold">17,494</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(95.0%)</span>
+</div>
+</div>
+<!-- Medium -->
+<div class="flex items-center justify-between py-space-2xs border-b border-outline-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-[#d97706] rounded-[1px] flex-shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Medium</span>
+</div>
+<div class="text-right">
+<span class="font-tabular-data text-tabular-data text-on-surface font-semibold">614</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(3.3%)</span>
+</div>
+</div>
+<!-- High -->
+<div class="flex items-center justify-between py-space-2xs border-b border-outline-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-[#ea580c] rounded-[1px] flex-shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface">High</span>
+</div>
+<div class="text-right">
+<span class="font-tabular-data text-tabular-data text-on-surface font-semibold">228</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(1.2%)</span>
+</div>
+</div>
+<!-- Critical -->
+<div class="flex items-center justify-between py-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-[#dc2626] rounded-[1px] flex-shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Critical</span>
+</div>
+<div class="text-right">
+<span class="font-tabular-data text-tabular-data text-on-surface font-semibold">84</span>
+<span class="font-label-sm text-label-sm text-secondary ml-1">(0.5%)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant bg-surface-container-low p-space-xs text-secondary font-label-sm text-label-sm">
+        Criteria: Automated heuristic classification based on Schedule-III delay metrics, discrepancy flags, and utilization ratio variances.
+      </div>
+</div>
+<!-- Right Column: Recent High-Risk Projects Table (Approx 60% -> 7 cols of 12) -->
+<div class="lg:col-span-7 bg-surface-container-lowest border border-outline-variant p-space-lg flex flex-col">
+<div class="pb-space-sm border-b border-outline-variant mb-space-md flex items-center justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Recent High-Risk Projects</h2>
+<span class="font-body-sm text-body-sm text-secondary">Immediate attention required by District Authority</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-space-2xs prototype-link-hover" href="#">
+<span>View Queue</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b-2 border-outline-variant">
+<th class="py-2.5 px-3 font-label-md text-label-md text-secondary uppercase tracking-wider" scope="col">Project ID</th>
+<th class="py-2.5 px-3 font-label-md text-label-md text-secondary uppercase tracking-wider" scope="col">Risk</th>
+<th class="py-2.5 px-3 font-label-md text-label-md text-secondary uppercase tracking-wider" scope="col">Status</th>
+<th class="py-2.5 px-3 font-label-md text-label-md text-secondary uppercase tracking-wider text-right" scope="col">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 font-tabular-data text-tabular-data text-on-surface font-semibold">MP-UP-23-0891</td>
+<td class="py-2.5 px-3">
+<span class="inline-flex items-center px-2 py-0.5 border border-[#fecaca] bg-[#fef2f2] text-[#dc2626] font-label-sm text-label-sm font-bold">
+                  Critical
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-body-sm text-on-surface">Disbursal Paused</td>
+<td class="py-2.5 px-3 text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline prototype-link-hover" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 font-tabular-data text-tabular-data text-on-surface font-semibold">MP-BR-22-1082</td>
+<td class="py-2.5 px-3">
+<span class="inline-flex items-center px-2 py-0.5 border border-[#fed7aa] bg-[#fff7ed] text-[#ea580c] font-label-sm text-label-sm font-semibold">
+                  High
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-body-sm text-on-surface">Field Inspection Ordered</td>
+<td class="py-2.5 px-3 text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 font-tabular-data text-tabular-data text-on-surface font-semibold">MP-WB-23-4419</td>
+<td class="py-2.5 px-3">
+<span class="inline-flex items-center px-2 py-0.5 border border-[#fecaca] bg-[#fef2f2] text-[#dc2626] font-label-sm text-label-sm font-bold">
+                  Critical
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-body-sm text-on-surface">Notice Issued</td>
+<td class="py-2.5 px-3 text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 font-tabular-data text-tabular-data text-on-surface font-semibold">MP-RJ-22-3112</td>
+<td class="py-2.5 px-3">
+<span class="inline-flex items-center px-2 py-0.5 border border-[#fed7aa] bg-[#fff7ed] text-[#ea580c] font-label-sm text-label-sm font-semibold">
+                  High
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-body-sm text-on-surface">Under Verification</td>
+<td class="py-2.5 px-3 text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 font-tabular-data text-tabular-data text-on-surface font-semibold">MP-MH-21-0442</td>
+<td class="py-2.5 px-3">
+<span class="inline-flex items-center px-2 py-0.5 border border-[#fecaca] bg-[#fef2f2] text-[#dc2626] font-label-sm text-label-sm font-bold">
+                  Critical
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-body-sm text-on-surface">Escalated to DM</td>
+<td class="py-2.5 px-3 text-right">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm font-semibold underline" type="button">Inspect</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-between items-center text-secondary font-label-sm text-label-sm">
+<span>Showing 5 highest priority pending cases</span>
+<span>Standard Audit Protocol v1.9</span>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Projects by Risk Category (Horizontal Bar Chart) -->
+<div class="bg-surface-container-lowest border border-outline-variant p-space-lg flex flex-col mb-space-xl">
+<div class="pb-space-sm border-b border-outline-variant mb-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Projects by Risk Category</h2>
+<span class="font-body-sm text-body-sm text-secondary">Categorized breakdown of statutory exceptions across 312 escalated records</span>
+</div>
+<div class="font-tabular-data text-tabular-data text-secondary">
+        Baseline: Fiscal 2024 Audit Threshold
+      </div>
+</div>
+<!-- Plain Flat Horizontal Bar Chart -->
+<div class="flex flex-col gap-space-md max-w-4xl">
+<!-- Category 1: Cost Anomaly -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-base">
+<div class="w-56 font-body-sm text-body-sm text-on-surface flex items-center justify-between sm:justify-start gap-space-xs">
+<span>Cost Anomaly</span>
+<span class="text-secondary sm:hidden font-tabular-data text-tabular-data font-semibold">119 projects</span>
+</div>
+<div class="flex-1 bg-surface-container-low border border-outline-variant h-7 flex items-center p-0.5">
+<!-- Width relative to max = 150 projects scale (119/150 = 79.3%) -->
+<div class="bg-primary-container h-full flex items-center px-2 text-on-primary font-tabular-data text-label-sm font-semibold" style="width: 79.3%;">
+            119
+          </div>
+</div>
+<div class="w-24 text-right hidden sm:block font-tabular-data text-tabular-data text-on-surface font-semibold">
+          119 projects
+        </div>
+</div>
+<!-- Category 2: Progress Mismatch -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-base">
+<div class="w-56 font-body-sm text-body-sm text-on-surface flex items-center justify-between sm:justify-start gap-space-xs">
+<span>Progress Mismatch</span>
+<span class="text-secondary sm:hidden font-tabular-data text-tabular-data font-semibold">97 projects</span>
+</div>
+<div class="flex-1 bg-surface-container-low border border-outline-variant h-7 flex items-center p-0.5">
+<!-- Width relative to 150 scale (97/150 = 64.6%) -->
+<div class="bg-secondary h-full flex items-center px-2 text-on-primary font-tabular-data text-label-sm font-semibold" style="width: 64.6%;">
+            97
+          </div>
+</div>
+<div class="w-24 text-right hidden sm:block font-tabular-data text-tabular-data text-on-surface font-semibold">
+          97 projects
+        </div>
+</div>
+<!-- Category 3: Inactivity / Stalled -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-base">
+<div class="w-56 font-body-sm text-body-sm text-on-surface flex items-center justify-between sm:justify-start gap-space-xs">
+<span>Inactivity / Stalled</span>
+<span class="text-secondary sm:hidden font-tabular-data text-tabular-data font-semibold">59 projects</span>
+</div>
+<div class="flex-1 bg-surface-container-low border border-outline-variant h-7 flex items-center p-0.5">
+<!-- Width relative to 150 scale (59/150 = 39.3%) -->
+<div class="bg-[#ea580c] h-full flex items-center px-2 text-on-primary font-tabular-data text-label-sm font-semibold" style="width: 39.3%;">
+            59
+          </div>
+</div>
+<div class="w-24 text-right hidden sm:block font-tabular-data text-tabular-data text-on-surface font-semibold">
+          59 projects
+        </div>
+</div>
+<!-- Category 4: Duplicate Geocode / Similarity -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-base">
+<div class="w-56 font-body-sm text-body-sm text-on-surface flex items-center justify-between sm:justify-start gap-space-xs">
+<span>Duplicate Geocode / Similarity</span>
+<span class="text-secondary sm:hidden font-tabular-data text-tabular-data font-semibold">37 projects</span>
+</div>
+<div class="flex-1 bg-surface-container-low border border-outline-variant h-7 flex items-center p-0.5">
+<!-- Width relative to 150 scale (37/150 = 24.6%) -->
+<div class="bg-[#dc2626] h-full flex items-center px-2 text-on-primary font-tabular-data text-label-sm font-semibold" style="width: 24.6%;">
+            37
+          </div>
+</div>
+<div class="w-24 text-right hidden sm:block font-tabular-data text-tabular-data text-on-surface font-semibold">
+          37 projects
+        </div>
+</div>
+</div>
+<!-- Chart Scale Axis Marker -->
+<div class="mt-space-md pt-space-xs border-t border-outline-variant flex flex-col sm:flex-row justify-between items-start sm:items-center text-secondary font-label-sm text-label-sm">
+<span>Scale increment: 0 to 150 units max per segment</span>
+<span class="mt-1 sm:mt-0">Aggregated from State Nodal Agency (SNA) Data Feeds</span>
+</div>
+</div>
+<!-- Administrative Footer Reference -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant flex flex-col sm:flex-row items-center justify-between text-secondary font-body-sm text-body-sm gap-space-xs">
+<span>National Informatics Centre (NIC) - MPLADS Division</span>
+<span class="font-tabular-data text-tabular-data">Portal Reference: MPLADS-MIS-RPT-2024-Q3-098</span>
+</div>
+</div></main>

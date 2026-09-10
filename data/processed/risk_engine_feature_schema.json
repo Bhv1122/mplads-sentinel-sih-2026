@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MPLADS_Risk_Engine_Feature_Contract",
+  "description": "Formal feature vector contract for the MPLADS Predictive Risk Scoring Engine.",
+  "version": "1.0.0",
+  "features": [
+    {
+      "name": "delay_days",
+      "data_type": "int",
+      "context": "in_flight_surveillance",
+      "formula": "(actual_completion_date - expected_completion_date) if completed else max(0, as_of_date - expected_completion_date)",
+      "expected_min": -365.0,
+      "expected_max": 1825.0,
+      "imputation_strategy": "0 for active works within schedule window",
+      "predictive_rationale": "Primary temporal slippage metric. Quantifies schedule overrun beyond contractual milestones to forecast abandonment risk."
+    },
+    {
+      "name": "utilization_ratio",
+      "data_type": "float",
+      "context": "in_flight_surveillance",
+      "formula": "expenditure_amount / (released_amount + epsilon)",
+      "expected_min": 0.0,
+      "expected_max": 2.0,
+      "imputation_strategy": "0.0 when released amount is 0 or unrecorded",
+      "predictive_rationale": "Fund absorption velocity. Stalled projects exhibit zero or negligible absorption despite fund disbursement."
+    },
+    {
+      "name": "cost_per_category",
+      "data_type": "float",
+      "context": "safe_pre_award",
+      "formula": "mean(sanctioned_amount) grouped by developmental sector",
+      "expected_min": 10000.0,
+      "expected_max": 50000000.0,
+      "imputation_strategy": "Overall dataset median cost if sector is unmapped",
+      "predictive_rationale": "Peer group baseline. Serves as denominator to detect budget inflation or under-estimation relative to typical asset types."
+    },
+    {
+      "name": "progress_gap",
+      "data_type": "float",
+      "context": "in_flight_surveillance",
+      "formula": "planned_schedule_pct - physical_progress_pct",
+      "expected_min": -100.0,
+      "expected_max": 100.0,
+      "imputation_strategy": "0.0 if milestone timeline dates are missing",
+      "predictive_rationale": "Direct execution drag indicator. High positive gap (>20%) signals that physical progress is critically lagging elapsed contract time."
+    },
+    {
+      "name": "cost_deviation",
+      "data_type": "float",
+      "context": "in_flight_surveillance",
+      "formula": "expenditure_amount - sanctioned_amount",
+      "expected_min": -50000000.0,
+      "expected_max": 50000000.0,
+      "imputation_strategy": "0.0 if expenditure has not commenced",
+      "predictive_rationale": "Financial cost overrun metric in absolute currency. Quantifies budgetary deficits and contractor claim variances."
+    },
+    {
+      "name": "project_duration",
+      "data_type": "int",
+      "context": "in_flight_surveillance",
+      "formula": "max(0, (actual_completion if completed else ref_date) - start_date)",
+      "expected_min": 1.0,
+      "expected_max": 3650.0,
+      "imputation_strategy": "Elapsed duration to reference date if completion date is missing",
+      "predictive_rationale": "Total lifespan to date. Older active projects accumulate exponential stalling probability due to contractor turnover or site disputes."
+    },
+    {
+      "name": "cost_relative_to_category",
+      "data_type": "float",
+      "context": "safe_pre_award",
+      "formula": "sanctioned_amount / category_mean_cost",
+      "expected_min": 0.1,
+      "expected_max": 10.0,
+      "imputation_strategy": "1.0 (average norm)",
+      "predictive_rationale": "Normalized capital intensity index. Proposals exceeding 1.5x of the sector norm face higher procurement scrutiny and cost risks."
+    },
+    {
+      "name": "sanction_sla_delay_days",
+      "data_type": "int",
+      "context": "safe_pre_award",
+      "formula": "max(0, (sanction_date - recommendation_date) - 75)",
+      "expected_min": 0.0,
+      "expected_max": 1000.0,
+      "imputation_strategy": "0 if dates are unrecorded",
+      "predictive_rationale": "Statutory bureaucratic friction. Projects that breached the 75-day district sanction SLA correlate with poor inter-agency coordination."
+    },
+    {
+      "name": "progress_gap_fin_phy",
+      "data_type": "float",
+      "context": "in_flight_surveillance",
+      "formula": "financial_progress_pct - physical_progress_pct",
+      "expected_min": -100.0,
+      "expected_max": 100.0,
+      "imputation_strategy": "0.0",
+      "predictive_rationale": "Financial-to-physical divergence. When fund disbursement exceeds physical milestone delivery by >15%, flags leakage or premature billing."
+    },
+    {
+      "name": "unreleased_allocation",
+      "data_type": "float",
+      "context": "in_flight_surveillance",
+      "formula": "max(0, sanctioned_amount - released_amount)",
+      "expected_min": 0.0,
+      "expected_max": 50000000.0,
+      "imputation_strategy": "0.0",
+      "predictive_rationale": "Funding pipeline backlog. High unreleased allocations starve contractor cash flows, directly inducing work stoppages."
+    },
+    {
+      "name": "planned_duration_days",
+      "data_type": "int",
+      "context": "safe_pre_award",
+      "formula": "max(0, expected_completion_date - start_date)",
+      "expected_min": 15.0,
+      "expected_max": 1825.0,
+      "imputation_strategy": "Sector median planned duration",
+      "predictive_rationale": "Contractual timeline scope. Multi-year complex civil works have higher systemic vulnerability to inflation and contractor default."
+    }
+  ],
+  "input_validation_schema": {
+    "additionalProperties": false,
+    "description": "Type-safe, validated feature vector passed into the future ML/heuristic risk scoring engine.",
+    "properties": {
+      "project_id": {
+        "description": "Unique Project Identifier",
+        "title": "Project Id",
+        "type": "string"
+      },
+      "delay_days": {
+        "default": 0,
+        "description": "Schedule delay in calendar days (positive = late, negative = early)",
+        "title": "Delay Days",
+        "type": "integer"
+      },
+      "utilization_ratio": {
+        "default": 0.0,
+        "description": "Fund absorption ratio (expenditure / released)",
+        "minimum": 0.0,
+        "title": "Utilization Ratio",
+        "type": "number"
+      },
+      "cost_per_category": {
+        "default": 0.0,
+        "description": "Developmental sector benchmark cost in INR",
+        "minimum": 0.0,
+        "title": "Cost Per Category",
+        "type": "number"
+      },
+      "progress_gap": {
+        "default": 0.0,
+        "description": "Schedule trajectory gap (planned - physical %)",
+        "maximum": 100.0,
+        "minimum": -100.0,
+        "title": "Progress Gap",
+        "type": "number"
+      },
+      "cost_deviation": {
+        "default": 0.0,
+        "description": "Cost variance in INR (expenditure - sanctioned)",
+        "title": "Cost Deviation",
+        "type": "number"
+      },
+      "project_duration": {
+        "default": 0,
+        "description": "Realized or current elapsed duration in days",
+        "minimum": 0,
+        "title": "Project Duration",
+        "type": "integer"
+      },
+      "cost_relative_to_category": {
+        "default": 1.0,
+        "description": "Normalized sector cost multiplier",
+        "minimum": 0.0,
+        "title": "Cost Relative To Category",
+        "type": "number"
+      },
+      "sanction_sla_delay_days": {
+        "default": 0,
+        "description": "Days exceeded beyond statutory 75-day sanction SLA",
+        "minimum": 0,
+        "title": "Sanction Sla Delay Days",
+        "type": "integer"
+      },
+      "progress_gap_fin_phy": {
+        "default": 0.0,
+        "description": "Financial vs physical disbursement skew %",
+        "maximum": 100.0,
+        "minimum": -100.0,
+        "title": "Progress Gap Fin Phy",
+        "type": "number"
+      },
+      "unreleased_allocation": {
+        "default": 0.0,
+        "description": "Committed funds awaiting release in INR",
+        "minimum": 0.0,
+        "title": "Unreleased Allocation",
+        "type": "number"
+      },
+      "planned_duration_days": {
+        "anyOf": [
+          {
+            "minimum": 0,
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Contractual timeline in days",
+        "title": "Planned Duration Days"
+      },
+      "is_delayed": {
+        "default": false,
+        "description": "Flag indicating project is behind schedule",
+        "title": "Is Delayed",
+        "type": "boolean"
+      },
+      "is_schedule_lagging": {
+        "default": false,
+        "description": "Flag indicating physical progress lags schedule timeline",
+        "title": "Is Schedule Lagging",
+        "type": "boolean"
+      },
+      "is_disbursement_skewed": {
+        "default": false,
+        "description": "Flag indicating financial disbursement exceeds physical delivery",
+        "title": "Is Disbursement Skewed",
+        "type": "boolean"
+      },
+      "has_cost_overrun": {
+        "default": false,
+        "description": "Flag indicating cost overrun above sanctioned ceiling",
+        "title": "Has Cost Overrun",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "project_id"
+    ],
+    "title": "RiskEngineFeatureVector",
+    "type": "object"
+  }
+}

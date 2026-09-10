@@ -1,0 +1,2390 @@
+{
+  "Andaman And Nicobar Islands": {
+    "state_id": 35,
+    "state_name": "Andaman And Nicobar Islands",
+    "constituencies": [
+      {
+        "ID": 1,
+        "CAPTION": "ANDAMAN AND NICOBAR ISLANDS"
+      }
+    ]
+  },
+  "Andhra Pradesh": {
+    "state_id": 2,
+    "state_name": "Andhra Pradesh",
+    "constituencies": [
+      {
+        "ID": 2,
+        "CAPTION": "ANAKAPALLE"
+      },
+      {
+        "ID": 3,
+        "CAPTION": "HINDUPUR"
+      },
+      {
+        "ID": 4,
+        "CAPTION": "VIJAYAWADA"
+      },
+      {
+        "ID": 5,
+        "CAPTION": "NANDYAL"
+      },
+      {
+        "ID": 7,
+        "CAPTION": "AMALAPURAM(SC)"
+      },
+      {
+        "ID": 8,
+        "CAPTION": "BAPATLA"
+      },
+      {
+        "ID": 9,
+        "CAPTION": "ARAKU(ST)"
+      },
+      {
+        "ID": 10,
+        "CAPTION": "NELLORE(SC)"
+      },
+      {
+        "ID": 11,
+        "CAPTION": "TIRUPATI(SC)"
+      },
+      {
+        "ID": 12,
+        "CAPTION": "ANANTAPUR"
+      },
+      {
+        "ID": 13,
+        "CAPTION": "SRIKAKULAM"
+      },
+      {
+        "ID": 14,
+        "CAPTION": "ONGOLE"
+      },
+      {
+        "ID": 15,
+        "CAPTION": "ELURU"
+      },
+      {
+        "ID": 16,
+        "CAPTION": "NARASAPURAM"
+      },
+      {
+        "ID": 17,
+        "CAPTION": "RAJAHMUNDRY"
+      },
+      {
+        "ID": 18,
+        "CAPTION": "GUNTUR"
+      },
+      {
+        "ID": 19,
+        "CAPTION": "NARASARAOPET"
+      },
+      {
+        "ID": 20,
+        "CAPTION": "VISAKHAPATNAM"
+      },
+      {
+        "ID": 21,
+        "CAPTION": "KADAPA"
+      },
+      {
+        "ID": 22,
+        "CAPTION": "MACHILIPATNAM"
+      },
+      {
+        "ID": 23,
+        "CAPTION": "KURNOOL"
+      },
+      {
+        "ID": 24,
+        "CAPTION": "VIZIANAGARAM"
+      },
+      {
+        "ID": 25,
+        "CAPTION": "CHITTOOR"
+      },
+      {
+        "ID": 26,
+        "CAPTION": "RAJAMPET"
+      },
+      {
+        "ID": 27,
+        "CAPTION": "KAKINADA"
+      }
+    ]
+  },
+  "Arunachal Pradesh": {
+    "state_id": 3,
+    "state_name": "Arunachal Pradesh",
+    "constituencies": [
+      {
+        "ID": 28,
+        "CAPTION": "ARUNACHAL WEST"
+      },
+      {
+        "ID": 29,
+        "CAPTION": "ARUNACHAL EAST"
+      }
+    ]
+  },
+  "Assam": {
+    "state_id": 5,
+    "state_name": "Assam",
+    "constituencies": [
+      {
+        "ID": 30,
+        "CAPTION": "BARPETA"
+      },
+      {
+        "ID": 31,
+        "CAPTION": "Darrang-Udalguri"
+      },
+      {
+        "ID": 32,
+        "CAPTION": "LAKHIMPUR"
+      },
+      {
+        "ID": 33,
+        "CAPTION": "DIBRUGARH"
+      },
+      {
+        "ID": 34,
+        "CAPTION": "JORHAT"
+      },
+      {
+        "ID": 35,
+        "CAPTION": "Diphu (ST)"
+      },
+      {
+        "ID": 36,
+        "CAPTION": "KARIMGANJ (SC)"
+      },
+      {
+        "ID": 37,
+        "CAPTION": "DHUBRI"
+      },
+      {
+        "ID": 38,
+        "CAPTION": "NOWGONG"
+      },
+      {
+        "ID": 39,
+        "CAPTION": "SILCHAR"
+      },
+      {
+        "ID": 40,
+        "CAPTION": "Kaziranga"
+      },
+      {
+        "ID": 41,
+        "CAPTION": "KOKRAJHAR (ST)"
+      },
+      {
+        "ID": 42,
+        "CAPTION": "Sonitpur"
+      },
+      {
+        "ID": 43,
+        "CAPTION": "GUWAHATI"
+      }
+    ]
+  },
+  "Bihar": {
+    "state_id": 6,
+    "state_name": "Bihar",
+    "constituencies": [
+      {
+        "ID": 44,
+        "CAPTION": "ARARIA"
+      },
+      {
+        "ID": 45,
+        "CAPTION": "KATIHAR"
+      },
+      {
+        "ID": 46,
+        "CAPTION": "MUZAFFARPUR"
+      },
+      {
+        "ID": 47,
+        "CAPTION": "VAISHALI"
+      },
+      {
+        "ID": 48,
+        "CAPTION": "PATALIPUTRA"
+      },
+      {
+        "ID": 49,
+        "CAPTION": "PATNA SAHIB"
+      },
+      {
+        "ID": 50,
+        "CAPTION": "KARAKAT"
+      },
+      {
+        "ID": 51,
+        "CAPTION": "SIWAN"
+      },
+      {
+        "ID": 52,
+        "CAPTION": "ARRAH"
+      },
+      {
+        "ID": 53,
+        "CAPTION": "KISHANGANJ"
+      },
+      {
+        "ID": 54,
+        "CAPTION": "JAMUI(SC)"
+      },
+      {
+        "ID": 55,
+        "CAPTION": "PURVI CHAMPARAN"
+      },
+      {
+        "ID": 56,
+        "CAPTION": "SHEOHAR"
+      },
+      {
+        "ID": 57,
+        "CAPTION": "PURNEA"
+      },
+      {
+        "ID": 58,
+        "CAPTION": "SASARAM(SC)"
+      },
+      {
+        "ID": 59,
+        "CAPTION": "HAJIPUR(SC)"
+      },
+      {
+        "ID": 60,
+        "CAPTION": "BHAGALPUR"
+      },
+      {
+        "ID": 61,
+        "CAPTION": "JAHANABAD"
+      },
+      {
+        "ID": 62,
+        "CAPTION": "JHANJHARPUR"
+      },
+      {
+        "ID": 63,
+        "CAPTION": "MADHUBANI"
+      },
+      {
+        "ID": 64,
+        "CAPTION": "NALANDA"
+      },
+      {
+        "ID": 65,
+        "CAPTION": "MADHEPURA"
+      },
+      {
+        "ID": 66,
+        "CAPTION": "MUNGER"
+      },
+      {
+        "ID": 67,
+        "CAPTION": "UJJARPUR"
+      },
+      {
+        "ID": 68,
+        "CAPTION": "SAMASTIPUR(SC)"
+      },
+      {
+        "ID": 69,
+        "CAPTION": "BANKA"
+      },
+      {
+        "ID": 70,
+        "CAPTION": "AURANGABAD_BR"
+      },
+      {
+        "ID": 71,
+        "CAPTION": "KHAGARIA"
+      },
+      {
+        "ID": 72,
+        "CAPTION": "SITAMARHI"
+      },
+      {
+        "ID": 73,
+        "CAPTION": "SUPAUL"
+      },
+      {
+        "ID": 74,
+        "CAPTION": "DARBHANGA"
+      },
+      {
+        "ID": 75,
+        "CAPTION": "SARAN"
+      },
+      {
+        "ID": 76,
+        "CAPTION": "MAHARAJGANJ_BR"
+      },
+      {
+        "ID": 77,
+        "CAPTION": "BEGUSARAI"
+      },
+      {
+        "ID": 78,
+        "CAPTION": "VALMIKI NAGAR"
+      },
+      {
+        "ID": 79,
+        "CAPTION": "PASCHIM CHAMPARAN"
+      },
+      {
+        "ID": 80,
+        "CAPTION": "BUXAR"
+      },
+      {
+        "ID": 81,
+        "CAPTION": "NAWADA"
+      },
+      {
+        "ID": 82,
+        "CAPTION": "GAYA (SC)"
+      },
+      {
+        "ID": 83,
+        "CAPTION": "GOPALGANJ (SC)"
+      }
+    ]
+  },
+  "Chandigarh": {
+    "state_id": 7,
+    "state_name": "Chandigarh",
+    "constituencies": [
+      {
+        "ID": 84,
+        "CAPTION": "CHANDIGARH"
+      }
+    ]
+  },
+  "Chhattisgarh": {
+    "state_id": 8,
+    "state_name": "Chhattisgarh",
+    "constituencies": [
+      {
+        "ID": 85,
+        "CAPTION": "RAIGARH(ST)"
+      },
+      {
+        "ID": 86,
+        "CAPTION": "DURG"
+      },
+      {
+        "ID": 87,
+        "CAPTION": "KORBA"
+      },
+      {
+        "ID": 88,
+        "CAPTION": "KANKER(ST)"
+      },
+      {
+        "ID": 89,
+        "CAPTION": "JANJGIR CHAMPA(SC)"
+      },
+      {
+        "ID": 90,
+        "CAPTION": "MAHASAMUND"
+      },
+      {
+        "ID": 91,
+        "CAPTION": "BILASPUR"
+      },
+      {
+        "ID": 92,
+        "CAPTION": "BASTAR(ST)"
+      },
+      {
+        "ID": 93,
+        "CAPTION": "RAIPUR"
+      },
+      {
+        "ID": 94,
+        "CAPTION": "RAJNANDGAON"
+      },
+      {
+        "ID": 95,
+        "CAPTION": "SARGUJA(ST)"
+      }
+    ]
+  },
+  "Delhi": {
+    "state_id": 11,
+    "state_name": "Delhi",
+    "constituencies": [
+      {
+        "ID": 98,
+        "CAPTION": "NORTH WEST DELHI(SC)"
+      },
+      {
+        "ID": 99,
+        "CAPTION": "CHANDINI CHOWK"
+      },
+      {
+        "ID": 100,
+        "CAPTION": "EAST DELHI"
+      },
+      {
+        "ID": 101,
+        "CAPTION": "NORTH EAST DELHI"
+      },
+      {
+        "ID": 102,
+        "CAPTION": "WEST DELHI"
+      },
+      {
+        "ID": 103,
+        "CAPTION": "NEW DELHI"
+      },
+      {
+        "ID": 104,
+        "CAPTION": "SOUTH DELHI"
+      }
+    ]
+  },
+  "Goa": {
+    "state_id": 12,
+    "state_name": "Goa",
+    "constituencies": [
+      {
+        "ID": 105,
+        "CAPTION": "SOUTH GOA"
+      },
+      {
+        "ID": 106,
+        "CAPTION": "NORTH GOA"
+      }
+    ]
+  },
+  "Gujarat": {
+    "state_id": 27,
+    "state_name": "Gujarat",
+    "constituencies": [
+      {
+        "ID": 107,
+        "CAPTION": "BANASKANTHA"
+      },
+      {
+        "ID": 108,
+        "CAPTION": "VADODARA"
+      },
+      {
+        "ID": 109,
+        "CAPTION": "PORBANDAR"
+      },
+      {
+        "ID": 110,
+        "CAPTION": "MAHESANA"
+      },
+      {
+        "ID": 111,
+        "CAPTION": "VALSAD(ST)"
+      },
+      {
+        "ID": 112,
+        "CAPTION": "AMRELI"
+      },
+      {
+        "ID": 113,
+        "CAPTION": "BARDOLI(ST)"
+      },
+      {
+        "ID": 114,
+        "CAPTION": "SURAT"
+      },
+      {
+        "ID": 115,
+        "CAPTION": "ANAND"
+      },
+      {
+        "ID": 116,
+        "CAPTION": "DAHOD(ST)"
+      },
+      {
+        "ID": 117,
+        "CAPTION": "PATAN"
+      },
+      {
+        "ID": 118,
+        "CAPTION": "SURENDRANAGAR"
+      },
+      {
+        "ID": 119,
+        "CAPTION": "BHAVNAGAR"
+      },
+      {
+        "ID": 120,
+        "CAPTION": "JAMNAGAR"
+      },
+      {
+        "ID": 121,
+        "CAPTION": "NAVSARI"
+      },
+      {
+        "ID": 122,
+        "CAPTION": "JUNAGADH"
+      },
+      {
+        "ID": 123,
+        "CAPTION": "KHEDA"
+      },
+      {
+        "ID": 124,
+        "CAPTION": "AHMEDABAD EAST"
+      },
+      {
+        "ID": 125,
+        "CAPTION": "AHMEDABAD WEST(SC)"
+      },
+      {
+        "ID": 126,
+        "CAPTION": "GANDHINAGAR"
+      },
+      {
+        "ID": 127,
+        "CAPTION": "KACHCHH(SC)"
+      },
+      {
+        "ID": 128,
+        "CAPTION": "RAJKOT"
+      },
+      {
+        "ID": 129,
+        "CAPTION": "SABARKANTHA"
+      },
+      {
+        "ID": 130,
+        "CAPTION": "CHHOTA UDAIPUR(ST)"
+      },
+      {
+        "ID": 131,
+        "CAPTION": "PANCHMAHAL"
+      },
+      {
+        "ID": 132,
+        "CAPTION": "BHARUCH"
+      }
+    ]
+  },
+  "Haryana": {
+    "state_id": 14,
+    "state_name": "Haryana",
+    "constituencies": [
+      {
+        "ID": 133,
+        "CAPTION": "SONEPAT"
+      },
+      {
+        "ID": 134,
+        "CAPTION": "KURUKSHETRA"
+      },
+      {
+        "ID": 135,
+        "CAPTION": "HISAR"
+      },
+      {
+        "ID": 136,
+        "CAPTION": "KARNAL"
+      },
+      {
+        "ID": 137,
+        "CAPTION": "SIRSA(SC)"
+      },
+      {
+        "ID": 138,
+        "CAPTION": "GURGAON"
+      },
+      {
+        "ID": 139,
+        "CAPTION": "AMBALA (SC)"
+      },
+      {
+        "ID": 140,
+        "CAPTION": "FARIDABAD"
+      },
+      {
+        "ID": 141,
+        "CAPTION": "BHIWANI MAHENDRAGARH"
+      },
+      {
+        "ID": 142,
+        "CAPTION": "ROHTAK"
+      }
+    ]
+  },
+  "Himachal Pradesh": {
+    "state_id": 15,
+    "state_name": "Himachal Pradesh",
+    "constituencies": [
+      {
+        "ID": 143,
+        "CAPTION": "HAMIRPUR_HP"
+      },
+      {
+        "ID": 144,
+        "CAPTION": "KANGRA"
+      },
+      {
+        "ID": 145,
+        "CAPTION": "SHIMLA (SC)"
+      },
+      {
+        "ID": 146,
+        "CAPTION": "MANDI"
+      }
+    ]
+  },
+  "Jammu And Kashmir": {
+    "state_id": 16,
+    "state_name": "Jammu And Kashmir",
+    "constituencies": [
+      {
+        "ID": 147,
+        "CAPTION": "ANANTNAG"
+      },
+      {
+        "ID": 148,
+        "CAPTION": "UDHAMPUR"
+      },
+      {
+        "ID": 149,
+        "CAPTION": "BARAMULLAH"
+      },
+      {
+        "ID": 150,
+        "CAPTION": "JAMMU"
+      },
+      {
+        "ID": 151,
+        "CAPTION": "SRINAGAR"
+      }
+    ]
+  },
+  "Jharkhand": {
+    "state_id": 17,
+    "state_name": "Jharkhand",
+    "constituencies": [
+      {
+        "ID": 152,
+        "CAPTION": "HAZARIBAGH"
+      },
+      {
+        "ID": 153,
+        "CAPTION": "GODDA"
+      },
+      {
+        "ID": 154,
+        "CAPTION": "DHANBAD"
+      },
+      {
+        "ID": 155,
+        "CAPTION": "GIRIDIH"
+      },
+      {
+        "ID": 156,
+        "CAPTION": "SINGHBHUM(ST)"
+      },
+      {
+        "ID": 157,
+        "CAPTION": "LOHARDAGA(ST)"
+      },
+      {
+        "ID": 158,
+        "CAPTION": "RANCHI"
+      },
+      {
+        "ID": 159,
+        "CAPTION": "DUMKA(ST)"
+      },
+      {
+        "ID": 160,
+        "CAPTION": "CHATRA"
+      },
+      {
+        "ID": 161,
+        "CAPTION": "JAMSHEDPUR"
+      },
+      {
+        "ID": 162,
+        "CAPTION": "PALAMU(SC)"
+      },
+      {
+        "ID": 163,
+        "CAPTION": "RAJMAHAL(ST)"
+      },
+      {
+        "ID": 164,
+        "CAPTION": "KHUNTI(ST)"
+      },
+      {
+        "ID": 165,
+        "CAPTION": "KODARMA"
+      }
+    ]
+  },
+  "Karnataka": {
+    "state_id": 18,
+    "state_name": "Karnataka",
+    "constituencies": [
+      {
+        "ID": 166,
+        "CAPTION": "BANGALORE RURAL"
+      },
+      {
+        "ID": 167,
+        "CAPTION": "BELLARY(ST)"
+      },
+      {
+        "ID": 168,
+        "CAPTION": "RAICHUR(ST)"
+      },
+      {
+        "ID": 169,
+        "CAPTION": "BAGALKOT"
+      },
+      {
+        "ID": 170,
+        "CAPTION": "KOPPAL"
+      },
+      {
+        "ID": 171,
+        "CAPTION": "CHIKBALLAPUR"
+      },
+      {
+        "ID": 172,
+        "CAPTION": "GULBARGA(SC)"
+      },
+      {
+        "ID": 173,
+        "CAPTION": "DAKSHINA KANNADA"
+      },
+      {
+        "ID": 174,
+        "CAPTION": "SHIMOGA"
+      },
+      {
+        "ID": 175,
+        "CAPTION": "BELGAUM"
+      },
+      {
+        "ID": 176,
+        "CAPTION": "CHIKKODI"
+      },
+      {
+        "ID": 177,
+        "CAPTION": "MYSORE"
+      },
+      {
+        "ID": 178,
+        "CAPTION": "UDUPI CHIKMAGALUR"
+      },
+      {
+        "ID": 179,
+        "CAPTION": "HASSAN"
+      },
+      {
+        "ID": 180,
+        "CAPTION": "HAVERI"
+      },
+      {
+        "ID": 181,
+        "CAPTION": "BANGALORE NORTH"
+      },
+      {
+        "ID": 182,
+        "CAPTION": "BANGALORE SOUTH"
+      },
+      {
+        "ID": 183,
+        "CAPTION": "BANGALORE CENTRAL"
+      },
+      {
+        "ID": 184,
+        "CAPTION": "BIDAR"
+      },
+      {
+        "ID": 185,
+        "CAPTION": "KOLAR(SC)"
+      },
+      {
+        "ID": 186,
+        "CAPTION": "DAVANAGERE"
+      },
+      {
+        "ID": 187,
+        "CAPTION": "DHARWAD"
+      },
+      {
+        "ID": 188,
+        "CAPTION": "MANDYA"
+      },
+      {
+        "ID": 189,
+        "CAPTION": "TUMKUR"
+      },
+      {
+        "ID": 190,
+        "CAPTION": "CHAMARAJANAGAR(SC)"
+      },
+      {
+        "ID": 191,
+        "CAPTION": "BIJAPUR(SC)"
+      },
+      {
+        "ID": 192,
+        "CAPTION": "CHITRADURGA(SC)"
+      },
+      {
+        "ID": 193,
+        "CAPTION": "UTTARA KANNADA"
+      }
+    ]
+  },
+  "Kerala": {
+    "state_id": 36,
+    "state_name": "Kerala",
+    "constituencies": [
+      {
+        "ID": 194,
+        "CAPTION": "KANNUR"
+      },
+      {
+        "ID": 195,
+        "CAPTION": "THIRUVANANTHAPURAM"
+      },
+      {
+        "ID": 196,
+        "CAPTION": "ATTINGAL"
+      },
+      {
+        "ID": 197,
+        "CAPTION": "WAYANAD"
+      },
+      {
+        "ID": 198,
+        "CAPTION": "PATHANAMTHITTA"
+      },
+      {
+        "ID": 199,
+        "CAPTION": "ERNAKULAM"
+      },
+      {
+        "ID": 200,
+        "CAPTION": "CHALAKUDY"
+      },
+      {
+        "ID": 201,
+        "CAPTION": "KASARAGOD"
+      },
+      {
+        "ID": 202,
+        "CAPTION": "KOTTAYAM"
+      },
+      {
+        "ID": 203,
+        "CAPTION": "MALAPPURAM"
+      },
+      {
+        "ID": 204,
+        "CAPTION": "PONNANI"
+      },
+      {
+        "ID": 205,
+        "CAPTION": "VADAKARA"
+      },
+      {
+        "ID": 206,
+        "CAPTION": "KOZHIKODE"
+      },
+      {
+        "ID": 207,
+        "CAPTION": "ALAPPUZHA"
+      },
+      {
+        "ID": 208,
+        "CAPTION": "MAVELIKKARA(SC)"
+      },
+      {
+        "ID": 209,
+        "CAPTION": "KOLLAM"
+      },
+      {
+        "ID": 210,
+        "CAPTION": "THRISSUR"
+      },
+      {
+        "ID": 211,
+        "CAPTION": "ALATHUR(SC)"
+      },
+      {
+        "ID": 212,
+        "CAPTION": "PALAKKAD"
+      },
+      {
+        "ID": 213,
+        "CAPTION": "IDUKKI"
+      }
+    ]
+  },
+  "Ladakh": {
+    "state_id": 130,
+    "state_name": "Ladakh",
+    "constituencies": [
+      {
+        "ID": 214,
+        "CAPTION": "LADAKH"
+      }
+    ]
+  },
+  "Lakshadweep": {
+    "state_id": 19,
+    "state_name": "Lakshadweep",
+    "constituencies": [
+      {
+        "ID": 215,
+        "CAPTION": "LAKSHADWEEP(ST)"
+      }
+    ]
+  },
+  "Madhya Pradesh": {
+    "state_id": 20,
+    "state_name": "Madhya Pradesh",
+    "constituencies": [
+      {
+        "ID": 216,
+        "CAPTION": "BETUL(ST)"
+      },
+      {
+        "ID": 217,
+        "CAPTION": "MORENA"
+      },
+      {
+        "ID": 218,
+        "CAPTION": "BHOPAL"
+      },
+      {
+        "ID": 219,
+        "CAPTION": "TIKAMGARH(SC)"
+      },
+      {
+        "ID": 220,
+        "CAPTION": "GUNA"
+      },
+      {
+        "ID": 221,
+        "CAPTION": "SHAHDOL (ST)"
+      },
+      {
+        "ID": 222,
+        "CAPTION": "KHANDWA"
+      },
+      {
+        "ID": 223,
+        "CAPTION": "DHAR(ST)"
+      },
+      {
+        "ID": 224,
+        "CAPTION": "BHIND(SC)"
+      },
+      {
+        "ID": 225,
+        "CAPTION": "INDORE"
+      },
+      {
+        "ID": 226,
+        "CAPTION": "JABALPUR"
+      },
+      {
+        "ID": 227,
+        "CAPTION": "VIDISHA"
+      },
+      {
+        "ID": 228,
+        "CAPTION": "SAGAR"
+      },
+      {
+        "ID": 229,
+        "CAPTION": "REWA"
+      },
+      {
+        "ID": 230,
+        "CAPTION": "RATLAM(ST)"
+      },
+      {
+        "ID": 231,
+        "CAPTION": "CHHINDWARA"
+      },
+      {
+        "ID": 232,
+        "CAPTION": "MANDLA(ST)"
+      },
+      {
+        "ID": 233,
+        "CAPTION": "MANDSOUR"
+      },
+      {
+        "ID": 234,
+        "CAPTION": "UJJAIN(SC)"
+      },
+      {
+        "ID": 235,
+        "CAPTION": "DAMOH"
+      },
+      {
+        "ID": 236,
+        "CAPTION": "DEWAS(SC)"
+      },
+      {
+        "ID": 237,
+        "CAPTION": "GWALIOR"
+      },
+      {
+        "ID": 238,
+        "CAPTION": "HOSHANGABAD"
+      },
+      {
+        "ID": 239,
+        "CAPTION": "KHARGONE(ST)"
+      },
+      {
+        "ID": 240,
+        "CAPTION": "SIDHI"
+      },
+      {
+        "ID": 241,
+        "CAPTION": "RAJGARH"
+      },
+      {
+        "ID": 242,
+        "CAPTION": "BALAGHAT"
+      },
+      {
+        "ID": 243,
+        "CAPTION": "KHAJURAHO"
+      },
+      {
+        "ID": 244,
+        "CAPTION": "SATNA"
+      }
+    ]
+  },
+  "Maharashtra": {
+    "state_id": 21,
+    "state_name": "Maharashtra",
+    "constituencies": [
+      {
+        "ID": 245,
+        "CAPTION": "RAVER"
+      },
+      {
+        "ID": 246,
+        "CAPTION": "JALGAON"
+      },
+      {
+        "ID": 247,
+        "CAPTION": "RATNAGIRI-SINDHUDURG"
+      },
+      {
+        "ID": 248,
+        "CAPTION": "DHULE"
+      },
+      {
+        "ID": 249,
+        "CAPTION": "LATUR(SC)"
+      },
+      {
+        "ID": 250,
+        "CAPTION": "NAGPUR"
+      },
+      {
+        "ID": 251,
+        "CAPTION": "RAMTEK(SC)"
+      },
+      {
+        "ID": 252,
+        "CAPTION": "BARAMATI"
+      },
+      {
+        "ID": 253,
+        "CAPTION": "MAVAL"
+      },
+      {
+        "ID": 254,
+        "CAPTION": "SHIRUR"
+      },
+      {
+        "ID": 255,
+        "CAPTION": "PUNE"
+      },
+      {
+        "ID": 256,
+        "CAPTION": "YAVATMAL-WASHIM"
+      },
+      {
+        "ID": 257,
+        "CAPTION": "WARDHA"
+      },
+      {
+        "ID": 258,
+        "CAPTION": "AURANGABAD_MH"
+      },
+      {
+        "ID": 259,
+        "CAPTION": "CHANDRAPUR"
+      },
+      {
+        "ID": 260,
+        "CAPTION": "JALNA"
+      },
+      {
+        "ID": 261,
+        "CAPTION": "PARBHANI"
+      },
+      {
+        "ID": 262,
+        "CAPTION": "AMRAVATI(SC)"
+      },
+      {
+        "ID": 263,
+        "CAPTION": "BEED"
+      },
+      {
+        "ID": 264,
+        "CAPTION": "RAIGAD"
+      },
+      {
+        "ID": 265,
+        "CAPTION": "MUMBAI SOUTH"
+      },
+      {
+        "ID": 266,
+        "CAPTION": "AKOLA"
+      },
+      {
+        "ID": 267,
+        "CAPTION": "MUMBAI NORTH"
+      },
+      {
+        "ID": 268,
+        "CAPTION": "MUMBAI NORTH-CENTRAL"
+      },
+      {
+        "ID": 269,
+        "CAPTION": "MUMBAI NORTH EAST"
+      },
+      {
+        "ID": 270,
+        "CAPTION": "MUMBAI NORTH WEST"
+      },
+      {
+        "ID": 271,
+        "CAPTION": "MUMBAI SOUTH CENTRAL"
+      },
+      {
+        "ID": 272,
+        "CAPTION": "BULDHANA"
+      },
+      {
+        "ID": 273,
+        "CAPTION": "GADCHIROLI-CHIMUR(ST)"
+      },
+      {
+        "ID": 274,
+        "CAPTION": "NANDED"
+      },
+      {
+        "ID": 275,
+        "CAPTION": "AHMEDNAGAR"
+      },
+      {
+        "ID": 276,
+        "CAPTION": "SHIRDI(SC)"
+      },
+      {
+        "ID": 277,
+        "CAPTION": "DINDORI(ST)"
+      },
+      {
+        "ID": 278,
+        "CAPTION": "NASHIK"
+      },
+      {
+        "ID": 279,
+        "CAPTION": "OSMANABAD"
+      },
+      {
+        "ID": 280,
+        "CAPTION": "MADHA"
+      },
+      {
+        "ID": 281,
+        "CAPTION": "SATARA"
+      },
+      {
+        "ID": 282,
+        "CAPTION": "BHANDARA-GONDIYA"
+      },
+      {
+        "ID": 283,
+        "CAPTION": "HINGOLI"
+      },
+      {
+        "ID": 284,
+        "CAPTION": "KOLHAPUR"
+      },
+      {
+        "ID": 285,
+        "CAPTION": "HATKANANGLE"
+      },
+      {
+        "ID": 286,
+        "CAPTION": "SOLAPUR(SC)"
+      },
+      {
+        "ID": 287,
+        "CAPTION": "NANDURBAR(ST)"
+      },
+      {
+        "ID": 288,
+        "CAPTION": "SANGLI"
+      },
+      {
+        "ID": 289,
+        "CAPTION": "BHIWANDI"
+      },
+      {
+        "ID": 290,
+        "CAPTION": "KALYAN"
+      },
+      {
+        "ID": 291,
+        "CAPTION": "THANE"
+      },
+      {
+        "ID": 292,
+        "CAPTION": "PALGHAR(ST)"
+      }
+    ]
+  },
+  "Manipur": {
+    "state_id": 22,
+    "state_name": "Manipur",
+    "constituencies": [
+      {
+        "ID": 293,
+        "CAPTION": "OUTER MANIPUR(ST)"
+      },
+      {
+        "ID": 294,
+        "CAPTION": "INNER MANIPUR"
+      }
+    ]
+  },
+  "Meghalaya": {
+    "state_id": 23,
+    "state_name": "Meghalaya",
+    "constituencies": [
+      {
+        "ID": 295,
+        "CAPTION": "TURA"
+      },
+      {
+        "ID": 296,
+        "CAPTION": "SHILLONG"
+      }
+    ]
+  },
+  "Mizoram": {
+    "state_id": 13,
+    "state_name": "Mizoram",
+    "constituencies": [
+      {
+        "ID": 297,
+        "CAPTION": "MIZORAM (ST)"
+      }
+    ]
+  },
+  "Nagaland": {
+    "state_id": 24,
+    "state_name": "Nagaland",
+    "constituencies": [
+      {
+        "ID": 298,
+        "CAPTION": "NAGALAND"
+      }
+    ]
+  },
+  "Odisha": {
+    "state_id": 25,
+    "state_name": "Odisha",
+    "constituencies": [
+      {
+        "ID": 299,
+        "CAPTION": "CUTTACK"
+      },
+      {
+        "ID": 300,
+        "CAPTION": "JAGATSINGHPUR(SC)"
+      },
+      {
+        "ID": 301,
+        "CAPTION": "ASKA"
+      },
+      {
+        "ID": 302,
+        "CAPTION": "BERHAMPUR"
+      },
+      {
+        "ID": 303,
+        "CAPTION": "BOLANGIR"
+      },
+      {
+        "ID": 304,
+        "CAPTION": "BALASORE"
+      },
+      {
+        "ID": 305,
+        "CAPTION": "NABARANGPUR(ST)"
+      },
+      {
+        "ID": 306,
+        "CAPTION": "KEONJHAR(ST)"
+      },
+      {
+        "ID": 307,
+        "CAPTION": "KALAHANDI"
+      },
+      {
+        "ID": 308,
+        "CAPTION": "PURI"
+      },
+      {
+        "ID": 309,
+        "CAPTION": "SAMBALPUR"
+      },
+      {
+        "ID": 310,
+        "CAPTION": "JAJPUR(SC)"
+      },
+      {
+        "ID": 311,
+        "CAPTION": "SUNDARGARH (ST)"
+      },
+      {
+        "ID": 312,
+        "CAPTION": "BHADRAK(SC)"
+      },
+      {
+        "ID": 313,
+        "CAPTION": "KENDRAPARA"
+      },
+      {
+        "ID": 314,
+        "CAPTION": "MAYURBHANJ (ST)"
+      },
+      {
+        "ID": 315,
+        "CAPTION": "BARGARH"
+      },
+      {
+        "ID": 316,
+        "CAPTION": "KANDHAMAL"
+      },
+      {
+        "ID": 317,
+        "CAPTION": "BHUBANESWAR"
+      },
+      {
+        "ID": 318,
+        "CAPTION": "DHENKANAL"
+      },
+      {
+        "ID": 319,
+        "CAPTION": "KORAPUT(ST)"
+      }
+    ]
+  },
+  "Puducherry": {
+    "state_id": 26,
+    "state_name": "Puducherry",
+    "constituencies": [
+      {
+        "ID": 547,
+        "CAPTION": "Puducherry"
+      }
+    ]
+  },
+  "Punjab": {
+    "state_id": 1,
+    "state_name": "Punjab",
+    "constituencies": [
+      {
+        "ID": 321,
+        "CAPTION": "BHATINDA"
+      },
+      {
+        "ID": 322,
+        "CAPTION": "GURDASPUR"
+      },
+      {
+        "ID": 323,
+        "CAPTION": "AMRITSAR"
+      },
+      {
+        "ID": 324,
+        "CAPTION": "HOSHIARPUR(SC)"
+      },
+      {
+        "ID": 325,
+        "CAPTION": "FIROZPUR"
+      },
+      {
+        "ID": 326,
+        "CAPTION": "FATEHGARH SAHIB(SC)"
+      },
+      {
+        "ID": 327,
+        "CAPTION": "SANGRUR"
+      },
+      {
+        "ID": 328,
+        "CAPTION": "PATIALA"
+      },
+      {
+        "ID": 329,
+        "CAPTION": "ANANDPUR SAHIB"
+      },
+      {
+        "ID": 330,
+        "CAPTION": "FARIDKOT(SC)"
+      },
+      {
+        "ID": 331,
+        "CAPTION": "JALANDHAR(SC)"
+      },
+      {
+        "ID": 332,
+        "CAPTION": "LUDHIANA"
+      },
+      {
+        "ID": 333,
+        "CAPTION": "KHADOOR SAHIB"
+      }
+    ]
+  },
+  "Rajasthan": {
+    "state_id": 28,
+    "state_name": "Rajasthan",
+    "constituencies": [
+      {
+        "ID": 334,
+        "CAPTION": "AJMER"
+      },
+      {
+        "ID": 335,
+        "CAPTION": "BARMER"
+      },
+      {
+        "ID": 336,
+        "CAPTION": "JHALAWAR-BARAN"
+      },
+      {
+        "ID": 337,
+        "CAPTION": "KOTA"
+      },
+      {
+        "ID": 338,
+        "CAPTION": "NAGAUR"
+      },
+      {
+        "ID": 339,
+        "CAPTION": "UDAIPUR(ST)"
+      },
+      {
+        "ID": 340,
+        "CAPTION": "DAUSA(ST)"
+      },
+      {
+        "ID": 341,
+        "CAPTION": "CHITTORGARH"
+      },
+      {
+        "ID": 342,
+        "CAPTION": "CHURU"
+      },
+      {
+        "ID": 343,
+        "CAPTION": "TONK-SAWAI MADHOPUR"
+      },
+      {
+        "ID": 344,
+        "CAPTION": "BIKANER(SC)"
+      },
+      {
+        "ID": 345,
+        "CAPTION": "JALORE"
+      },
+      {
+        "ID": 346,
+        "CAPTION": "SIKAR"
+      },
+      {
+        "ID": 347,
+        "CAPTION": "JODHPUR"
+      },
+      {
+        "ID": 348,
+        "CAPTION": "BHARATPUR(SC)"
+      },
+      {
+        "ID": 349,
+        "CAPTION": "RAJSAMAND"
+      },
+      {
+        "ID": 350,
+        "CAPTION": "KARAULI-DHOLPUR(SC)"
+      },
+      {
+        "ID": 351,
+        "CAPTION": "ALWAR"
+      },
+      {
+        "ID": 352,
+        "CAPTION": "BANSWARA(ST)"
+      },
+      {
+        "ID": 353,
+        "CAPTION": "BHILWARA"
+      },
+      {
+        "ID": 354,
+        "CAPTION": "JHUNJHUNU"
+      },
+      {
+        "ID": 355,
+        "CAPTION": "GANGANAGAR(SC)"
+      },
+      {
+        "ID": 356,
+        "CAPTION": "JAIPUR RURAL"
+      },
+      {
+        "ID": 357,
+        "CAPTION": "JAIPUR"
+      },
+      {
+        "ID": 358,
+        "CAPTION": "PALI"
+      }
+    ]
+  },
+  "Sikkim": {
+    "state_id": 29,
+    "state_name": "Sikkim",
+    "constituencies": [
+      {
+        "ID": 359,
+        "CAPTION": "SIKKIM"
+      }
+    ]
+  },
+  "Tamil Nadu": {
+    "state_id": 30,
+    "state_name": "Tamil Nadu",
+    "constituencies": [
+      {
+        "ID": 360,
+        "CAPTION": "TIRUNELVELI"
+      },
+      {
+        "ID": 361,
+        "CAPTION": "KANCHEEPURAM(SC)"
+      },
+      {
+        "ID": 362,
+        "CAPTION": "SRIPERUMBUDUR"
+      },
+      {
+        "ID": 363,
+        "CAPTION": "MADURAI"
+      },
+      {
+        "ID": 364,
+        "CAPTION": "ARAKKONAM"
+      },
+      {
+        "ID": 365,
+        "CAPTION": "VELLORE"
+      },
+      {
+        "ID": 366,
+        "CAPTION": "TIRUPPUR"
+      },
+      {
+        "ID": 367,
+        "CAPTION": "CHIDAMBARAM(SC)"
+      },
+      {
+        "ID": 368,
+        "CAPTION": "TENKASI(SC)"
+      },
+      {
+        "ID": 369,
+        "CAPTION": "SALEM"
+      },
+      {
+        "ID": 370,
+        "CAPTION": "NAMAKKAL"
+      },
+      {
+        "ID": 371,
+        "CAPTION": "CUDDALORE"
+      },
+      {
+        "ID": 372,
+        "CAPTION": "TIRUCHIRAPPALLI"
+      },
+      {
+        "ID": 373,
+        "CAPTION": "VILUPPURAM(SC)"
+      },
+      {
+        "ID": 374,
+        "CAPTION": "KALLAKURICHI"
+      },
+      {
+        "ID": 375,
+        "CAPTION": "KRISHNAGIRI"
+      },
+      {
+        "ID": 376,
+        "CAPTION": "VIRUDHUNAGAR"
+      },
+      {
+        "ID": 377,
+        "CAPTION": "THENI"
+      },
+      {
+        "ID": 378,
+        "CAPTION": "CHENNAI CENTRAL"
+      },
+      {
+        "ID": 379,
+        "CAPTION": "CHENNAI NORTH"
+      },
+      {
+        "ID": 380,
+        "CAPTION": "CHENNAI SOUTH"
+      },
+      {
+        "ID": 381,
+        "CAPTION": "MAYILADUTHURAI"
+      },
+      {
+        "ID": 382,
+        "CAPTION": "THANJAVUR"
+      },
+      {
+        "ID": 383,
+        "CAPTION": "ARANI"
+      },
+      {
+        "ID": 384,
+        "CAPTION": "TIRUVANNAMALAI"
+      },
+      {
+        "ID": 385,
+        "CAPTION": "KARUR"
+      },
+      {
+        "ID": 386,
+        "CAPTION": "DINDIGUL"
+      },
+      {
+        "ID": 387,
+        "CAPTION": "KANNIYAKUMARI"
+      },
+      {
+        "ID": 388,
+        "CAPTION": "ERODE"
+      },
+      {
+        "ID": 389,
+        "CAPTION": "DHARAMAPURI"
+      },
+      {
+        "ID": 390,
+        "CAPTION": "COIMBATORE"
+      },
+      {
+        "ID": 391,
+        "CAPTION": "POLLACHI"
+      },
+      {
+        "ID": 392,
+        "CAPTION": "TIRUVALLUR(SC)"
+      },
+      {
+        "ID": 393,
+        "CAPTION": "THOOTHUKKUDI"
+      },
+      {
+        "ID": 394,
+        "CAPTION": "SIVAGANGA"
+      },
+      {
+        "ID": 395,
+        "CAPTION": "RAMANATHAPURAM"
+      },
+      {
+        "ID": 396,
+        "CAPTION": "NILGIRIS(SC)"
+      },
+      {
+        "ID": 397,
+        "CAPTION": "NAGAPATTINAM(SC)"
+      },
+      {
+        "ID": 398,
+        "CAPTION": "PERAMBALUR"
+      }
+    ]
+  },
+  "Telangana": {
+    "state_id": 129,
+    "state_name": "Telangana",
+    "constituencies": [
+      {
+        "ID": 399,
+        "CAPTION": "ADILABAD(ST)"
+      },
+      {
+        "ID": 400,
+        "CAPTION": "HYDERABAD"
+      },
+      {
+        "ID": 401,
+        "CAPTION": "SECUNDERABAD"
+      },
+      {
+        "ID": 402,
+        "CAPTION": "KARIMNAGAR"
+      },
+      {
+        "ID": 403,
+        "CAPTION": "KHAMMAM"
+      },
+      {
+        "ID": 404,
+        "CAPTION": "MAHABUBNAGAR"
+      },
+      {
+        "ID": 405,
+        "CAPTION": "MEDAK"
+      },
+      {
+        "ID": 406,
+        "CAPTION": "NIZAMABAD"
+      },
+      {
+        "ID": 407,
+        "CAPTION": "CHELVELLA"
+      },
+      {
+        "ID": 408,
+        "CAPTION": "WARANGEL(SC)"
+      },
+      {
+        "ID": 409,
+        "CAPTION": "MAHABUBABAD"
+      },
+      {
+        "ID": 410,
+        "CAPTION": "NAGARKURNOOL(SC)"
+      },
+      {
+        "ID": 411,
+        "CAPTION": "MALKAJGIRI"
+      },
+      {
+        "ID": 412,
+        "CAPTION": "ZAHIRABAD"
+      },
+      {
+        "ID": 413,
+        "CAPTION": "PEDDAPALLE"
+      },
+      {
+        "ID": 414,
+        "CAPTION": "NALGONDA"
+      },
+      {
+        "ID": 415,
+        "CAPTION": "BHONGIR"
+      }
+    ]
+  },
+  "The Dadra And Nagar Haveli And Daman And Diu": {
+    "state_id": 10,
+    "state_name": "The Dadra And Nagar Haveli And Daman And Diu",
+    "constituencies": [
+      {
+        "ID": 97,
+        "CAPTION": "DAMAN and DIU"
+      },
+      {
+        "ID": 548,
+        "CAPTION": "DADRA & NAGAR HAVELI (ST)"
+      }
+    ]
+  },
+  "Tripura": {
+    "state_id": 31,
+    "state_name": "Tripura",
+    "constituencies": [
+      {
+        "ID": 416,
+        "CAPTION": "TRIPURA WEST"
+      },
+      {
+        "ID": 417,
+        "CAPTION": "TRIPURA EAST(ST)"
+      }
+    ]
+  },
+  "Uttar Pradesh": {
+    "state_id": 33,
+    "state_name": "Uttar Pradesh",
+    "constituencies": [
+      {
+        "ID": 418,
+        "CAPTION": "ALIGARH"
+      },
+      {
+        "ID": 419,
+        "CAPTION": "BARABANKI(SC)"
+      },
+      {
+        "ID": 420,
+        "CAPTION": "ETAWAH(SC)"
+      },
+      {
+        "ID": 421,
+        "CAPTION": "FATEHPUR"
+      },
+      {
+        "ID": 422,
+        "CAPTION": "FIROZABAD"
+      },
+      {
+        "ID": 423,
+        "CAPTION": "BANSGAON(SC)"
+      },
+      {
+        "ID": 424,
+        "CAPTION": "GORAKHPUR"
+      },
+      {
+        "ID": 425,
+        "CAPTION": "HARDOI (SC)"
+      },
+      {
+        "ID": 426,
+        "CAPTION": "MISRIKH(SC)"
+      },
+      {
+        "ID": 427,
+        "CAPTION": "UNNAO"
+      },
+      {
+        "ID": 428,
+        "CAPTION": "JAUNPUR"
+      },
+      {
+        "ID": 429,
+        "CAPTION": "MACHHLISHAHR(SC)"
+      },
+      {
+        "ID": 430,
+        "CAPTION": "MEERUT"
+      },
+      {
+        "ID": 431,
+        "CAPTION": "ROBERTSGANJ(SC)"
+      },
+      {
+        "ID": 432,
+        "CAPTION": "AMROHA"
+      },
+      {
+        "ID": 433,
+        "CAPTION": "GHOSI"
+      },
+      {
+        "ID": 434,
+        "CAPTION": "SANT KABIR NAGAR"
+      },
+      {
+        "ID": 435,
+        "CAPTION": "BAGHPAT"
+      },
+      {
+        "ID": 436,
+        "CAPTION": "CHANDAULI"
+      },
+      {
+        "ID": 437,
+        "CAPTION": "BADAUN"
+      },
+      {
+        "ID": 438,
+        "CAPTION": "GONDA"
+      },
+      {
+        "ID": 439,
+        "CAPTION": "KAISERGANJ"
+      },
+      {
+        "ID": 440,
+        "CAPTION": "KANNAUJ"
+      },
+      {
+        "ID": 441,
+        "CAPTION": "MUZAFFARNAGAR"
+      },
+      {
+        "ID": 442,
+        "CAPTION": "AGRA(SC)"
+      },
+      {
+        "ID": 443,
+        "CAPTION": "FATEHPUR SIKRI"
+      },
+      {
+        "ID": 444,
+        "CAPTION": "ALLAHABAD"
+      },
+      {
+        "ID": 445,
+        "CAPTION": "PHULPUR"
+      },
+      {
+        "ID": 446,
+        "CAPTION": "BAHRAICH(SC)"
+      },
+      {
+        "ID": 447,
+        "CAPTION": "BALLIA"
+      },
+      {
+        "ID": 448,
+        "CAPTION": "SALEMPUR"
+      },
+      {
+        "ID": 449,
+        "CAPTION": "FARRUKHABAD"
+      },
+      {
+        "ID": 450,
+        "CAPTION": "GHAZIABAD"
+      },
+      {
+        "ID": 451,
+        "CAPTION": "AKBARPUR"
+      },
+      {
+        "ID": 452,
+        "CAPTION": "KANPUR"
+      },
+      {
+        "ID": 453,
+        "CAPTION": "MATHURA"
+      },
+      {
+        "ID": 454,
+        "CAPTION": "MIRZAPUR"
+      },
+      {
+        "ID": 455,
+        "CAPTION": "RAMPUR"
+      },
+      {
+        "ID": 456,
+        "CAPTION": "SITAPUR"
+      },
+      {
+        "ID": 457,
+        "CAPTION": "VARANASI"
+      },
+      {
+        "ID": 458,
+        "CAPTION": "AMETHI"
+      },
+      {
+        "ID": 459,
+        "CAPTION": "KUSHI NAGAR"
+      },
+      {
+        "ID": 460,
+        "CAPTION": "FAIZABAD"
+      },
+      {
+        "ID": 461,
+        "CAPTION": "GHAZIPUR"
+      },
+      {
+        "ID": 462,
+        "CAPTION": "LUCKNOW"
+      },
+      {
+        "ID": 463,
+        "CAPTION": "MOHANLALGANJ(SC)"
+      },
+      {
+        "ID": 464,
+        "CAPTION": "PILIBHIT"
+      },
+      {
+        "ID": 465,
+        "CAPTION": "SAHARANPUR"
+      },
+      {
+        "ID": 466,
+        "CAPTION": "KAUSHAMBI(SC)"
+      },
+      {
+        "ID": 467,
+        "CAPTION": "HAMIRPUR_UP"
+      },
+      {
+        "ID": 468,
+        "CAPTION": "AZAMGARH"
+      },
+      {
+        "ID": 469,
+        "CAPTION": "LALGANJ (SC)"
+      },
+      {
+        "ID": 470,
+        "CAPTION": "AONLA"
+      },
+      {
+        "ID": 471,
+        "CAPTION": "BAREILLY"
+      },
+      {
+        "ID": 472,
+        "CAPTION": "DEORIA"
+      },
+      {
+        "ID": 473,
+        "CAPTION": "JHANSI"
+      },
+      {
+        "ID": 474,
+        "CAPTION": "KHERI"
+      },
+      {
+        "ID": 475,
+        "CAPTION": "DHAURAHRA"
+      },
+      {
+        "ID": 476,
+        "CAPTION": "PRATAPGARH"
+      },
+      {
+        "ID": 477,
+        "CAPTION": "SHAHJAHANPUR(SC)"
+      },
+      {
+        "ID": 478,
+        "CAPTION": "GAUTAM BUDDHA NAGAR"
+      },
+      {
+        "ID": 479,
+        "CAPTION": "MAHARAJGANJ_UP"
+      },
+      {
+        "ID": 480,
+        "CAPTION": "SAMBHAL"
+      },
+      {
+        "ID": 481,
+        "CAPTION": "BANDA"
+      },
+      {
+        "ID": 482,
+        "CAPTION": "ETAH"
+      },
+      {
+        "ID": 483,
+        "CAPTION": "KAIRANA"
+      },
+      {
+        "ID": 484,
+        "CAPTION": "BASTI"
+      },
+      {
+        "ID": 485,
+        "CAPTION": "BIJNOR"
+      },
+      {
+        "ID": 486,
+        "CAPTION": "NAGINA(SC)"
+      },
+      {
+        "ID": 487,
+        "CAPTION": "BULANDSHAHR(SC)"
+      },
+      {
+        "ID": 488,
+        "CAPTION": "JALAUN(SC)"
+      },
+      {
+        "ID": 489,
+        "CAPTION": "MAINPURI"
+      },
+      {
+        "ID": 490,
+        "CAPTION": "RAE BARELI"
+      },
+      {
+        "ID": 491,
+        "CAPTION": "DOMARIYAGANJ"
+      },
+      {
+        "ID": 492,
+        "CAPTION": "AMBEDKAR NAGAR"
+      },
+      {
+        "ID": 493,
+        "CAPTION": "BHADOHI"
+      },
+      {
+        "ID": 494,
+        "CAPTION": "MORADABAD"
+      },
+      {
+        "ID": 495,
+        "CAPTION": "SULTANPUR"
+      },
+      {
+        "ID": 496,
+        "CAPTION": "SHRAWASTI"
+      },
+      {
+        "ID": 497,
+        "CAPTION": "HATHRAS (SC)"
+      }
+    ]
+  },
+  "Uttarakhand": {
+    "state_id": 32,
+    "state_name": "Uttarakhand",
+    "constituencies": [
+      {
+        "ID": 498,
+        "CAPTION": "NAINITAL UDHAM SINGH NAG."
+      },
+      {
+        "ID": 499,
+        "CAPTION": "GARHWAL"
+      },
+      {
+        "ID": 500,
+        "CAPTION": "HARDWAR"
+      },
+      {
+        "ID": 501,
+        "CAPTION": "TEHRI GARHWAL"
+      },
+      {
+        "ID": 502,
+        "CAPTION": "ALMORA(SC)"
+      }
+    ]
+  },
+  "West Bengal": {
+    "state_id": 34,
+    "state_name": "West Bengal",
+    "constituencies": [
+      {
+        "ID": 503,
+        "CAPTION": "ARAMBAG(SC)"
+      },
+      {
+        "ID": 504,
+        "CAPTION": "HOOGHLY"
+      },
+      {
+        "ID": 505,
+        "CAPTION": "SREERAMPUR"
+      },
+      {
+        "ID": 506,
+        "CAPTION": "PURULIA"
+      },
+      {
+        "ID": 507,
+        "CAPTION": "BANKURA"
+      },
+      {
+        "ID": 508,
+        "CAPTION": "BISHNUPUR(SC)"
+      },
+      {
+        "ID": 509,
+        "CAPTION": "KRISHNANAGAR"
+      },
+      {
+        "ID": 510,
+        "CAPTION": "RANAGHAT(SC)"
+      },
+      {
+        "ID": 511,
+        "CAPTION": "DARJEELING"
+      },
+      {
+        "ID": 512,
+        "CAPTION": "BIRBHUM"
+      },
+      {
+        "ID": 513,
+        "CAPTION": "BOLPUR(SC)"
+      },
+      {
+        "ID": 514,
+        "CAPTION": "COOCHBEHAR(SC)"
+      },
+      {
+        "ID": 515,
+        "CAPTION": "KANTHI"
+      },
+      {
+        "ID": 516,
+        "CAPTION": "TAMLUK"
+      },
+      {
+        "ID": 517,
+        "CAPTION": "ALIPURDUARS(ST)"
+      },
+      {
+        "ID": 518,
+        "CAPTION": "HOWRAH"
+      },
+      {
+        "ID": 519,
+        "CAPTION": "ULUBERIA"
+      },
+      {
+        "ID": 520,
+        "CAPTION": "BALURGHAT"
+      },
+      {
+        "ID": 521,
+        "CAPTION": "BAHARAMPUR"
+      },
+      {
+        "ID": 522,
+        "CAPTION": "JANGIPUR"
+      },
+      {
+        "ID": 523,
+        "CAPTION": "MURSHIDABAD"
+      },
+      {
+        "ID": 524,
+        "CAPTION": "DIAMOND HARBOUR"
+      },
+      {
+        "ID": 525,
+        "CAPTION": "JADAVPUR"
+      },
+      {
+        "ID": 526,
+        "CAPTION": "JOYNAGAR(SC)"
+      },
+      {
+        "ID": 527,
+        "CAPTION": "MATHURAPUR(SC)"
+      },
+      {
+        "ID": 528,
+        "CAPTION": "KOLKATA DAKSHIN"
+      },
+      {
+        "ID": 529,
+        "CAPTION": "KOLKATA UTTAR"
+      },
+      {
+        "ID": 530,
+        "CAPTION": "JALPAIGURI(SC)"
+      },
+      {
+        "ID": 531,
+        "CAPTION": "MALDAHA DAKSHIN"
+      },
+      {
+        "ID": 532,
+        "CAPTION": "MALDAHA UTTAR"
+      },
+      {
+        "ID": 533,
+        "CAPTION": "MEDINIPUR"
+      },
+      {
+        "ID": 534,
+        "CAPTION": "GHATAL"
+      },
+      {
+        "ID": 535,
+        "CAPTION": "BARASAT"
+      },
+      {
+        "ID": 536,
+        "CAPTION": "BARRACKPUR"
+      },
+      {
+        "ID": 537,
+        "CAPTION": "BASIRHAT"
+      },
+      {
+        "ID": 538,
+        "CAPTION": "DUM DUM"
+      },
+      {
+        "ID": 539,
+        "CAPTION": "BANGAON(SC)"
+      },
+      {
+        "ID": 540,
+        "CAPTION": "RAIGANJ"
+      },
+      {
+        "ID": 541,
+        "CAPTION": "JHARGRAM(ST)"
+      },
+      {
+        "ID": 542,
+        "CAPTION": "ASANSOL"
+      },
+      {
+        "ID": 543,
+        "CAPTION": "BARDHAMAN-DURGAPUR"
+      },
+      {
+        "ID": 544,
+        "CAPTION": "BARDHAMAN PURBA(SC)"
+      }
+    ]
+  }
+}

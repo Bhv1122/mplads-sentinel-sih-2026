@@ -1,0 +1,299 @@
+[
+  {
+    "financial_year": "1993-94",
+    "scheme_entitlement_per_mp_cr": 0.05,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 790.0,
+    "actual_expenditure_cr": 782.0,
+    "major_head": 3475,
+    "status": "Inception Year (Dec 1993)"
+  },
+  {
+    "financial_year": "1994-95",
+    "scheme_entitlement_per_mp_cr": 1.0,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 790.0,
+    "actual_expenditure_cr": 771.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "1995-96",
+    "scheme_entitlement_per_mp_cr": 1.0,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 790.0,
+    "actual_expenditure_cr": 763.9,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "1996-97",
+    "scheme_entitlement_per_mp_cr": 1.0,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 778.0,
+    "actual_expenditure_cr": 778.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "1997-98",
+    "scheme_entitlement_per_mp_cr": 1.0,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 489.0,
+    "actual_expenditure_cr": 488.85,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "1998-99",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 790.0,
+    "revised_estimate_cr": 790.0,
+    "actual_expenditure_cr": 789.5,
+    "major_head": 3475,
+    "status": "Entitlement raised to 2 Cr"
+  },
+  {
+    "financial_year": "1999-00",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1390.0,
+    "actual_expenditure_cr": 1390.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2000-01",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 2080.0,
+    "actual_expenditure_cr": 2080.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2001-02",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1800.0,
+    "actual_expenditure_cr": 1800.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2002-03",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1600.0,
+    "actual_expenditure_cr": 1600.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2003-04",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1682.0,
+    "actual_expenditure_cr": 1682.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2004-05",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1310.0,
+    "actual_expenditure_cr": 1310.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2005-06",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1464.0,
+    "actual_expenditure_cr": 1463.95,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2006-07",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1475.0,
+    "actual_expenditure_cr": 1475.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2007-08",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1465.0,
+    "actual_expenditure_cr": 1465.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2008-09",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1580.0,
+    "actual_expenditure_cr": 1580.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2009-10",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1530.0,
+    "actual_expenditure_cr": 1530.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2010-11",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 1580.0,
+    "actual_expenditure_cr": 1558.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2011-12",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 1580.0,
+    "revised_estimate_cr": 2980.0,
+    "actual_expenditure_cr": 2950.0,
+    "major_head": 3475,
+    "status": "Entitlement raised to 5 Cr"
+  },
+  {
+    "financial_year": "2012-13",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3945.5,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2013-14",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3894.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2014-15",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3500.0,
+    "actual_expenditure_cr": 3314.5,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2015-16",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3500.0,
+    "actual_expenditure_cr": 3497.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2016-17",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3500.0,
+    "actual_expenditure_cr": 3489.2,
+    "major_head": 3475,
+    "status": "2016 Guidelines Implemented"
+  },
+  {
+    "financial_year": "2017-18",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3949.0,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2018-19",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3949.5,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2019-20",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3965.0,
+    "revised_estimate_cr": 2492.0,
+    "actual_expenditure_cr": 2491.5,
+    "major_head": 3475,
+    "status": "Implemented"
+  },
+  {
+    "financial_year": "2020-21",
+    "scheme_entitlement_per_mp_cr": 0.0,
+    "budget_estimate_cr": 3965.0,
+    "revised_estimate_cr": 100.0,
+    "actual_expenditure_cr": 99.4,
+    "major_head": 3475,
+    "status": "Suspended for COVID-19 relief"
+  },
+  {
+    "financial_year": "2021-22",
+    "scheme_entitlement_per_mp_cr": 2.0,
+    "budget_estimate_cr": 200.0,
+    "revised_estimate_cr": 1500.0,
+    "actual_expenditure_cr": 1498.0,
+    "major_head": 3475,
+    "status": "Restored (One tranche of 2 Cr)"
+  },
+  {
+    "financial_year": "2022-23",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3948.0,
+    "major_head": 3475,
+    "status": "Final Year of Legacy WMS"
+  },
+  {
+    "financial_year": "2023-24",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3945.0,
+    "major_head": 3475,
+    "status": "e-SAKSHI & CNA Reform Operational"
+  },
+  {
+    "financial_year": "2024-25",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": 3950.0,
+    "actual_expenditure_cr": 3920.0,
+    "major_head": 3475,
+    "status": "18th Lok Sabha Transition"
+  },
+  {
+    "financial_year": "2025-26",
+    "scheme_entitlement_per_mp_cr": 5.0,
+    "budget_estimate_cr": 3950.0,
+    "revised_estimate_cr": null,
+    "actual_expenditure_cr": null,
+    "major_head": 3475,
+    "status": "Budget Estimate (Target)"
+  }
+]
