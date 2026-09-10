@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPLADS Sentinel - Visual Brochure & Comprehensive Report</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    .snapshot-frame { border: 1px solid #e2e8f0; border-radius: 0.75rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .snapshot-frame:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+
+  <!-- Top Global Header -->
+  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-lg text-white shadow-sm">IN</div>
+        <div>
+          <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Government of India • MoSPI • SIH 2026</div>
+          <h1 class="text-base font-bold text-white tracking-tight">MPLADS Sentinel — Visual Product Brochure</h1>
+        </div>
+      </div>
+      
+      <!-- Quick Navigation -->
+      <div class="flex items-center gap-2 flex-wrap">
+        <a href="#roles" class="text-xs px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors">3 Stakeholder Portals</a>
+        <a href="#dashboards" class="text-xs px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors">Executive Dashboards</a>
+        <a href="#architecture" class="text-xs px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors">Architecture</a>
+        <a href="https://github.com/Bhv1122/mplads-sentinel-sih-2026" target="_blank" class="text-xs px-3 py-1.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-medium flex items-center gap-1 transition-colors">
+          <span>GitHub Repo</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-slate-900 to-blue-950 text-white py-14 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold mb-4 border border-blue-400/30">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Production Release • 100% Relational Integrity • 14 Snapshots Included
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        AI-Powered Public Fund Intelligence, Surveillance & Multi-Stakeholder Governance
+      </h2>
+      <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+        Synchronizing <strong>Citizens</strong>, <strong>District Nodal Officers</strong>, and <strong>Site Contractors</strong> to eliminate chronic project delays, prevent fiscal leakage, and deliver verified public infrastructure across India.
+      </p>
+
+      <!-- Key Stat Badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="p-4 rounded-xl bg-white/10 backdrop-blur border border-white/15">
+          <div class="text-2xl sm:text-3xl font-bold text-white">₹3,950+ Cr</div>
+          <div class="text-xs text-slate-300 mt-1">Under Surveillance</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/10 backdrop-blur border border-white/15">
+          <div class="text-2xl sm:text-3xl font-bold text-emerald-400">543</div>
+          <div class="text-xs text-slate-300 mt-1">Lok Sabha Constituencies</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/10 backdrop-blur border border-white/15">
+          <div class="text-2xl sm:text-3xl font-bold text-blue-400">&lt; 18 ms</div>
+          <div class="text-xs text-slate-300 mt-1">FTS Search Latency</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white/10 backdrop-blur border border-white/15">
+          <div class="text-2xl sm:text-3xl font-bold text-amber-400">63 / 63</div>
+          <div class="text-xs text-slate-300 mt-1">Audit Scorecard (100%)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+
+    <!-- Section 1: Tri-Stakeholder Operational Portals -->
+    <section id="roles" class="scroll-mt-20">
+      <div class="border-b border-slate-200 pb-4 mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Tier 1 • Operations & Field Workflows</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">Tri-Stakeholder Check & Edit Portals</h3>
+        <p class="text-slate-600 text-sm mt-1">Synchronized interfaces designed specifically for citizens, district magistrates, and field contractors.</p>
+      </div>
+
+      <div class="space-y-12">
+
+        <!-- 1. Consumer Portal -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div>
+              <span class="px-2.5 py-1 rounded bg-blue-50 text-blue-700 text-xs font-bold uppercase">Role 1</span>
+              <h4 class="text-xl font-bold text-slate-900 mt-1">Citizen / Consumer Oversight Portal</h4>
+              <p class="text-xs text-slate-500">Public transparency interface for local constituents to track MP works and report discrepancies.</p>
+            </div>
+            <a href="/ui/consumer/" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors">
+              <span>Open Live Portal</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
+          <div class="snapshot-frame overflow-hidden bg-slate-100 mb-4">
+            <img src="/ui/assets/snapshots/10_consumer_portal.png" alt="Citizen Oversight Portal Snapshot" class="w-full h-auto object-cover" loading="lazy">
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 text-xs text-slate-600">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">🔍 Live Constituency Search</strong>
+              Instant search across titles, work codes, and MPs with sub-second response times.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">🏷️ Sector Filter Pills</strong>
+              Filter projects by Drinking Water, Education, Healthcare, Roads, and Community Infrastructure.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">📢 Civic Grievance Triage</strong>
+              Citizen issue submission generating tracked tickets (`CIT-XXXX`) reviewed by District Authorities.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Nodal Head Portal & Modal -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div>
+              <span class="px-2.5 py-1 rounded bg-indigo-50 text-indigo-700 text-xs font-bold uppercase">Role 2</span>
+              <h4 class="text-xl font-bold text-slate-900 mt-1">District Nodal Head Console & Sanction Action</h4>
+              <p class="text-xs text-slate-500">Administrative portal for District Collectors and DMs to grant statutory sanctions and release tranches.</p>
+            </div>
+            <a href="/ui/nodal-head/" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors">
+              <span>Open Live Portal</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
+            <div>
+              <div class="text-xs font-bold text-slate-500 mb-2 uppercase">District Telemetry & Delayed Works Queue</div>
+              <div class="snapshot-frame overflow-hidden bg-slate-100">
+                <img src="/ui/assets/snapshots/11_nodal_head_portal.png" alt="District Nodal Head Portal Snapshot" class="w-full h-auto" loading="lazy">
+              </div>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-500 mb-2 uppercase">Interactive Administrative Sanction Modal</div>
+              <div class="snapshot-frame overflow-hidden bg-slate-100">
+                <img src="/ui/assets/snapshots/13_nodal_sanction_modal.png" alt="Nodal Sanction Modal Snapshot" class="w-full h-auto" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 text-xs text-slate-600">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">⚖️ Statutory Sanction Issuance</strong>
+              Review MP recommendations, specify approved budget, select executing agency, and commit completion deadline.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">💰 Tranche Fund Release</strong>
+              Disburse fund installments directly correlated with certified physical progress stages.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">🚨 Priority Delay Escalation</strong>
+              Prioritized table sorting delayed projects by schedule slippage and machine learning risk score.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Site Executer Portal & Modal -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div>
+              <span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-700 text-xs font-bold uppercase">Role 3</span>
+              <h4 class="text-xl font-bold text-slate-900 mt-1">Site Executer & Contractor Console & Milestone Modal</h4>
+              <p class="text-xs text-slate-500">Field engineer dashboard for executing agencies to log physical stages, vouchers, and GPS remarks.</p>
+            </div>
+            <a href="/ui/site-executer/" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors">
+              <span>Open Live Portal</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
+            <div>
+              <div class="text-xs font-bold text-slate-500 mb-2 uppercase">Contracted Works & Financial Drawdown</div>
+              <div class="snapshot-frame overflow-hidden bg-slate-100">
+                <img src="/ui/assets/snapshots/12_site_executer_portal.png" alt="Site Executer Portal Snapshot" class="w-full h-auto" loading="lazy">
+              </div>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-500 mb-2 uppercase">Interactive Milestone & Expense Modal</div>
+              <div class="snapshot-frame overflow-hidden bg-slate-100">
+                <img src="/ui/assets/snapshots/14_site_executer_modal.png" alt="Site Executer Modal Snapshot" class="w-full h-auto" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 text-xs text-slate-600">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">🏗️ Stage Progression</strong>
+              Update project from Earthwork to Foundation, Superstructure, Finishing, and Handover.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">🧾 Expense Voucher Logging</strong>
+              Record verified contractor expenditure amount, invoice references, and material categories.
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <strong class="text-slate-900 block mb-1">📍 Geo-Tagging & Site Notes</strong>
+              Capture GPS coordinates and field inspection notes for tamper-proof verification.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 2: Executive Surveillance Dashboards -->
+    <section id="dashboards" class="scroll-mt-20">
+      <div class="border-b border-slate-200 pb-4 mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Tier 2 • Ministry & Leadership Intelligence</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">Executive Governance & Surveillance Dashboards</h3>
+        <p class="text-slate-600 text-sm mt-1">High-level national telemetry, predictive risk modeling, spatial heatmaps, and AI assistants.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Overview Dashboard -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">1. Executive Overview Dashboard</h4>
+              <a href="/ui/overview/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">National scheme scorecard, capital distribution by sector, and 36 States/UTs utilization ranking.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/01_overview_dashboard.png" alt="Overview Dashboard Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> ₹3,950 Cr fund accounting, sector allocation charts, and sanction pace benchmarks.
+          </div>
+        </div>
+
+        <!-- Projects Explorer -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">2. High-Performance Projects Explorer</h4>
+              <a href="/ui/projects/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Faceted project explorer powered by PostgreSQL TSVECTOR full-text search and trigram fuzzy matching.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/02_projects_explorer.png" alt="Projects Explorer Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Sub-18ms queries, typo-tolerant search across MP names, districts, and contractor agencies.
+          </div>
+        </div>
+
+        <!-- Risk Analytics -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">3. Portfolio Risk Telemetry & Anomaly Intelligence</h4>
+              <a href="/ui/analytics/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Predictive anomaly surveillance detecting chronic delays, budget gaps, and non-completion likelihood.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/03_risk_analytics.png" alt="Risk Analytics Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Risk tier stratification (Low, Moderate, High, Critical) and causal factor radar charts.
+          </div>
+        </div>
+
+        <!-- Forensic Project Profile -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">4. Forensic Project Risk Profile</h4>
+              <a href="/ui/project_risk_profile_p_10291_multi_purpose_community_hall/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Deep-dive single-project diagnostic view providing a complete forensic audit trail of individual works.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/04_project_risk_profile.png" alt="Project Risk Profile Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Deterministic 'Why Was This Flagged?' diagnostic tree with empirical peer comparisons.
+          </div>
+        </div>
+
+        <!-- Investigation Queue -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">5. Investigation Queue & Review Triage</h4>
+              <a href="/ui/investigation_queue_case_management_review_triage/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Case management workflow for vigilance officers to assign, investigate, and close anomaly cases.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/05_investigation_queue.png" alt="Investigation Queue Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Triage of citizen discrepancy reports and automated escalation of high-risk projects.
+          </div>
+        </div>
+
+        <!-- Spatial Intelligence -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">6. Spatial Risk Intelligence & GIS Mapping</h4>
+              <a href="/ui/spatial/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Interactive geographic choropleth maps displaying delay density and unspent balances across India.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/06_spatial_intelligence.png" alt="Spatial Intelligence Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Regional bottleneck identification and statutory SC/ST reservation equity mapping.
+          </div>
+        </div>
+
+        <!-- AI Audit Assistant -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">7. AI Audit Assistant</h4>
+              <a href="/ui/assistant/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Conversational natural-language query assistant translating governance questions into verified SQL tables.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/07_ai_audit_assistant.png" alt="AI Audit Assistant Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Natural language to SQL, automatic parliamentary briefing generation, guidelines citations.
+          </div>
+        </div>
+
+        <!-- System Health & Status -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-lg text-slate-900">8. Platform Telemetry & System Status</h4>
+              <a href="/ui/system-status/" target="_blank" class="text-xs font-medium text-blue-600 hover:underline">Launch →</a>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Real-time health monitoring of database connection pool, API latency, and ETL pipeline synchronization.</p>
+            <div class="snapshot-frame overflow-hidden bg-slate-100 mb-3">
+              <img src="/ui/assets/snapshots/09_data_system_status.png" alt="System Status Snapshot" class="w-full h-auto" loading="lazy">
+            </div>
+          </div>
+          <div class="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+            <strong>Key Analytics:</strong> Connection pool utilization, sub-50ms p95 latency tracking, and e-Sakshi scraper health.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Section 3: Architecture Blueprint -->
+    <section id="architecture" class="scroll-mt-20 bg-slate-900 text-white rounded-2xl p-8 border border-slate-800">
+      <div class="max-w-3xl mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Technical Foundation</span>
+        <h3 class="text-2xl font-bold mt-1">Four-Tier Scalable System Architecture</h3>
+        <p class="text-slate-300 text-xs mt-1 leading-relaxed">
+          Engineered for 100% relational integrity, sub-second query performance, and resilient offline demonstration fallback.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+          <div class="font-bold text-blue-400 text-sm mb-1">1. Presentation Tier</div>
+          <p class="text-slate-300">Responsive Vanilla CSS & Tailwind tokens, Material Symbols, mobile-ready field layouts, and interactive action modals.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+          <div class="font-bold text-indigo-400 text-sm mb-1">2. API Gateway</div>
+          <p class="text-slate-300">FastAPI (Python 3.12), Pydantic v2 schemas, OpenAPI Swagger UI, and automated in-memory session fallback.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+          <div class="font-bold text-emerald-400 text-sm mb-1">3. Predictive ML</div>
+          <p class="text-slate-300">Dual-context feature contracts (Pre-award inherent risk vs. In-flight surveillance) with deterministic XAI causal factor trees.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+          <div class="font-bold text-amber-400 text-sm mb-1">4. Relational DB</div>
+          <p class="text-slate-300">PostgreSQL 16+ with 13 tables (3NF), 8 precomputed analytical views, and 85 GIN, B-Tree, and TSVECTOR indexes.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <strong>MPLADS Sentinel</strong> — Developed for the Smart India Hackathon (SIH) 2026.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Bhv1122/mplads-sentinel-sih-2026" target="_blank" class="hover:text-blue-600 font-medium">GitHub Repository</a>
+        <span>•</span>
+        <a href="/docs" target="_blank" class="hover:text-blue-600 font-medium">Interactive API Docs</a>
+        <span>•</span>
+        <a href="/ui/consumer/" class="hover:text-blue-600 font-medium">Citizen Portal</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

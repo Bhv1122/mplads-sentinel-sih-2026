@@ -248,6 +248,11 @@ def redirect_to_projects():
 def redirect_to_login():
     return RedirectResponse(url="/ui/authorized_officer_login_mplads_sentinel/")
 
+@app.get("/brochure", include_in_schema=False)
+@app.get("/ui/brochure", include_in_schema=False)
+def redirect_to_brochure():
+    return RedirectResponse(url="/ui/brochure/")
+
 app.mount("/ui", StaticFiles(directory=_frontend_dir, html=True), name="ui")
 
 

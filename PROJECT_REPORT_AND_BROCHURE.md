@@ -111,7 +111,7 @@ MPLADS Sentinel coordinates the lifecycle through synchronized interfaces. Below
 ### 2.1 Citizen / Consumer Oversight Portal (`/ui/consumer/`)
 The citizen interface empowers the public with uninhibited access to local public expenditure data and an immediate channel for reporting anomalies.
 
-![Citizen / Consumer Oversight Portal](docs/snapshots/10_consumer_portal.png)
+![Citizen / Consumer Oversight Portal](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/10_consumer_portal.png)
 
 #### Key Features:
 - **Constituency Search Bar**: Instant search across project titles, work codes, MP names, and districts.
@@ -124,7 +124,7 @@ The citizen interface empowers the public with uninhibited access to local publi
 ### 2.2 District Nodal Head Console (`/ui/nodal-head/`)
 The District Nodal Head portal serves District Collectors, District Magistrates (DMs), and Chief Development Officers (CDOs) who manage scheme approvals and fund disbursements.
 
-![District Nodal Head Console](docs/snapshots/11_nodal_head_portal.png)
+![District Nodal Head Console](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/11_nodal_head_portal.png)
 
 #### Key Features:
 - **District Executive Telemetry**: Metrics tracking Total Allocation (₹3,950 Cr), Sanction Rate (88.4%), and Stalled Works Under Review.
@@ -134,14 +134,14 @@ The District Nodal Head portal serves District Collectors, District Magistrates 
 #### Interactive Sanction Action Modal:
 When the Nodal Officer reviews a recommendation, clicking "Sanction Project" opens an interactive modal to record the approved budget, assign the certified executing agency, and commit the statutory target deadline.
 
-![District Nodal Sanction Modal](docs/snapshots/13_nodal_sanction_modal.png)
+![District Nodal Sanction Modal](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/13_nodal_sanction_modal.png)
 
 ---
 
 ### 2.3 Site Executer & Contractor Console (`/ui/site-executer/`)
 The field engineer portal provides contractors and executing agencies (CPWD, PWD, PRIs) with a field-ready operational dashboard.
 
-![Site Executer & Contractor Console](docs/snapshots/12_site_executer_portal.png)
+![Site Executer & Contractor Console](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/12_site_executer_portal.png)
 
 #### Key Features:
 - **Active Contracts Inventory**: Immediate overview of assigned works across all operational stages.
@@ -151,7 +151,7 @@ The field engineer portal provides contractors and executing agencies (CPWD, PWD
 #### Interactive Milestone & Expense Modal:
 Clicking "Update Progress" opens the field engineer logging modal to record the updated physical progress percentage, work stage, GPS coordinates, and contractor expenditure vouchers.
 
-![Site Executer Progress Modal](docs/snapshots/14_site_executer_modal.png)
+![Site Executer Progress Modal](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/14_site_executer_modal.png)
 
 ---
 
@@ -160,7 +160,7 @@ Clicking "Update Progress" opens the field engineer logging modal to record the 
 ### 3.1 Overview Dashboard (`/ui/overview/`)
 National-level executive command center for MoSPI leadership and Members of Parliament.
 
-![Overview Dashboard](docs/snapshots/01_overview_dashboard.png)
+![Overview Dashboard](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/01_overview_dashboard.png)
 
 #### Highlights:
 - **National Scheme KPIs**: Cumulative works recommended, sanctioned, completed, and overall fund utilization %.
@@ -172,7 +172,7 @@ National-level executive command center for MoSPI leadership and Members of Parl
 ### 3.2 Projects Explorer (`/ui/projects/`)
 High-performance faceted explorer enabling sub-second search across the entire project microdata repository.
 
-![Projects Explorer](docs/snapshots/02_projects_explorer.png)
+![Projects Explorer](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/02_projects_explorer.png)
 
 #### Highlights:
 - **PostgreSQL Full-Text Search**: Accelerated by GIN `search_vector` indexes with weighted matching.
@@ -184,7 +184,7 @@ High-performance faceted explorer enabling sub-second search across the entire p
 ### 3.3 Portfolio Risk Telemetry & Anomaly Intelligence (`/ui/analytics/`)
 Early-warning surveillance suite detecting chronic delays, cost overruns, and financial leakage.
 
-![Portfolio Risk Telemetry](docs/snapshots/03_risk_analytics.png)
+![Portfolio Risk Telemetry](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/03_risk_analytics.png)
 
 #### Highlights:
 - **Predictive Risk Stratification**: Classification of works into Low, Moderate, High, and Critical risk tiers.
@@ -196,7 +196,7 @@ Early-warning surveillance suite detecting chronic delays, cost overruns, and fi
 ### 3.4 Forensic Project Risk Profile (`/ui/project_risk_profile_p_10291.../`)
 Deep-dive single-project diagnostic view providing an exhaustive audit trail of an individual development work.
 
-![Forensic Project Risk Profile](docs/snapshots/04_project_risk_profile.png)
+![Forensic Project Risk Profile](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/04_project_risk_profile.png)
 
 #### Highlights:
 - **Granular Financial Ledger**: Sanctioned, released, expended, and unspent balance reconciliation.
@@ -208,7 +208,7 @@ Deep-dive single-project diagnostic view providing an exhaustive audit trail of 
 ### 3.5 Investigation Queue & Case Review Triage (`/ui/investigation_queue.../`)
 Case management workflow for anti-corruption and vigilance officers to investigate anomalous projects.
 
-![Investigation Queue](docs/snapshots/05_investigation_queue.png)
+![Investigation Queue](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/05_investigation_queue.png)
 
 #### Highlights:
 - **Automated Anomaly Triage**: Works with $\ge 70$ risk score or citizen discrepancies automatically placed into the queue.
@@ -220,7 +220,7 @@ Case management workflow for anti-corruption and vigilance officers to investiga
 ### 3.6 Spatial Risk Intelligence & GIS Heatmaps (`/ui/spatial/`)
 Choropleth mapping of India visualizing geographic risk clusters, unspent fund density, and regional delay hot spots.
 
-![Spatial Risk Intelligence](docs/snapshots/06_spatial_intelligence.png)
+![Spatial Risk Intelligence](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/06_spatial_intelligence.png)
 
 #### Highlights:
 - **State & District Heatmaps**: Dynamic color grading based on average completion time and fund utilization rates.
@@ -232,7 +232,7 @@ Choropleth mapping of India visualizing geographic risk clusters, unspent fund d
 ### 3.7 AI Audit Assistant (`/ui/assistant/`)
 Conversational governance copilot translating natural language questions into verified analytical reports.
 
-![AI Audit Assistant](docs/snapshots/07_ai_audit_assistant.png)
+![AI Audit Assistant](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/07_ai_audit_assistant.png)
 
 #### Highlights:
 - **Natural Language to SQL**: Inquiring *"Show me delayed drinking water projects in Varanasi with over ₹50 Lakhs budget"* produces verified data tables and charts instantly.
@@ -244,7 +244,7 @@ Conversational governance copilot translating natural language questions into ve
 ### 3.8 Secure Authorized Officer Authentication (`/ui/login/`)
 Multi-tier government authentication gate enforcing Role-Based Access Control (RBAC).
 
-![Authorized Officer Login](docs/snapshots/08_authorized_officer_login.png)
+![Authorized Officer Login](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/08_authorized_officer_login.png)
 
 #### Highlights:
 - **Role Enforcement**: Partitions access between Citizens, Executing Agencies, District Nodal Authorities, and MoSPI Leadership.
@@ -255,7 +255,7 @@ Multi-tier government authentication gate enforcing Role-Based Access Control (R
 ### 3.9 System Health, Database Telemetry & Status (`/ui/system-status/`)
 Operational telemetry dashboard for infrastructure reliability and data freshness.
 
-![Data System Status](docs/snapshots/09_data_system_status.png)
+![Data System Status](https://raw.githubusercontent.com/Bhv1122/mplads-sentinel-sih-2026/main/docs/snapshots/09_data_system_status.png)
 
 #### Highlights:
 - **Database Connection Pool**: Real-time status of PostgreSQL connection pool and query latency metrics.
